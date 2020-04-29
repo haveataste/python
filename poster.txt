@@ -1,0 +1,9 @@
+from poster.encode import multipart_encode
+from poster.streaminghttp import register_openers
+import urllib2
+
+def upload_file(url,upload_file_path,filename):
+    register_openers()
+    datagen, headers = multipart_encode({"file": open(upload_file_path, "rb"),"type":"uploadFile","filename":filename})
+    request = urllib2.Request(url, datagen, headers)
+    return urllib2.urlopen(request).read()
