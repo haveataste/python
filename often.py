@@ -14,7 +14,7 @@ import re
 re.compile(r'')
 re.search()
 re.match()
-re.
+re.findall()
 
 import random
 random.random()
@@ -63,7 +63,8 @@ chr()
 ord()
 s.zfill(3)
 
-map()
-filter()
+enumerate(sequence, [start=0])
+map(func, seq)
+filter(func, seq)
 import functools
 functools.reduce()
