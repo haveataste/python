@@ -1,33 +1,24 @@
 # pip3 install Scrapy
 Collecting Scrapy
-  Using cached https://files.pythonhosted.org/packages/d2/b1/105fe9a289e5bb64ec104076546f72060296d9989a0fc31a8b608c810868/Scrapy-
-2.2.0-py2.py3-none-any.whl
+  Using cached https://files.pythonhosted.org/packages/d2/b1/105fe9a289e5bb64ec104076546f72060296d9989a0fc31a8b608c810868/Scrapy-2.2.0-py2.py3-none-any.whl
 Collecting itemadapter>=0.1.0 (from Scrapy)
-  Downloading https://files.pythonhosted.org/packages/7d/fb/92f848fcfa85dc9f95370eaecb5c99b5230dd4fc5c6bae684f4ca59df973/itemadap
-ter-0.1.0-py3-none-any.whl
+  Downloading https://files.pythonhosted.org/packages/7d/fb/92f848fcfa85dc9f95370eaecb5c99b5230dd4fc5c6bae684f4ca59df973/itemadapter-0.1.0-py3-none-any.whl
 Collecting queuelib>=1.4.2 (from Scrapy)
-  Using cached https://files.pythonhosted.org/packages/4c/85/ae64e9145f39dd6d14f8af3fa809a270ef3729f3b90b3c0cf5aa242ab0d4/queueli
-b-1.5.0-py2.py3-none-any.whl
+  Using cached https://files.pythonhosted.org/packages/4c/85/ae64e9145f39dd6d14f8af3fa809a270ef3729f3b90b3c0cf5aa242ab0d4/queuelib-1.5.0-py2.py3-none-any.whl
 Collecting service-identity>=16.0.0 (from Scrapy)
-  Using cached https://files.pythonhosted.org/packages/e9/7c/2195b890023e098f9618d43ebc337d83c8b38d414326685339eb024db2f6/service
-_identity-18.1.0-py2.py3-none-any.whl
+  Using cached https://files.pythonhosted.org/packages/e9/7c/2195b890023e098f9618d43ebc337d83c8b38d414326685339eb024db2f6/service_identity-18.1.0-py2.py3-none-any.whl
 Collecting parsel>=1.5.0 (from Scrapy)
-  Using cached https://files.pythonhosted.org/packages/23/1e/9b39d64cbab79d4362cdd7be7f5e9623d45c4a53b3f7522cd8210df52d8e/parsel-
-1.6.0-py2.py3-none-any.whl
+  Using cached https://files.pythonhosted.org/packages/23/1e/9b39d64cbab79d4362cdd7be7f5e9623d45c4a53b3f7522cd8210df52d8e/parsel-1.6.0-py2.py3-none-any.whl
 Collecting protego>=0.1.15 (from Scrapy)
-  Downloading https://files.pythonhosted.org/packages/db/6e/bf6d5e4d7cf233b785719aaec2c38f027b9c2ed980a0015ec1a1cced4893/Protego-
-0.1.16.tar.gz (3.2MB)
+  Downloading https://files.pythonhosted.org/packages/db/6e/bf6d5e4d7cf233b785719aaec2c38f027b9c2ed980a0015ec1a1cced4893/Protego-0.1.16.tar.gz (3.2MB)
     100% |████████████████████████████████| 3.2MB 4.5kB/s 
 Requirement already satisfied: zope.interface>=4.1.3 in /usr/local/lib/python3.6/dist-packages (from Scrapy)
 Collecting pyOpenSSL>=16.2.0 (from Scrapy)
-  Using cached https://files.pythonhosted.org/packages/9e/de/f8342b68fa9e981d348039954657bdf681b2ab93de27443be51865ffa310/pyOpenS
-SL-19.1.0-py2.py3-none-any.whl
+  Using cached https://files.pythonhosted.org/packages/9e/de/f8342b68fa9e981d348039954657bdf681b2ab93de27443be51865ffa310/pyOpenSSL-19.1.0-py2.py3-none-any.whl
 Collecting lxml>=3.5.0 (from Scrapy)
-  Using cached https://files.pythonhosted.org/packages/55/6f/c87dffdd88a54dd26a3a9fef1d14b6384a9933c455c54ce3ca7d64a84c88/lxml-4.
-5.1-cp36-cp36m-manylinux1_x86_64.whl
+  Using cached https://files.pythonhosted.org/packages/55/6f/c87dffdd88a54dd26a3a9fef1d14b6384a9933c455c54ce3ca7d64a84c88/lxml-4.5.1-cp36-cp36m-manylinux1_x86_64.whl
 Collecting cssselect>=0.9.1 (from Scrapy)
-  Using cached https://files.pythonhosted.org/packages/3b/d4/3b5c17f00cce85b9a1e6f91096e1cc8e8ede2e1be8e96b87ce1ed09e92c5/csssele
-ct-1.1.0-py2.py3-none-any.whl
+  Using cached https://files.pythonhosted.org/packages/3b/d4/3b5c17f00cce85b9a1e6f91096e1cc8e8ede2e1be8e96b87ce1ed09e92c5/cssselect-1.1.0-py2.py3-none-any.whl
 Collecting w3lib>=1.17.0 (from Scrapy)
   Using cached https://files.pythonhosted.org/packages/a3/59/b6b14521090e7f42669cafdb84b0ab89301a42f1f1a82fcf5856661ea3a7/w3lib-1.22.0-py2.py3-none-any.whl
 Collecting PyDispatcher>=2.0.5 (from Scrapy)
