@@ -5,7 +5,7 @@ sess = requests.session()
 headers = {"User_agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3427.400 QQBrowser/9.6.12513.400"}
 url_captcha_image = 'https://kyfw.12306.cn/passport/captcha/captcha-image?login_site=E&module=login&rand=sjrand'#&0.4254218556575875'
 response_captcha_image = sess.get(url_captcha_image, headers=headers, verify=False)
-response_captcha_image.encoding = 'utf-8'
+#response_captcha_image.encoding = 'utf-8'
 if response_captcha_image.status_code == 200:
     with open('captcha_image.png', 'wb') as f:
         f.write(response_captcha_image.content)
@@ -24,6 +24,7 @@ try:
     print(title[de_index:])
 except:
     print('error!')
+    exit(1)
 
 is_position = [int(i) for i in input().split()]
 position = ['37,40','107,40','185,40','257,40','37,116','105,116','187,116','255,116']
@@ -35,7 +36,7 @@ for i in is_position:
 url_captcha_check = 'https://kyfw.12306.cn/passport/captcha/captcha-check'
 data_captcha_check = {'answer':','.join(answer_position), 'login_site':'E', 'rand':'sjrand'}
 response_captcha_check = sess.post(url_captcha_check, headers=headers, data=data_captcha_check, verify=False)
-#验证结果，4:成功  5:验证失败  7:过期  8:验证码校验失败,信息为空
+# 验证结果，4:成功  5:验证失败  7:过期  8:验证码校验失败,信息为空
 print(response_captcha_check.text, '\n')
 
 # ===================================================================================================================
