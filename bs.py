@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup as bf
-import requests
-import os
+import requests, os
 
 s = requests.get('https://github.com').text
 soup = bf(s, 'lxml')
