@@ -1,6 +1,6 @@
 # Selector
 from scrapy.selector import Selector
-response_object = Selector(text="HTML DOM")
+selector_object = Selector(text="HTML DOM")
 from scrapy.http import HtmlResponse
 response = HtmlResponse(url='http://example.com', body=body)
 response_object = Selector(response=response)
@@ -18,7 +18,6 @@ https://docs.scrapy.org/en/latest/topics/selectors.html
 >>> response.xpath('//a[contains(@href, "http")]/text()').re(r'Name:\s*(.*)')
 >>> response.xpath('//img/@src').getall()
 >>> response.xpath('//img').attrib['src']
-
 >>> response.css('span::text').get()
 >>> response.css('img::attr(src)').get()
 >>> response.css('img').attrib['src']
