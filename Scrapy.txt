@@ -1,6 +1,6 @@
 # Selector
 from scrapy.selector import Selector
-selector_object = Selector(text="HTML DOM")
+selector_object = Selector(text=HTML_DOM)
 from scrapy.http import HtmlResponse
 response = HtmlResponse(url='http://example.com', body=body)
 response_object = Selector(response=response)
