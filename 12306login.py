@@ -3,7 +3,6 @@ from aip import AipOcr
 
 sess = requests.session()
 headers = {"User_agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.3427.400 QQBrowser/9.6.12513.400"}
-
 url_captcha_image = 'https://kyfw.12306.cn/passport/captcha/captcha-image?login_site=E&module=login&rand=sjrand'#&0.4254218556575875'
 response_captcha_image = sess.get(url_captcha_image, headers=headers, verify=False)
 response_captcha_image.encoding = 'utf-8'
