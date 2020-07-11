@@ -2,12 +2,10 @@ from bs4 import BeautifulSoup as bf
 import requests
 import os
 
-with open('github.com.html', 'r') as f:
-    s = f.read()
-
+s = requests.get('https://github.com').text
 soup = bf(s, 'lxml')
-#print(soup.prettify())
 '''
+print(soup.prettify())
 a = soup.get_text()
 for i in a.split('\n'):
     if i != '':
