@@ -1,3 +1,20 @@
+# Selector
+from scrapy.selector import Selector
+response_object = Selector("HTML DOM")
+
+from scrapy.http import HtmlResponse
+response = HtmlResponse(url='http://example.com', body=body)
+response_object = Selector(response=response)
+
+# xpath
+
+
+# scrapy shell URL
+>>> response.text
+>>> response.xpath('').get()
+# scrapy bench URL
+
+
 # pip3 install Scrapy
 Collecting Scrapy
   Using cached https://files.pythonhosted.org/packages/d2/b1/105fe9a289e5bb64ec104076546f72060296d9989a0fc31a8b608c810868/Scrapy-2.2.0-py2.py3-none-any.whl
@@ -112,9 +129,3 @@ Building wheels for collected packages: Twisted, protego, PyDispatcher
 Successfully built Twisted protego PyDispatcher
 Installing collected packages: cssselect, attrs, Automat, PyHamcrest, constantly, hyperlink, incremental, zope.interface, Twisted, protego, pyasn1, pyasn1-modules, service-identity, queuelib, lxml, w3lib, parsel, pyOpenSSL, itemadapter, PyDispatcher, Scrapy
 Successfully installed Automat-20.2.0 PyDispatcher-2.0.5 PyHamcrest-2.0.2 Scrapy-2.2.0 Twisted-20.3.0 attrs-19.3.0 constantly-15.1.0 cssselect-1.1.0 hyperlink-19.0.0 incremental-17.5.0 itemadapter-0.1.0 lxml-4.5.1 parsel-1.6.0 protego-0.1.16 pyOpenSSL-19.1.0 pyasn1-0.4.8 pyasn1-modules-0.2.8 queuelib-1.5.0 service-identity-18.1.0 w3lib-1.22.0 zope.interface-5.1.0
-
-
-# scrapy shell URL
->>> response.text
->>> response.xpath('').get()
-# scrapy bench URL
