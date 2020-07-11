@@ -1,19 +1,45 @@
 # Selector
 from scrapy.selector import Selector
-response_object = Selector("HTML DOM")
-
+response_object = Selector(text="HTML DOM")
 from scrapy.http import HtmlResponse
 response = HtmlResponse(url='http://example.com', body=body)
 response_object = Selector(response=response)
 
 # xpath
-
+https://www.w3school.com.cn/xpath/xpath_syntax.asp
+https://docs.scrapy.org/en/latest/topics/selectors.html
 
 # scrapy shell URL
->>> response.text
->>> response.xpath('').get()
-# scrapy bench URL
+# response.text,request.url,request.headers
+# get(),getall(),extract(),extract_first(),re(pattern),re_first(pattern),attrib[attrs]
+>>> response.xpath('//span/text()').get()
+>>> response.xpath('//div[@id="images"]/a/text()').get()
+>>> response.xpath('//div[@id=$val]/a/text()', val='images').get()
+>>> response.xpath('//a[contains(@href, "http")]/text()').re(r'Name:\s*(.*)')
+>>> response.xpath('//img/@src').getall()
+>>> response.xpath('//img').attrib['src']
 
+>>> response.css('span::text').get()
+>>> response.css('img::attr(src)').get()
+>>> response.css('img').attrib['src']
+
+# scrapy -h
+Scrapy 2.2.0 - no active project
+Usage:
+  scrapy <command> [options] [args]
+Available commands:
+  bench         Run quick benchmark test
+  commands      
+  fetch         Fetch a URL using the Scrapy downloader
+  genspider     Generate new spider using pre-defined templates
+  runspider     Run a self-contained spider (without creating a project)
+  settings      Get settings values
+  shell         Interactive scraping console
+  startproject  Create new project
+  version       Print Scrapy version
+  view          Open URL in browser, as seen by Scrapy
+  [ more ]      More commands available when run from project directory
+Use "scrapy <command> -h" to see more info about a command
 
 # pip3 install Scrapy
 Collecting Scrapy
