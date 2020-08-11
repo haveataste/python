@@ -40,6 +40,12 @@ Available commands:
   [ more ]      More commands available when run from project directory
 Use "scrapy <command> -h" to see more info about a command
 
+$ scrapy startproject crabz
+$ cd crabz/crabz/spiders/
+$ vim spidername.py
+$ scrapy list
+$ scrapy crawl spidername
+
 # pip3 install Scrapy
 Collecting Scrapy
   Using cached https://files.pythonhosted.org/packages/d2/b1/105fe9a289e5bb64ec104076546f72060296d9989a0fc31a8b608c810868/Scrapy-2.2.0-py2.py3-none-any.whl
