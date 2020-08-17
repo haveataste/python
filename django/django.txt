@@ -1,0 +1,35 @@
+#Django命令
+
+#新建一个django project
+django-admin.py startproject project_name
+cd project_name
+#新建app
+python manage.py startapp app_name
+#创建数据库表或更改数据库表或字段，Django 1.7.1及以上用以下命令
+# 1. 创建更改的文件
+python manage.py makemigrations
+# 2. 将生成的python文件应用到数据库
+python manage.py migrate
+#使用开发服务器
+python manage.py runserver
+#当提示端口被占用的时候，可以用其它端口：
+python manage.py runserver 1234
+#监听机器所有可用ip （电脑可能有多个内网ip或多个外网ip）
+python manage.py runserver 0.0.0.0:1234
+#浏览器访问http://127.0.0.1:1234
+
+#清空数据库
+python manage.py flush
+#创建超级管理员，按照提示输入用户名和对应的密码就好了邮箱可以留空，用户名和密码必填
+python manage.py createsuperuser
+# 修改用户密码可以用：
+python manage.py changepassword username
+#导出数据 导入数据
+python manage.py dumpdata appname > appname.json
+python manage.py loaddata appname.json
+#Django项目环境终端
+python manage.py shell
+#数据库命令行
+python manage.py dbshell
+
+#终端上输入 python manage.py 可以看到详细的列表，在忘记子名称的时候特别有用。

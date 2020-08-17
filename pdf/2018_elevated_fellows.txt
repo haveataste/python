@@ -1,0 +1,2115 @@
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Pieter Abbeel 
+University of California - Berkeley 
+Berkeley, CA, USA 
+ 
+for contributions to apprenticeship and reinforcement learning for robotics and autonomous systems 
+ 
+Pamela Ann Abshire 
+Silver Spring, MD, USA 
+ 
+for contributions to CMOS biosensors 
+ 
+Haithem Abu-rub 
+Texas A&M University 
+College Station, TX, USA 
+ 
+for contributions to power electronic converters for renewable energy applications 
+ 
+Erik Agrell 
+Chalmers University of Technology 
+Goteborg, Sweden 
+ 
+for contributions to coding and modulation in optical communications 
+ 
+Fauzia Ahmad 
+Temple University 
+Philadelphia, PA, USA 
+ 
+for contribution to through-the-wall radar imaging 
+ 
+Anastasia Ailamaki 
+Ecole Polytechnique Federale de Lausanne 
+Lausanne, Switzerland 
+ 
+for contributions to hardware-conscious database systems and scientific data management 
+ 
+Matteo Albani 
+Firenze, Italy 
+ 
+for contributions to the uniform geometrical theory of diffraction 
+ 
+Andrew Alleyne 
+University of Illinois 
+Urbana, IL, USA 
+ 
+for contributions to the control of thermal management systems 
+
+2018 Newly Elevated Fellows 
+
+ 
+Pietro Andreani 
+Lund University 
+Lund, Sweden 
+ 
+for contributions to CMOS integrated voltage-controlled oscillators 
+ 
+Walid Aref 
+Purdue University 
+West Lafayette, IN, USA 
+ 
+for contributions to spatio-temporal database indexing and query processing 
+ 
+Kohtaro Asai 
+Mitsubishi Electric Corporation 
+Tokyo, Japan 
+ 
+for contributions to video coding  development and standardization 
+ 
+Hajime Asama 
+University of Tokyo 
+Tokyo, Japan 
+ 
+for contributions to distributed autonomous robotic systems 
+ 
+Bertan Bakkaloglu 
+Arizona State University-Tempe 
+Scottsdale, AZ, USA 
+ 
+for contributions to radio frequency circuits 
+ 
+Bijnan Bandyopadhyay 
+IIT Bombay 
+Mumbai, India 
+ 
+for contributions to discrete-time, multi-rate, output feedback sliding-mode control 
+ 
+Paul Barford 
+University of Wisconsin 
+Madison, WI, USA 
+ 
+for contributions to Internet measurement and  security 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+ 
+N. Scott Barker 
+University of Virginia 
+Charlottesville, VA, USA 
+ 
+for contributions to millimeter-wave and terahertz micromachining 
+ 
+Erik Blasch 
+US Dept. of Air Force 
+Rome, NY, USA 
+ 
+for leadership in aerospace information fusion systems 
+ 
+Glenn Boreman 
+University North Carolina at Charlotte 
+Charlotte, NC, USA 
+ 
+for contributions to optical and infrared antenna technologies 
+ 
+Vicente Boria 
+Universidad Politecnica de Valencia 
+Valencia, Spain 
+ 
+for contributions to high-power microwave filters and multiplexers 
+ 
+Timothy Boykin 
+University of Alabama 
+Huntsville, AL, USA 
+ 
+for contributions to atomistic models for semiconductor device simulation 
+ 
+Maurizio Bozzi 
+University of Pavia 
+Pavia, Italy 
+ 
+for contributions to substrate integrated waveguides and integrated periodic structures 
+ 
+Oliver Brock 
+Technische Universität Berlin 
+Berlin, Germany 
+ 
+for contributions to mobile manipulation and grasping 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Alexander Bronstein 
+Tel Aviv University 
+Tel Aviv, Israel 
+ 
+for contributions to three-dimensional geometric processing in imaging 
+ 
+Charles Bunting 
+Oklahoma State University 
+Stillwater, OK, USA 
+ 
+for educational contributions to electromagnetic compatibility and reverberation chambers 
+ 
+Karen Butler-Purry 
+Texas A&M University 
+College Station, TX, USA 
+ 
+for contributions to expanding minority participation in power systems education 
+ 
+Marco Caccamo 
+University of Illinois at Urbana-Champaign 
+Urbana, IL, USA 
+ 
+for contributions to the theory and applications of hard real-time multicore computing 
+ 
+Yigang Cai 
+Naperville, IL, USA 
+ 
+for innovations in high-speed wireless networks 
+ 
+Giuseppe Calafiore 
+Politecnico di Torino 
+Torino, Italy 
+ 
+for contributions to probabilistic methods for robust control design 
+ 
+Jeffrey Calame 
+Annapolis, MD, USA 
+ 
+for contributions to high-power microwave and millimeter-wave amplifiers enabled by composite 
+dielectric materials 
+ 
+
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Linda Camp 
+Indiana State University 
+Bloomington, IN, USA 
+ 
+for research in human-centered risk and security 
+ 
+Mark Campbell 
+Cornell University 
+Ithaca, NY, USA 
+ 
+for contributions to control and estimation theory for autonomous systems 
+ 
+Gustavo Camps-Valls 
+Universitat de Valencia 
+Valenciana, Spain 
+ 
+for contributions to machine learning in remote sensing 
+ 
+Emmanuel Candes 
+Stanford University 
+Stanford, CA, USA 
+ 
+for contributions to sparse and low-rank signal and image processing 
+ 
+Leo Casey 
+San Francisco, CA, USA 
+ 
+for contributions to high-speed power electronic interfaces for grid-tied distributed resources 
+ 
+Sherman Chan 
+Aspen Incorporated 
+San Mateo, CA, USA 
+ 
+for contributions to power system modeling and analysis tools for protective relaying 
+ 
+Chip Hong Chang 
+Nanyang Technical University 
+Singapore, Singapore 
+ 
+for contributions to hardware security 
+ 
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Kun-Yung Chang 
+Los Altos Hills, CA, USA 
+ 
+for contributions to transceivers for high-performance networking and high-density memories 
+ 
+Ni-Bin Chang 
+University of Central Florida 
+Orlando, FL, USA 
+ 
+for contributions to computational techniques for the analysis of environmental sustainability 
+ 
+Tsung-Yung Chang 
+Taiwan Semiconductor Manufacturing Company 
+Hsinchu, Taiwan 
+ 
+for application of SRAM technology to low-power and high-performance computing 
+ 
+Kuan-Neng Chen 
+National Chiao Tung Univeristy 
+Hsinchu, Taiwan 
+ 
+for contributions to 3D integrated circuit and packaging technologies 
+ 
+Wen-Hua Chen 
+Loughborough University 
+Loughborough, UK 
+ 
+for contributions to the applications of nonlinear disturbance observer based control 
+ 
+Yi-Jan Emery Chen 
+National Taiwan University 
+Taipei, Taiwan 
+ 
+for contributions to monolithic RF CMOS power amplifiers and transceiver frontends 
+ 
+Yiran Chen 
+Pittsburgh, PA, USA 
+ 
+for contributions to spintronic memory 
+ 
+Po-Tai Cheng 
+National Tsing Hua University 
+Hsinchu, Taiwan 
+ 
+for contributions to power converters for microgrid applications 
+
+2018 Newly Elevated Fellows 
+
+ 
+Richard Chernock 
+Triveni Digital 
+Princeton, NJ, USA 
+ 
+for leadership in next generation digital TV 
+ 
+Yiu-Ming Cheung 
+Hong Kong Baptist University 
+Kowloon, Hong Kong 
+ 
+for contributions to cluster analysis and visual computing 
+ 
+Carla Chiasserini 
+Politecnico di Torino 
+Torino, Italy 
+ 
+for contributions to energy efficiency and cooperation in wireless networks 
+ 
+Gianfranco Chicco 
+Politecnico di Torino 
+Torino, Italy 
+ 
+for contributions to data analytics for smart metering 
+ 
+Gary Christensen 
+University of Iowa 
+Iowa City, IA, USA 
+ 
+for contributions to medical image registration and analysis 
+ 
+Oscar Cordon 
+University of Granada 
+Granada, Spain 
+ 
+for contributions to genetic and evolutionary fuzzy systems 
+ 
+Thomas Coughlin 
+San Jose, CA, USA 
+ 
+for leadership in consumer electronics digital storage technology 
+ 
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Jian Dai 
+King's College of London 
+London, UK 
+ 
+for contributions to reconfigurable and metamorphic mechanisms 
+ 
+Swaroop Darbha 
+Texas A&M University 
+College Station, TX, USA 
+ 
+for contributions to intelligent transportation systems and autonomous vehicles 
+ 
+Ewa Deelman 
+University of Southern California 
+Marina Del Rey, CA, USA 
+ 
+for contributions to scientific workflow management 
+ 
+Andreas Demosthenous 
+University College London 
+London, UK 
+ 
+for contributions to integrated circuits for active medical devices 
+ 
+Jaydev Desai 
+Georgia Institute of Technology 
+Atlanta, GA, USA 
+ 
+for contributions to medical and swarm robotics 
+ 
+Po Dong 
+Nokia Bell Labs 
+Holmdel, NJ, USA 
+ 
+for contributions to silicon-based photonic devices and integrated circuits 
+ 
+Qian Du 
+Mississippi State University 
+Mississippi State, MS, USA 
+ 
+for contributions to hyperspectral data processing 
+ 
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Alan Edelman 
+Massachusetts Institute of Technology 
+Cambridge, MA, USA 
+ 
+for contributions to the development of technical-computing languages 
+ 
+Lieven Eeckhout 
+Ghent University 
+Gent, Belgium 
+ 
+for contributions in computer architecture performance analysis and modeling 
+ 
+Karen Egiazarian 
+Tampere University of Technology 
+Tampere, Finland 
+ 
+for contributions to image and video denoising and restoration 
+ 
+Daniel Ellis 
+Columbia University 
+New York, NY, USA 
+ 
+for contributions to speech, audio, and music processing 
+ 
+Ehab El-Saadany 
+University of Waterloo 
+Waterloo, ON, Canada 
+ 
+for contributions to distributed generation planning, operation and control 
+ 
+Fariba Fahroo 
+Defense Advanced Research Projects Agency 
+Arlington, VA, USA 
+ 
+for contributions to computational optimal control theory 
+ 
+Liping Fang 
+Ryerson University 
+Toronto, ON, Canada 
+ 
+for contributions to multiple participant-multiple objective decision making and decision support systems 
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Hany Farid 
+Dartmouth College 
+Hanover, NH, USA 
+ 
+for contributions to digital forensics 
+ 
+Dario Farina 
+University Medical Center Göttingen 
+Göttingen, Germany 
+ 
+for contributions to neuromuscular electrophysiology and neurorehabilitation 
+ 
+Steven Feiner 
+Columbia University 
+New York, NY, USA 
+ 
+for contributions to augmented reality and computer graphics 
+ 
+James Feltes 
+Siemens Power Technologies 
+Schenectady, NY, USA 
+ 
+for contributions to modelling the dynamic response of power generation systems 
+ 
+Massimo Franceschetti 
+University of California-San Diego 
+La Jolla, CA, USA 
+ 
+for contributions to random wireless networks 
+ 
+James Friend 
+University of California-San Diego 
+La Jolla, CA, USA 
+ 
+for contributions to acoustics, microfluidics and microactuation 
+ 
+Pascal Frossard 
+EPFL-École polytechnique fédérale de Lausanne 
+Lausanne, Switzerland 
+ 
+for contributions to adaptive image and video representation, coding and communication 
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Kevin Fu 
+University of Michigan 
+Ann Arbor, MI, USA 
+ 
+for contributions to embedded and medical device security 
+ 
+Akira Fujiwara 
+NTT Basic Research Laboratories 
+Atsugi, Japan 
+ 
+for contributions to silicon single-electron devices 
+ 
+Thomas Furness 
+University of Washington 
+Seattle, WA, USA 
+ 
+for leadership in virtual and augmented reality 
+ 
+Andrea Galtarossa 
+Università degli Studi di Padova 
+Padova, Italy 
+ 
+for contributions to low polarization mode dispersion fibers 
+ 
+Dave Garrett 
+Tustin, CA, USA 
+ 
+for contributions to beam-forming architectures and implementations 
+ 
+Alexander Gelman 
+NETovations, LLC 
+Princeton, NJ, USA 
+ 
+for contributions to technologies for streaming and controlling digital video 
+ 
+Mounir Ghogho 
+Université Internationale de Rabat 
+Rabat, Morocco 
+ 
+for contributions to synchronization algorithms for communication systems 
+ 
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+ 
+Maria Gini 
+University of Minnesota - Twin Cities 
+Minneapolis, MN, USA 
+ 
+for contributions to multi-agent programming in robotics 
+ 
+Yihong Gong 
+Xi'an Jiaotong University 
+Xi'an City, China 
+ 
+for contributions to pattern recognition and multimedia content analysis 
+ 
+Stefano Grivet-Talocia 
+Politecnico Di Torino 
+Torino, Italy 
+ 
+for contributions to passive macromodeling for signal and power integrity 
+ 
+Cuntai Guan 
+Nanyang Technological University 
+Singapore, Singapore 
+ 
+for contributions to brain-computer interfaces and applications 
+ 
+Xinping Guan 
+Shanghai Jiao Tong University 
+Shanghai, China 
+ 
+for contributions to stability analysis for time-delay fuzzy systems and intelligent control of nonlinear 
+systems 
+ 
+Minyi Guo 
+Shanghai Jiao Tong University 
+Shanghai, China 
+ 
+for contributions to performance optimization and resource management of parallel and distributed 
+systems 
+ 
+Yongxin Guo 
+National University of Singapore 
+Singapore, Singapore 
+ 
+for contributions to wideband printed antennas 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Jung-Ik Ha 
+Seoul National University 
+Seoul, Korea  
+ 
+for contribution to sensorless control of AC drives 
+ 
+Martin Haardt 
+Ilmenau University of Technology 
+Ilmenau, Germany 
+ 
+for contributions to multi-user MIMO communications and tensor-based signal processing 
+ 
+Harald Haas 
+University of of Edinburgh 
+Edinburgh, UK 
+ 
+for leadership in the design of visible-light and wireless communication systems 
+ 
+Hashem Hashemian 
+Analysis and Measurement Services Corp. 
+Knoxville, TN, USA 
+ 
+for leadership in developing technologies for nuclear reactor monitoring 
+ 
+Haibo He 
+University of Rhode Island 
+Kingston, RI, USA 
+ 
+for contributions to adaptive learning 
+ 
+Tian He 
+University of Minnesota - Twin Cities 
+Minneapolis, MN, USA 
+ 
+for development and optimization of networked sensing systems 
+ 
+Jeffrey Herd 
+MIT Lincoln Laboratory 
+Lexington, MA, USA 
+ 
+for leadership in the development of low-cost phased array technology 
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Yoshihito Hirano 
+Mitsubishi Electric Corporation 
+Tokyo, Japan 
+ 
+for leadership in the development of 1.5-micron wind sensing lidar 
+ 
+Michel Houssa 
+University of Leuven 
+Leuven, Belgium 
+ 
+for contributions to materials characterization for advanced MOSFETs 
+ 
+Naira Hovakimyan 
+University of Illinois at Urbana-Champaign 
+Urbana, IL, USA 
+ 
+for contributions to control with applications to aerospace and robotic systems 
+ 
+Jonathan How 
+Massachusetts Institute of Technology 
+Cambridge, MA, USA 
+ 
+for contributions to guidance and control of air and space vehicles 
+ 
+David Howe 
+US National Institute of Standards & Technology 
+Boulder, CO, USA 
+ 
+for contributions to global time synchronization 
+ 
+David Hsu 
+National University of Singapore 
+Singapore, Singapore 
+ 
+for contributions to robot motion planning 
+ 
+Biao Huang 
+University of Alberta 
+Edmonton, AB, Canada 
+ 
+for contributions to and application of Bayesian soft-sensing for control performance monitoring 
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Qingming Huang 
+University of Chinese Academy of Sciences 
+Beijing, China 
+ 
+for contributions to multimedia content analysis and visual perceptual processing 
+ 
+Pan Hui 
+University of Helsinki 
+Hong Kong University of Science &Technology 
+Clear Water Bay, Hong Kong 
+ 
+for contributions to social-based opportunistic networks 
+ 
+Brad Hutchings 
+Brigham Young University-Provo 
+Provo, UT, USA 
+ 
+for contributions to CAD tools for reconfigurable computing 
+ 
+Jaroslav Hynecek 
+Allen, TX, USA 
+ 
+for contributions to solid-state image sensors 
+ 
+Kullervo Hynynen 
+Imaging Research 
+Toronto, ON, Canada 
+ 
+for contributions to image-guided therapeutic focused ultrasound 
+ 
+Leon Iasemidis 
+Louisiana Technical University 
+Ruston, LA, USA 
+ 
+for developments in epileptic seizure prediction and closed-loop brain stimulation 
+ 
+Anil Jampala 
+Alstom Grid, Inc. 
+Redmond, WA, USA 
+ 
+for contributions to the utilization of synchrophasors in energy management systems 
+ 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Somesh Jha 
+University of Wisconsin-Madison 
+Madison, WI, USA 
+ 
+for contributions to the application of formal methods to security 
+ 
+Jiaya Jia 
+Chinese University of Hong Kong 
+Shatin NT, Hong Kong 
+ 
+for contributions to deblurring techniques in computational photography 
+ 
+Lynette Jones 
+Massachusetts Institute of Technology 
+Cambridge, MA, USA 
+ 
+for contributions to tactile and thermal displays 
+ 
+Sergei Kalinin 
+Oak Ridge National Laboratory 
+Oak Ridge, TN, USA 
+ 
+for leadership in piezoresponse force microscopy for nanoscale imaging 
+ 
+George Karypis 
+University of Minnesota-Twin Cities 
+Minneapolis, MN, USA 
+ 
+for contributions to graph partitioning and data mining 
+ 
+Aleksandar Kavcic 
+University of Hawaii 
+Honolulu, HI, USA 
+ 
+for contributions to signal processing and coding in data storage 
+ 
+Noriko Kawakami 
+Toshiba Mitsubishi-Electric Industrial Systems Corp. 
+Tokyo, Japan 
+ 
+for contributions to large-capacity power converters and applications 
+ 
+ 
+
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Thomas Kazior 
+Raytheon: Radio Frequency Components 
+Andover, MA, USA 
+ 
+for leadership in microwave and millimeter wave compound semiconductor technology and 
+heterogeneous integration with silicon 
+ 
+Angelos Keromytis 
+Defense Advanced Research Projects Agency (DARPA) 
+Arlington, VA, USA 
+ 
+for contributions to network security systems 
+ 
+Sung Kim 
+Seoul National University 
+Seoul, Korea  
+ 
+for contributions to the design of microfabricated neural prosthetic devices 
+ 
+Brian E.D. Kingsbury 
+IBM T. J. Watson Research Center 
+Yorktown Heights, NY, USA 
+ 
+for contributions to acoustic models for automatic speech recognition 
+ 
+Roberta Klatzky 
+Carnegie Mellon University 
+Pittsburgh, PA, USA 
+ 
+for contributions to human visual, auditory, and haptic perception in robotics and virtual environments 
+ 
+Lang Klaus 
+Fraunhofer Institute for Reliability  
+and Microintegration IZM 
+Berlin, Germany 
+ 
+for leadership in heterogeneous integration and microelectronic packaging 
+ 
+Xenofon Koutsoukos 
+Vanderbilt University 
+Nashville, TN, USA 
+ 
+for contributions to design of resilient cyber-physical systems 
+
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Michael Krames 
+Philips Lumileds Lighting Company 
+San Jose, CA, USA 
+ 
+for leadership in GaN-based light-emitting device physics and its commercialization 
+ 
+D. Richard Kuhn 
+US National Institute of Standards & Technology 
+Boulder, CO, USA 
+ 
+for contributions to access control and combinatorial test methods 
+ 
+Ajay Kumar 
+Hong Kong Polytechnic University 
+Kowloon, Hong Kong 
+ 
+for contributions to non-contact hand-based biometrics recognition 
+ 
+Isaac Lagnado 
+San Diego, CA, USA 
+ 
+for leadership in the development of silicon-on-sapphire technology 
+ 
+Pablo Laguna Lasosa 
+University of Zaragoza 
+Zaragoza, Spain 
+ 
+for contributions to cardiac biomedical signal processing 
+ 
+Susan Land 
+US  Department of Defense 
+Madison, AL, USA 
+ 
+for leadership in software product development 
+ 
+Jungwon Lee 
+Samsung Semiconductor Inc. 
+San Diego, CA, USA 
+ 
+for contributions to signal processing for cellular modems 
+ 
+ 
+ 
+
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Riccardo Leonardi 
+University of Brescia 
+Brescia, Italy 
+ 
+for contributions to image and video compression and multimedia semantic content analysis 
+ 
+Hui Li 
+Florida State University 
+Tallahassee, FL, USA 
+ 
+for contributions to bidirectional converters for utility applications and high efficiency photovoltaic 
+converters 
+ 
+Qun Li 
+College of William & Mary 
+Williamsburg, VA, USA 
+ 
+for contributions to ad-hoc network routing and sensor networks 
+ 
+Tao Li 
+University of Florida 
+Gainesville, FL, USA 
+ 
+for contributions to sustainable and power-efficient computer architectures 
+ 
+Zhuo Li 
+Cadence Design Systems, Inc. 
+Austin, TX, USA 
+ 
+for contributions to physical synthesis and modeling of integrated circuits 
+ 
+Ben Liang 
+University of Toronto 
+Toronto, ON, Canada 
+ 
+for contributions to mobility modeling and resource management in wireless networks 
+ 
+Jiao Li-cheng 
+Xidian University 
+Xian, China 
+ 
+for contributions to artificial neural networks and evolutionary computation 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Chia-Wen Lin 
+National Tsing Hua University 
+Hsinchu, Taiwan 
+ 
+for contributions to multimedia coding and editing 
+ 
+Wei Lin 
+Case Western Reserve University 
+Cleveland, OH, USA 
+ 
+for contributions to nonlinear control systems 
+ 
+Zhouchen Lin 
+Peking University 
+Beijing, China 
+ 
+for contributions to low-rank data modeling and image processing 
+ 
+Giuseppe Lipari 
+University of Lille 
+Lille, France 
+ 
+for contributions to reservation-based real-time scheduling 
+ 
+Chee Wee Liu 
+National Taiwan University 
+Taipei, Taiwan 
+ 
+for contributions to high-mobility germanium and silicon-germanium MOSFETs 
+ 
+Jie Liu 
+Microsoft Research 
+Redmond, WA, USA 
+ 
+for contributions to wireless sensing 
+ 
+Ming Liu 
+Institute of Microelectronics of Chinese Academy of Sciences  
+Beijing, China 
+ 
+for contributions to the development of resistive non-volatile memories 
+ 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Shengyi Liu 
+The Boeing Company 
+Seattle, WA, USA 
+ 
+for application of multifunctional power conversion and power source integration to aircraft 
+ 
+Guo-Quan Lu 
+Virginia Tech 
+Blacksburg, VA, USA 
+ 
+for development of materials and packaging technologies for  power electronics modules 
+ 
+Jie Lu 
+University of Technology Sydney 
+Sydney, NSW, Australia 
+ 
+for contributions to fuzzy machine learning and decision support systems 
+ 
+Wei Lu 
+University of Michigan 
+Ann Arbor, MI, USA 
+ 
+for contributions to development of neuromorphic systems 
+ 
+Yilong Lu 
+Nanyang Tech University 
+Singapore, Singapore 
+ 
+for contributions to array antenna techniques in radar systems 
+ 
+John Luginsland 
+Air Force Office of Scientific Research 
+Arlington, VA, USA 
+ 
+for contributions to space-charge limited flow physics, coherent radiation sources, and computational 
+plasma physics 
+ 
+Richard Lukaszewski 
+Rockwell Automation 
+Mequon, WI, USA 
+ 
+for contributions to the application of power electronic devices for variable frequency drives 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+ 
+Xiaobing Luo 
+Huazhong University of Science & Technology 
+Wuhan, China 
+ 
+for contributions to packaging of optoelectronic devices 
+ 
+Shugen Ma 
+Ritsumeikan University 
+Kusatsu-Shi, Japan 
+ 
+for contributions to the design and control of environment-adaptive robots 
+ 
+Zhenqiang Ma 
+University of Wisconsin-Madison 
+Madison, WI, USA 
+ 
+for contributions to flexible and biodegradable microwave electronics 
+ 
+Udaya Madawala 
+University of Auckland 
+Auckland, New Zealand 
+ 
+for contributions to power electronics for bi-directional wireless power transfer 
+ 
+Guoqiang Mao 
+University of Technology Sydney 
+Sydney, NSW, Australia 
+ 
+for contributions to localization algorithms for wireless networks 
+ 
+Vladimir Marik 
+Czech Institute of Informatics 
+Prague, Czech Republic 
+ 
+for leadership in industrial applications of cybernetics 
+ 
+Sonia Martinez 
+Univerity of California-San Diego 
+La Jolla, CA, USA 
+ 
+for contributions to the geometric mechanics and control 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Saverio Mascolo 
+Politecnico di Bari 
+Bari, Italy 
+ 
+for contributions to modeling and control of congestion in packet networks 
+ 
+Andrea Massa 
+University of Trento 
+Trento, Italy 
+ 
+for contributions to phased arrays and electromagnetic inverse scattering 
+ 
+Sanu Mathew 
+Intel Corporation 
+Hillsboro, OR, USA 
+ 
+for leadership in computer arithmetic datapath and security circuits 
+ 
+Earl Mc Cune 
+RF Communications Consulting 
+Santa Clara, CA, USA 
+ 
+for leadership in polar modulation  circuits and signals 
+ 
+Paul Meaney 
+Thayer School of Engineering at Dartmouth 
+Hanover, NH, USA 
+ 
+for contributions to microwave tomography and its translation to clinical use 
+ 
+Deepankar Medhi 
+University of Missouri-Kansas City 
+Kansas City, MO, USA 
+ 
+for contributions to optimization and the design of computer-communication networks 
+ 
+Russell Meier 
+Milwaukee School of Engineering 
+Milwaukee, WI, USA 
+ 
+for contributions to global on-line engineering education 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Tommaso Melodia 
+Northeastern University 
+Boston, MA, USA 
+ 
+for contributions to underwater acoustic and multimedia networks 
+ 
+Abraham Mendelson 
+Technion-Israel Institute of Technology 
+Haifa, Israel 
+ 
+for contributions to power-aware architecture and value prediction for program execution 
+ 
+Olgica Milenkovic 
+University of Illinois at Urbana-Champaign 
+Urbana, IL, USA 
+ 
+for contributions to genomic data compression 
+ 
+Jelena Misic 
+Ryerson University 
+Toronto, ON, Canada 
+ 
+for contributions to modeling and performance evaluation in wireless communications 
+ 
+Andrea Montanari 
+Stanford University 
+Stanford, CA, USA 
+ 
+for applications of statistical physics to coding theory 
+ 
+Mehul Motani 
+National University of Singapore 
+Singapore, Singapore 
+ 
+for contributions to wireless communications and sensor networks 
+ 
+ 
+Hideki Motoyama 
+Central Research Institute of Electric Power Industry Corporation 
+Yokosuka, Japan 
+ 
+for contributions to lightning protection and insulation coordination of electric power systems 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Saibal Mukhopadhyay 
+Georgia Institue of Technology 
+Atlanta, GA, USA 
+ 
+for contributions to energy-efficient and robust computing systems design 
+ 
+Chandra Nair 
+Chinese University of Hong Kong 
+Shatin NT, Hong Kong 
+ 
+for contributions to network information theory 
+ 
+Girish Nair 
+University of Melbourne 
+Victoria, Australia 
+ 
+for contributions to control and information in networked dynamical systems 
+ 
+Hans Peter Nee 
+KTH Royal Institute of Technology 
+Stockholm, Sweden 
+ 
+for contributions to silicon carbide power electronics and modular multilevel converters 
+ 
+Silviu-Iulian Niculescu 
+Centre National de la Recherche Scientifique 
+Paris, France 
+ 
+for research on the effects of delays in system dynamics 
+ 
+Konstantina Nikita 
+National Technical University of Athens 
+Athens, Greece 
+ 
+for contributions to bioelectromagnetics and implantable antennas for medical applications 
+ 
+Barbara Oakley 
+Oakland University 
+Rochester, MI, USA 
+ 
+for outreach through online engineering pedagogy 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Hideo Ohno 
+Tohoku University 
+Sendai, Japan 
+ 
+for contributions to materials and device design for spintronics 
+ 
+Yew-Soon Ong 
+Nanyang Technological University 
+Singapore, Singapore 
+ 
+for contributions to memetic computation and applications 
+ 
+Hidetoshi Onodera 
+Kyoto University 
+Kyoto, Japan 
+ 
+for contributions to variation-aware design and analysis of integrated circuits 
+ 
+Javier Ortega-Garcia 
+Universidad Autonoma de Madrid 
+Madrid, Spain 
+ 
+for contributions to biometrics for forensic speaker verification and signature recognition 
+ 
+Lawrence Ozarow 
+Nokia- Bell Labs 
+New Providence, NJ, USA 
+ 
+for contributions to capacity characterization of fading and feedback channels 
+ 
+Hitay Ozbay 
+Bilkent University 
+Bilkent, Turkey 
+ 
+for contributions to robust control for infinite dimensional systems 
+ 
+Philippe Paillet 
+University of Montpellier-CEA 
+Paris, France 
+ 
+for contributions to the understanding of radiation effects in electronics 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Patrick Panciatici 
+Réseau de Transport d'Électricité 
+Paris, France 
+ 
+for contributions to power systems analysis software 
+ 
+Stefan Parkvall 
+Ericsson AB 
+Stockholm, Sweden 
+ 
+for contributions to cellular standards 
+ 
+Jignesh Patel 
+University of Wisconsin 
+Madison, WI, USA 
+ 
+for contributions to high-performance spatial data analysis methods 
+ 
+Constantinos S. Pattichis 
+University of Cyprus 
+Nicosia, Cyprus 
+ 
+for contributions to medical diagnostic and mobile health systems 
+ 
+Shanthi Pavan 
+Indian Institute of Technology 
+Chennai, India 
+ 
+for contributions to delta sigma modulators and analog filters 
+ 
+George Pavlou 
+University College London 
+London, UK 
+ 
+for contributions to resource management and content-based networking 
+ 
+Joseph Pawlowski 
+Micron Technology, Inc. 
+Boise, ID, USA 
+ 
+for contributions to memory system interfaces 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Peter Perkins 
+Tigard, OR, USA 
+ 
+for contributions to touch current measurement and electric shock protection 
+ 
+Alexei Pilipetskii 
+Tyco Telecommunications 
+Eatontown, NJ, USA 
+ 
+for contributions to transoceanic fiber-optic transmission systems 
+ 
+Josien Pluim 
+Eindhoven University of Technology 
+Eindhoven, Netherlands 
+ 
+for contributions to medical image analysis 
+ 
+Massimo Poncino 
+Politecnico Di Torino 
+Torino, Italy 
+ 
+for contributions to low-power circuits and systems 
+ 
+John Potter 
+Centre for Maritime Research and Experimentation (CMRE) 
+La Spezia, Italy 
+ 
+for contributions to ice-ocean interaction, oceanography, and underwater communication 
+ 
+Paras Prasad 
+State University of New York at Buffalo 
+Buffalo, NY, USA 
+ 
+for contributions in biophotonics, nanophotonics and novel biomedical technology 
+ 
+Konstantinos Psounis 
+University of Southern California 
+Los Angeles, CA, USA 
+ 
+for contributions to multi-hop wireless networks 
+ 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Hairong Qi 
+University of Tennessee 
+Knoxville, TN, USA 
+ 
+for contributions to collaborative signal processing in sensor networks 
+ 
+Jianmin Qu 
+Tufts University 
+Medford, MA, USA 
+ 
+for contributions to design and reliability analysis for microelectronic packaging 
+ 
+Ronghai Qu 
+Huazhong University of Science & Technology 
+Wuhan, China 
+ 
+for contributions to flux modulations machines and wind generators 
+ 
+Tony Quek 
+Singapore University of Technology 
+Singapore, Singapore 
+ 
+for contributions to heterogeneous and wireless  networks 
+ 
+CJ. Reddy 
+Altair Engineering Inc. 
+Hampton, VA, USA 
+ 
+for leadership in simulation methods for antenna placement and co-site analysis 
+ 
+Jennifer Rexford 
+Princeton University 
+Princeton, NJ, USA 
+ 
+for contributions to network management and associated routing systems 
+ 
+Brian Rigling 
+Wright State University 
+Dayton, OH, USA 
+ 
+for contributions to synthetic aperture radar imaging 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Michael Riley 
+New York, NY, USA 
+ 
+for contributions to automatic speech recognition using Weighted Finite-State Transducers 
+ 
+Kim Roberts 
+Ciena Corporation 
+New York, NY, USA 
+ 
+for contributions to digital signal processing for coherent optical communication systems 
+ 
+Justin Romberg 
+Georgia Tech 
+Atlanta, GA, USA 
+ 
+for contributions to compressive sensing 
+ 
+Luca Roselli 
+University of Perugia 
+Perugia, Italy 
+ 
+for contributions to sustainable radio-frequency modules for wireless sensor networks 
+ 
+Tajana Rosing 
+University of California, San Diego 
+La Jolla, CA, USA 
+ 
+for contributions to power and reliability management of Systems-on-Chip 
+ 
+Eugeniusz Rosolowski 
+Wroclaw University of Technology 
+Wroclaw, Poland 
+ 
+for contributions to education in power system modeling and  protection 
+ 
+Badrinath Roysam 
+University of Houston 
+Houston, TX, USA 
+ 
+for contributions to image processing algorithms for biological microscopy 
+ 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Karen Rudie 
+Queens University 
+Kingston, ON, Canada 
+ 
+for contributions to the supervisory control theory of discrete event systems 
+ 
+Kazuhiro Saitou 
+University of Michigan 
+Ann Arbor, MI, USA 
+ 
+for contributions in computational assembly and disassembly design of mechanical products 
+ 
+Seiji Samukawa 
+Tohoku University 
+Sendai, Japan 
+ 
+for contributions to damage-free plasma processing for nano-device manufacturing 
+ 
+Kevin Sangston 
+Georgia Tech Research Institute 
+Atlanta, GA, USA 
+ 
+for contributions to coherent detection of radar signals in clutter 
+ 
+Venkateswara Anand Sankaran 
+Ford Motor Company 
+Dearborn, MI, USA 
+ 
+for leadership in power electronics and energy storage for electric vehicles 
+ 
+Rahul Sarpeshkar 
+Thayer School of Engineering at Dartmouth 
+Hanover, NH, USA 
+ 
+for contributions to ultra low-power biomedical electronics 
+ 
+Ronan Sauleau 
+Universite de Rennes 
+Rennes, France 
+ 
+for contributions to lens and millimeter wave antennas 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+ 
+Hiroshi Sawada 
+NTT Communication Science Laboratories 
+Nara, Japan 
+ 
+for contributions to blind source separation of speech and audio signals 
+ 
+Dieter Scherer 
+Palo Alto, CA, USA 
+ 
+for contributions to the design of oscillators and synthesized signal sources 
+ 
+Alex Schneider 
+Glen Ellyn, IL, USA 
+ 
+for contribution to transmission and generation failure modeling 
+ 
+Clint Schow 
+University of California Santa Barbara 
+Santa Barbara, CA, USA 
+ 
+for contributions to high bandwidth optical interconnects 
+ 
+Bjoern Schuller 
+University of Passau 
+Passau, Germany 
+ 
+for contributions to computer audition 
+ 
+Assaf Schuster 
+Technion – Israel Institute of Technology 
+Haifa, Israel 
+ 
+for contributions to cloud computing 
+ 
+Andrew Senior 
+London, UK 
+ 
+for contributions to pattern recognition in speech, computer vision, and biometrics 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Sanjit Seshia 
+University of California- Berkeley 
+Berkeley, CA, USA 
+ 
+for contributions to formal methods for inductive synthesis and algorithmic verification 
+ 
+Shihab Shamma 
+University of Maryland- College Park 
+College Park, MD, USA 
+ 
+for applications of signal processing to auditory neuroscience 
+ 
+Dinggang Shen 
+University of North Carolina-Chapel Hill 
+Chapel Hill, NC, USA 
+ 
+for contributions to medical image analysis 
+ 
+Riichiro Shirota 
+National Chao-Tung University 
+Hsinchu, Taiwan 
+ 
+for contributions to the development of NAND flash memory 
+ 
+Jiwu Shu 
+Tsinghua University 
+Beijing, China 
+ 
+for contributions to dependable, high-performance storage systems architecture 
+ 
+Hava Siegelmann 
+University of Massachusetts 
+Amherst, MA, USA 
+ 
+for contributions to neural computation 
+ 
+Lowell Smith 
+Ge Global Research 
+Niskayuna, NY, USA 
+ 
+for contributions to ultrasound transducer technology for medical imaging 
+ 
+ 
+
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Gregory Snider 
+University of Notre Dame 
+Notre Dame, IN, USA 
+ 
+for contributions to single electron based computing technology 
+ 
+Yan Solihin 
+North Carolina State University 
+Raleigh, NC, USA 
+ 
+for contributions to shared cache hierarchies and secure processors 
+ 
+Min Song 
+Michigan Technological University 
+Houghton, MI, USA 
+ 
+for leadership in supporting wireless networking and radio spectrum access 
+ 
+Miguel Angel Sotelo Vazquez 
+Universidad de Alcala 
+Madrid, Spain 
+ 
+for contributions to intelligent vehicles for road infrastructure inspection 
+ 
+Siddhartha Srinivasa 
+Carnegie Mellon University 
+Pittsburgh, PA, USA 
+ 
+for contributions to robotic manipulation and human-robot interaction 
+ 
+Salvatore Stolfo 
+Columbia University 
+New York, NY, USA 
+ 
+for contributions to machine learning-based computer security 
+ 
+Peter Stone 
+University of Texas- Austin 
+Austin, TX, USA 
+ 
+for contributions to reinforcement learning, multiagent systems, and robotics 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+David Stork 
+Rambus 
+Sunnyvale, CA, USA 
+ 
+for contributions to pattern recognition and image analysis 
+ 
+Weifeng Su 
+State University of New York at Buffalo 
+Buffalo, NY, USA 
+ 
+for contributions to multi-input multi-output wireless communications and cooperative networks 
+ 
+Rahul Sukthankar 
+Google, Inc. 
+Mountain View, CA, USA 
+ 
+for contributions to video understanding 
+ 
+Hong-Bo Sun 
+Jilin University 
+Jilin, China 
+ 
+for contributions to laser nanofabrication and ultrafast spectroscopy 
+ 
+Hongbin Sun 
+Tsinghua University 
+Beijing, China 
+ 
+for contributions to algorithms and technologies for energy management systems 
+ 
+Shuji Tanaka 
+Tohoku University 
+Sendai, Japan 
+ 
+for contributions to micro-electromechanical systems for acoustic wave devices, physical sensors, and 
+power generation 
+ 
+Mark Tehranipoor 
+University of Florida 
+Gainesville, FL, USA 
+ 
+for contributions to integrated circuits security and trust 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+ 
+Juergen Teich 
+University of Erlangen-Nuremberg 
+Erlangen, Germany 
+ 
+for contributions to hardware/software co-design for embedded systems 
+ 
+Marina Thottan 
+Nokia- Bell Labs 
+New Providence, NJ, USA 
+ 
+for leadership in high-speed internet-protocol networks 
+ 
+Yingli Tian 
+City College of NY-SUNY 
+New York, NY, USA 
+ 
+for contributions to automatic facial expression analysis and human activity understanding 
+ 
+Jocelyne Troccaz 
+TIMC-IMAG Laboratory 
+La Tronche Cedex, France 
+ 
+for contributions to robotics and imaging for medical applications 
+ 
+John Tsotsos 
+York University 
+Toronto, ON, Canada 
+ 
+for contributions to active vision and computational models of visual attention 
+ 
+Marcelo Valdes 
+GE Industrial Solutions 
+Cary, NC, USA 
+ 
+for contributions to improving the safety and reliability of low voltage power systems 
+ 
+Matthew Valenti 
+West Virginia University 
+Morgantown, WV, USA 
+ 
+for contributions to cooperative diversity and development of distributed turbo codes 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+Victor Veliadis 
+PowerAmerica 
+Raleigh, NC, USA 
+ 
+for contributions to development of silicon carbide power devices 
+ 
+Giovanni Vigna 
+University of California- Santa Barbara 
+Santa Barbara, CA, USA 
+ 
+for contributions to Internet security and  cybercrime prevention 
+ 
+Sergiy Vorobyov 
+Aalto University 
+Espoo, Finland 
+ 
+for contributions to optimization in robust signal processing 
+ 
+Haixun Wang 
+Google Research 
+Palo Alto, CA, USA 
+ 
+for contributions to knowledge bases for text understanding 
+ 
+Li-C Wang 
+University of California- Santa Barbara 
+Santa Barbara, CA, USA 
+ 
+for contributions to statistical timing analysis for integrated circuits 
+ 
+Peng Wang 
+Nanyang Technological University 
+Singapore, Singapore 
+ 
+for contributions to power system reliability and hybrid AC/DC micro-grids 
+ 
+Xudong Wang 
+Shanghai Jiao Tong University 
+Shanghai, China 
+ 
+for contributions to wireless mesh networks 
+ 
+ 
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Yu Wang 
+University of North Carolina- Charlotte 
+Charlotte, NC, USA 
+ 
+for contributions to topology design and performance optimization in wireless networks 
+ 
+Robert Weikle 
+University of Virginia-Charlottesville 
+Charlottesville, VA, USA 
+ 
+for contributions to millimeter-wave and submillimeter-wave electronics and instrumentation for 
+terahertz frequencies 
+ 
+Daniel Weile 
+University of Delaware 
+Newark, DE, USA 
+ 
+for contributions to computational electromagnetics 
+ 
+Mark Weiss 
+Florida International University 
+Miami, FL, USA 
+ 
+for advancements in computer science education 
+ 
+Stephen Welby 
+US Department of Defense 
+Washington, DC, USA 
+ 
+for leadership in defense and aerospace systems engineering 
+ 
+Thomas Weller 
+University of South Florida 
+Tampa, FL, USA 
+ 
+for contributions to modeling and design of passive microwave circuits and components 
+ 
+Qihao Weng 
+Indiana State University 
+Terre Haute, IN, USA 
+ 
+for contributions to urban remote sensing 
+ 
+
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+David Whelan 
+University of California, San Diego 
+La Jolla, CA, USA 
+ 
+for leadership in space-based navigation, synchronization, and surveillance 
+ 
+Jean-Pierre Wigneron 
+Université de Bordeaux 
+Villenave d'Ornon, France 
+ 
+for contributions to surface modeling in passive microwave remote sensing 
+ 
+James Wilkinson 
+University of Southampton 
+Southampton, UK 
+ 
+for contributions to integrated photonics 
+ 
+Laurie Williams 
+North Carolina State University 
+Raleigh, NC, USA 
+ 
+for contributions to reliable and secure software engineering 
+ 
+Stefan Winkler 
+Singapore, Singapore 
+ 
+for contributions to perceptual video quality measurement 
+ 
+Philip Winston 
+Southern Company 
+Atlanta, GA, USA 
+ 
+for development of standards in power system protection reliability 
+ 
+Stephen T. Wong 
+Houston Methodist Hospital 
+Houston, TX, USA 
+ 
+for leadership in drug discovery, systems biology, bioinformatics, and health analytics 
+ 
+ 
+
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Rebecca Wright 
+Rutgers, The State University of New Jersey 
+Piscataway, NJ, USA 
+ 
+for contributions to applied cryptography and privacy 
+ 
+Shien-Yang Wu 
+Taiwan Semiconductor Manufacturing Company, Limited 
+Hsinchu, Taiwan 
+ 
+for leadership in CMOS process integration 
+ 
+Huikai Xie 
+University of Florida 
+Gainesville, FL, USA 
+ 
+for contributions to micro-electromechanical optical scanning systems 
+ 
+Tao Xie 
+University of Illinois at Urbana–Champaign 
+Urbana, IL, USA 
+ 
+for contributions to software testing and analytics 
+ 
+Hao Xin 
+University of Arizona 
+Tucson, AZ, USA 
+ 
+for contributions to electromagnetic metamaterials and 3D printing of metamaterial structures 
+ 
+Dong Xu 
+University of Sydney 
+Sydney, NSW, Australia 
+ 
+for contributions to recognition and retrieval of multimedia and biometric data 
+ 
+Jianbin Xu 
+Chinese University of Hong Kong 
+Shatin NT, Hong Kong 
+ 
+for contributions to nanoscale electronic materials and devices 
+ 
+
+ 
+ 
+
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+
+ 
+Yang Yang 
+Shanghai Institute of Microsystem and Information Technology (SIMIT) 
+Shanghai, China 
+ 
+for contributions and leadership in wireless access and networking 
+ 
+Anthony Yen 
+ASML  
+San Jose, CA, USA 
+ 
+for leadership in extreme-ultraviolet lithography for high volume manufacture of integrated circuits 
+ 
+Dong Yu 
+Bothell, WA, USA 
+ 
+for contributions to context-dependent automatic speech recognition 
+ 
+Richard Yu 
+Carleton University 
+Ottawa, ON, Canada 
+ 
+for contributions to mobility management and radio resource allocation in mobile wireless networks 
+ 
+Habib Zaidi 
+Geneva University Hospital 
+Geneva, Switzerland 
+ 
+for contributions to quantitative multimodality molecular imaging 
+ 
+Changshui Zhang 
+Tshinghua University 
+Beijing, China 
+ 
+for contributions to semi-supervised learning for signal processing 
+ 
+ 
+Lei Zhang 
+Hong Kong Polytechnic University 
+Hong Kong, China 
+ 
+for contributions to sparsity-based image modeling and perceptual image quality assessment 
+
+ 
+ 
+ 
+ 
+
+2018 Newly Elevated Fellows 
+
+ 
+ 
+Yanyong Zhang 
+Rutgers, The State University of New Jersey 
+New Brunswick, NJ, USA 
+ 
+for contributions to robust and efficient large-scale sensor networks 
+ 
+Zhensheng Zhang 
+Livermore, CA, USA 
+ 
+for contributions to wireless ad-hoc and optical networks 
+ 
+Zhengming Zhao 
+Tsinghua University 
+Beijing, China 
+ 
+for contributions to electromagnetic transient analysis and control of high-voltage high-power 
+electronics conversion 
+ 
+Tong Zhou 
+Tsinghua University 
+Beijing, China 
+ 
+for contributions to robust identification and estimation of control systems 
+ 
+Xiaofang Zhou 
+University Of Queensland 
+Queensland, Australia 
+ 
+for advancements in database query processing 
+ 
+Peiying Zhu 
+Huawei Technologies Canada 
+Ottawa, ON, Canada 
+ 
+for leadership in wireless communications systems 
+ 
+Thomas Zwick 
+Karlsruhe Institute of Technology 
+Karlsruhe, Germany 
+ 
+for contributions to millimeter wave transceivers 
+
+ 
+
