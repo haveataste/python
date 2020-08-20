@@ -10,7 +10,7 @@ https://www.w3school.com.cn/xpath/xpath_syntax.asp
 https://docs.scrapy.org/en/latest/topics/selectors.html
 
 # scrapy shell URL
-# response.text,request.url,request.headers
+# response.text,response.headers,request.url,request.headers
 # get(),getall(),extract(),extract_first(),re(pattern),re_first(pattern),attrib[attrs]
 >>> response.xpath('//span/text()').get()
 >>> response.xpath('//div[@id="images"]/a/text()').get()
