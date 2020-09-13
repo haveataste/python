@@ -1,0 +1,16 @@
+# pip install PyExecJS
+
+>>> import execjs
+>>> execjs.get().name
+'Node.js (V8)'
+>>> print(execjs.eval("1+2"))
+3
+>>> func = execjs.compile(
+... '''
+... function f(m){
+...     return m;
+... }
+... '''
+... )
+>>> func.call('f', 'hello world!')
+'hello world!'
