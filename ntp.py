@@ -37,22 +37,15 @@ def getTime(NTP_HOST, NTP_PORT=123):
     NTP_Recv = NTP_Packet()
     ctypes.memmove(ctypes.addressof(NTP_Recv), data_recv, ctypes.sizeof(NTP_Recv))
     #计算服务器的时间
+    tbn = bin(NTP_Recv.transmit_timestamp_seconds)[2:].zfill(64)
+    tbh = tbn[56:64] + tbn[48:56] + tbn[40:48] + tbn[32:40] + tbn[24:32] + tbn[16:24] + tbn[8:16] + tbn[0:8]
     TIME_1970 = 2208988800
-    #ntp_time = socket.ntohl(NTP_Recv.transmit_timestamp_seconds) - TIME_1970
-    #return ' NTP Time : ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(ntp_time)) + ' Server : ' + addr[0] + ' Port : ' + str(addr[1])
-    #print(hex(NTP_Recv.receive_timestamp), hex(NTP_Recv.transmit_timestamp_seconds), sep='\n')
-    x = bin(NTP_Recv.transmit_timestamp_seconds)[2:].zfill(64)
-    for i in range(len(x)):
-        if i%8==0:
-            print(' ', end='')
-        print(x[i], end='')
-    print()
-    #print(socket.ntohl(NTP_Recv.transmit_timestamp_seconds)<<32 | socket.ntohl(NTP_Recv.transmit_timestamp_seconds >> 32)
-
+    ntp_time = int(tbh, 2) - TIME_1970
+    return ' NTP Time : ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(ntp_time)) + ' Server : ' + addr[0] + ' Port : ' + str(addr[1])
+    
 def main():
-    #print('Local Time : ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-    for i in range(10):
-        getTime('ntp1.aliyun.com')
+    print('Local Time : ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+    print(getTime('ntp1.aliyun.com'))`
 
 if __name__ == "__main__":
     main()
