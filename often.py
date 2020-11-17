@@ -12,9 +12,10 @@ conn.close()
 
 import re
 re.compile(r'')
-re.search()
-re.match()
+re.search(pattern, string)
+re.match(pattern, string).group(2)
 re.findall()
+re.split(pattern, string[, maxsplit=0, flags=0])
 
 import random
 random.random()
