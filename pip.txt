@@ -1,4 +1,4 @@
-使用清华镜像源
+# 使用清华镜像源
 mkdir ~/.pip
 cd ~/.pip
 vim pip.conf
@@ -7,3 +7,18 @@ vim pip.conf
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 [install]
 trusted-host = https://pypi.tuna.tsinghua.edu.cn
+
+# 常用命令
+pip install      # Install packages.
+pip download     # Download packages.
+pip uninstall    # Uninstall packages.
+pip freeze       # Output installed packages in requirements format.
+pip list         # List installed packages.
+pip show         # Show information about installed packages.
+pip check        # Verify installed packages have compatible dependencies.
+pip config       # Manage local and global configuration.
+pip search       # Search PyPI for packages.
+pip wheel        # Build wheels from your requirements.
+pip hash         # Compute hashes of package archives.
+pip completion   # A helper command used for command completion.
+pip debug        # Show informat
