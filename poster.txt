@@ -8,7 +8,7 @@ def upload_file(url,upload_file_path,filename):
     request = urllib2.Request(url, datagen, headers)
     return urllib2.urlopen(request).read()
 
-#poster的用法可以参考官方文件-->https://atlee.ca/software/poster/
+# poster的用法可以参考官方文件-->https://atlee.ca/software/poster/
 # test_client.py
 from poster.encode import multipart_encode
 from poster.streaminghttp import register_openers
