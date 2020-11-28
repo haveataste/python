@@ -118,12 +118,6 @@ r = requests.get(url)
 r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content
 
 
-import time
-time.sleep(3)
-time.localtime()
-time.time()
-
-
 import json
 l = json.loads(s)
 json.dumps(l)
