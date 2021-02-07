@@ -1,3 +1,6 @@
+# 使用 pip 安装
+# The Python Package Index (PyPI) is a repository of software for the Python programming language.
+
 # 使用清华镜像源
 # mkdir ~/.pip && cd ~/.pip
 # vim pip.conf
@@ -20,3 +23,10 @@ pip wheel        # Build wheels from your requirements.
 pip hash         # Compute hashes of package archives.
 pip completion   # A helper command used for command completion.
 pip debug        # Show informat
+
+
+# 本地安装
+# python setup.py install
+# 卸载
+# python setup.py install --record files.txt # 获取安装程序安装的文件名
+# cat files.txt | xargs rm -rf               # 删除这些文件
