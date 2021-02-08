@@ -28,19 +28,6 @@ sys.version
 sys.version_info
 sys.path
 
-import sqlite3
-conn = sqlite3.connect('name.db')
-conn = sqlite3.connect(':memory:')
-cur = conn.cursor()
-cur.execute('''
-''')
-cur.executescript('''
-''')
-cur.fetchone()
-conn.commit()
-cur.close()
-conn.close()
-
 import re
 re.compile(r'')
 re.search(pattern, string)
@@ -99,16 +86,20 @@ r = requests.get(url)
 r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content
 
 
-bin()
-oct()
-hex()
-int()
-str()
-chr()
-ord()
+dir(obj)
+help(obj)
+callable(obj)
+isinstance(obj, typestr)
+bin(aint)
+oct(aint)
+hex(aint)
+int(s)
+str(aint)
+chr(aint)
+ord(char)
 s.zfill(3)
 zip(seq, seq)
-enumerate(sequence, [start=0])
+enumerate(seq, [start=0])
 map(func, seq)
 filter(func, seq)
 import functools
