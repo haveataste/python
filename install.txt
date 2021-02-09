@@ -34,6 +34,7 @@ pip debug        # Show informat
 
 # wheel 安装
 # 安装requests模块
+# pip3 install requests
 Collecting requests
 Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
 Collecting idna<3,>=2.5
@@ -46,3 +47,4 @@ Collecting chardet<5,>=3.0.2
 Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
 Installing collected packages: idna, certifi, urllib3, chardet, requests
 Successfully installed certifi-2020.12.5 chardet-4.0.0 idna-2.10 requests-2.25.1 urllib3-1.26.3
+# pip3 download requests && zip requests.zip *.whl
