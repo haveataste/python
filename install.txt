@@ -25,8 +25,24 @@ pip completion   # A helper command used for command completion.
 pip debug        # Show informat
 
 
-# 本地安装
+# setup.py 安装
 # python setup.py install
 # 卸载
 # python setup.py install --record files.txt # 获取安装程序安装的文件名
 # cat files.txt | xargs rm -rf               # 删除这些文件
+
+
+# wheel 安装
+# 安装requests模块
+Collecting requests
+Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Collecting idna<3,>=2.5
+Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+Collecting certifi>=2017.4.17
+Downloading certifi-2020.12.5-py2.py3-none-any.whl (147 kB)
+Collecting urllib3<1.27,>=1.21.1
+Downloading urllib3-1.26.3-py2.py3-none-any.whl (137 kB)
+Collecting chardet<5,>=3.0.2
+Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+Installing collected packages: idna, certifi, urllib3, chardet, requests
+Successfully installed certifi-2020.12.5 chardet-4.0.0 idna-2.10 requests-2.25.1 urllib3-1.26.3
