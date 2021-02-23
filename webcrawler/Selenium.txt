@@ -1,3 +1,12 @@
+# Linux version 4.14.105-1-tlinux3-0016 (root@VM_194_153_centos) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC)) #1 SMP Fri Jul 31 16:16:47 CST 2020
+# 安装Chrome
+curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+# 解决包依赖关系
+apt-get install -f
+# google-chrome -version
+Google Chrome 88.0.4324.182
+
 # selenium 是一个 web 的自动化测试工具
 pip install selenium
 # 下载webdriver，注意版本，至/usr/bin/目录中
@@ -22,6 +31,8 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
 # 如果不加这个选项，有时定位会出现问题
 chrome_options.add_argument('--disable-gpu')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 # 启动浏览器，获取网页源代码
 browser = webdriver.Chrome(chrome_options=chrome_options)
 browser.get("https://www.taobao.com/")
