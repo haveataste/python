@@ -24,13 +24,16 @@ pip hash         # Compute hashes of package archives.
 pip completion   # A helper command used for command completion.
 pip debug        # Show informat
 
+# 安装requirements.txt依赖
+pip install -r requirements.txt
+# 生成requirements.txt文件
+pip freeze > requirements.txt
 
 # setup.py 安装
 # python setup.py install
 # 卸载
 # python setup.py install --record files.txt # 获取安装程序安装的文件名
 # cat files.txt | xargs rm -rf               # 删除这些文件
-
 
 # wheel 安装
 # 安装requests模块
