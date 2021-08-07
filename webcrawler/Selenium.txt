@@ -40,3 +40,16 @@ browser = webdriver.Chrome(chrome_options=chrome_options)
 browser.get("https://www.taobao.com/")
 print(f"browser text = {browser.page_source}")
 browser.quit()
+
+selenium元素明明可见但is_displayed()为False，这样造成click的时候抛出异常：不可见的元素。目前知道的可选方案有：
+修改页面当前元素,或者当前元素父元素的CSS,使元素的isDisplayed()值为true
+相关信息如下：
+1,isDisplayed为false,是指那个元素是存在的,只是webdriver认为不见.回到关键问题,webdriver是如何判断一个元素是否displayed,请参照:
+http://www.w3.org/TR/webdriver/#determining-visibility
+2、存在使用webElement.text取不到任何字符，但是用webElement.get_attribute("innerHTML")能够取到字符的情况，特别是is_displayed()属性为false的时候。
+3、可以使用JavaScript修改元素的可见属性。
+browser.execute_script('$(arguments[0]).fadeIn()', currentElement)
+browser.execute_script('$(arguments[0]).style.display=""',currentElement)
+这两条语句都可以，注意要执行：
+webDriver.execute_script(js)
+4、我的这次错误，最后找到原因了，是因为webElement找错了，有3个相同属性的，只有一个是可见的，是网页上见到的那个。IE下的调测真实麻烦，这个网站是IE only的，所以没有别的办法。
