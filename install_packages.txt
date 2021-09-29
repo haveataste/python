@@ -1,6 +1,10 @@
 # 使用 pip 安装
-# The Python Package Index (PyPI) is a repository of software for the Python programming language.
+curl -O https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+python -m pip --version
+python -m pip install --upgrade pip
 
+# The Python Package Index (PyPI) is a repository of software for the Python programming language.
 # 使用清华镜像源
 # mkdir ~/.pip && cd ~/.pip
 # vim pip.conf
