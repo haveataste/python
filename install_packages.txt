@@ -5,6 +5,7 @@ python -m pip --version
 python -m pip install --upgrade pip
 
 # The Python Package Index (PyPI) is a repository of software for the Python programming language.
+pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
 # 使用清华镜像源
 # mkdir ~/.pip && cd ~/.pip
 # vim pip.conf
