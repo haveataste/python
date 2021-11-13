@@ -9,8 +9,8 @@ def f():
     while True:
         print(Thread.name, Thread.ident, 'Noo')
         time.sleep(1)
-if __name__ == '__main__':
-    mt = Thread(target=m, args=())
-    ft = Thread(target=f, args=())
-    mt.start()
-    ft.start()
+
+mt = Thread(target=m, args=())
+ft = Thread(target=f, args=())
+mt.start()
+ft.start()
