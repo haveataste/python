@@ -28,3 +28,8 @@ bar()
 >>> a()
 aaa
 bbb
+
+
+l=[1,2,3]
+l.append(l)
+print(l, len(l), len(l[3]), len(l[3][3][3][3]), sep='\n')
