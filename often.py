@@ -20,19 +20,6 @@ with open('temp.pkl', 'rb') as f2:
     c2 = pickle.load(f2)
 print(a2,b2,c2,sep='\n')
 
-from numpy import *
-zeros((3,4))
-ones((2,3,4))
-empty((2,3))
-random.random((2,3))
-arange(1,20,3)
-arange(12).reshape(4,3)
-arange(24).reshape(2,3,4)
-a = arange(1,10).reshape(3,3)
-a.sum(), a.min(), a.max(), a.shape, a.size, a.dtype, a.itemsize, a.ndim, a.data
-b = ones((3,3))
-print(a+b)
-
 import queue
 q = queue.Queue()
 for i in range(5):
