@@ -1,6 +1,18 @@
 import pandas as pd
 import numpy as np
 
+np.zeros((3,4))
+np.ones((2,3,4))
+np.empty((2,3))
+np.random.random((2,3))
+np.arange(1,20,3)
+np.arange(12).reshape(4,3)
+np.arange(24).reshape(2,3,4)
+a = np.arange(1,10).reshape(3,3)
+a.sum(), a.min(), a.max(), a.shape, a.size, a.dtype, a.itemsize, a.ndim, a.data
+b = np.ones((3,3))
+print(a+b)
+
 #读json文件
 df = pd.read_json('a.json')
 print(df)
