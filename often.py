@@ -55,6 +55,14 @@ random.choice([1,2,3,4,5,6])
 random.shuffle([1,2,3,4,5,7])
 random.sample(range(10),3)
 
+from hashlib import *
+import random
+s = 'abcd'
+hf = random.choice([md5(), sha1(), sha256(), sha512()])
+hf.update(bytes(s, encoding='utf-8'))
+result = hf.hexdigest().upper()
+print(hf, result, len(result), sep='\n')
+
 import time
 time.sleep(3)
 list(time.localtime())
@@ -87,12 +95,12 @@ os.path.getmtime(path)
 os.path.getatime(path)
 os.path.getctime(path)
 
-import PIL
-
 import requests
 url = 'https://api.shodan.io/tools/myip'
 r = requests.get(url)
 r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content
+
+import PIL
 
 
 dir(obj)
