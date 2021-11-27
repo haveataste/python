@@ -100,6 +100,14 @@ url = 'https://api.shodan.io/tools/myip'
 r = requests.get(url)
 r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content
 
+import requests
+import base64
+url = 'http://bunker.wlppr.co/01-hfyeo8.png'
+r = requests.get(url).content
+e = base64.b64encode(r)
+print(len(r), len(e), (len(e)-len(r))/len(r), sep=' ')
+base64.encodebytes(r)
+
 import PIL
 
 
