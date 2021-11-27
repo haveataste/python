@@ -106,6 +106,7 @@ url = 'http://bunker.wlppr.co/01-hfyeo8.png'
 r = requests.get(url).content
 e = base64.b64encode(r)
 print(len(r), len(e), (len(e)-len(r))/len(r), sep=' ')
+base64.b64encode('abc'.encode()).decode('utf-8')
 base64.encodebytes(r)
 
 import PIL
