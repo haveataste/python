@@ -143,6 +143,7 @@ redis (remote dictionary server): string, hash, list, set, sorted set
     # 获取集合中所有的成员--set形式
     b = r.smembers('pic')
     type(b)  # <class 'set'>
+---
 
 --- 20211127 ---
 
