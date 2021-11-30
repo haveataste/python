@@ -34,8 +34,6 @@ Pur_date datetime not null
 c.executescript(create_table_script)
 conn.commit()
 
-#---------------------------------------------------------------------------------------
-
 customer_data = [
 ('ZY20130006','李勇','男','1986-3-25','13023451890','伏牛路12号'),
 ('GC20121355','刘晨','男','null','13839531178','商城路8号'),
@@ -73,20 +71,14 @@ conn.commit()
 
 print('customer')
 c.execute('select * from customer')
-for row in c:
-    print(row)
+for row in c:print(row)
 print('commodity')
 c.execute('select * from commodity')
-for row in c:
-    print(row)
+for row in c:print(row)
 print('purchase')
 c.execute('select * from purchase')
-for row in c:
-    print(row)
+for row in c:print(row)
 
-#---------------------------------------------------------------------------------------
-
-#with open('record.txt','w+') as rec:
 while True:
     print('please input the select sentence:');s = input()
     for row in c.execute(s):

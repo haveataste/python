@@ -18,11 +18,8 @@ delete_table_sql = """\
 DROP TABLE test
 """
 
-print('--------------sqlite3--------------')
-#sqlite3 moudle's version
-print('version:',sqlite3.version)
-#sqlite's version
-print('sqlite_version:',sqlite3.sqlite_version)
+# sqlite3 moudle's version and sqlite's version
+print('moudle_version:', sqlite3.version, '\n', 'sqlite_version:', sqlite3.sqlite_version)
 
 with sqlite3.connect(db_file) as connection:
     try:
