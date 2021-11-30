@@ -15,8 +15,8 @@ Redis 字符串（string）命令
     decr
 
     参考链接：
-   [RUNOOB.COM](http://www.runoob.com/redis/redis-strings.html)  
-   [Markdown 语法手册完整整理](https://www.jianshu.com/p/8c1b2b39deb0)
+    http://www.runoob.com/redis/redis-strings.html
+    https://www.jianshu.com/p/8c1b2b39deb0
 ---
 
 --- 20210223 ---  
