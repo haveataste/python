@@ -1,4 +1,4 @@
---- 20190425 ---
+--- 20190425 ---  
 Redis 字符串（string）命令
 
     set  
@@ -15,8 +15,8 @@ Redis 字符串（string）命令
     decr
 
     参考链接：
-    &nbsp;&nbsp;&nbsp;&nbsp;[RUNOOB.COM](http://www.runoob.com/redis/redis-strings.html)  
-    &nbsp;&nbsp;&nbsp;&nbsp;[Markdown 语法手册完整整理](https://www.jianshu.com/p/8c1b2b39deb0)
+   [RUNOOB.COM](http://www.runoob.com/redis/redis-strings.html)  
+   [Markdown 语法手册完整整理](https://www.jianshu.com/p/8c1b2b39deb0)
 ---
 
 --- 20210223 ---  
