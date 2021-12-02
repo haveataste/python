@@ -95,6 +95,14 @@ os.path.getmtime(path)
 os.path.getatime(path)
 os.path.getctime(path)
 
+from urllib import request
+with request.urlopen(URL) as f:
+    print('Status:', f.status, f.reason)
+    for k, v in f.getheaders():
+        print('%s: %s' % (k, v))
+    data = f.read()
+    print('Data:', data.decode('utf-8'))
+
 import requests
 url = 'https://api.shodan.io/tools/myip'
 r = requests.get(url)
