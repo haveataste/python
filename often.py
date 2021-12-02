@@ -41,10 +41,9 @@ import re
 re.compile(r'')
 re.search(pattern, string)
 re.match(pattern, string).group(2)
-re.findall()
+re.findall(pattern, string)
 re.split(pattern, string[, maxsplit=0, flags=0])
-re.sub('', '', s)
-re.subs('', '', s)
+re.sub(pattern, repl, string, count=0, flags=0)
 
 import random
 random.random()
