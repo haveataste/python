@@ -94,13 +94,20 @@ os.path.getmtime(path)
 os.path.getatime(path)
 os.path.getctime(path)
 
-from urllib import request
-with request.urlopen(URL) as f:
+import urllib.request
+with urllib.request.urlopen(URL) as f:
     print('Status:', f.status, f.reason)
     for k, v in f.getheaders():
         print('%s: %s' % (k, v))
     data = f.read()
     print('Data:', data.decode('utf-8'))
+d = {
+    "content": "中文内容信息",
+    "charsetSelect": "utf-8",
+    "en": "UrlEncode编码"
+}
+urllib.parse.urlencode(d) #content=%E4%B8%AD%E6%96%87%E5%86%85%E5%AE%B9%E4%BF%A1%E6%81%AF&charsetSelect=utf-8&en=UrlEncode%E7%BC%96%E7%A0%81
+urllib.parse.quote('好好学习')
 
 import requests
 url = 'https://api.shodan.io/tools/myip'
