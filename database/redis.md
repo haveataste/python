@@ -1,17 +1,17 @@
 --- 20190425 ---  
-Redis 字符串（string）命令
 
-    set  
-    setnx  
-    append  
-    setex  
+    Redis 字符串（string）命令：
+    set
+    setnx
+    append
+    setex
 
-    get  
-    mget  
-    getrange  
-    strlen  
+    get
+    mget
+    getrange
+    strlen
 
-    incr  
+    incr
     decr
 
     参考链接：
@@ -20,7 +20,8 @@ Redis 字符串（string）命令
 ---
 
 --- 20210223 ---  
-redis (remote dictionary server): string, hash, list, set, sorted set
+
+    redis (remote dictionary server): string, hash, list, set, sorted set
 
     set a 1
     get a
@@ -127,9 +128,6 @@ redis (remote dictionary server): string, hash, list, set, sorted set
 ---
 
 --- 20211125 ---
-
-    import redis
-    r = redis.StrictRedis(host='redistributionpublic.redis.rds.aliyuncs.com', port=6379, db=0, password='xxoo1234@')
     
     with open('some.jpg', 'rb') as f:
         s = f.read()
