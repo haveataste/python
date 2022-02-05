@@ -13,6 +13,8 @@ pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 [install]
 trusted-host = https://pypi.tuna.tsinghua.edu.cn
+# 查看使用的镜像源
+pip config list
 
 # 常用命令
 pip install      # Install packages.
