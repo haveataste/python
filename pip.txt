@@ -3,6 +3,9 @@ curl -O https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 python -m pip --version
 python -m pip install --upgrade pip
+       -m mod : run library module as a script (terminates option list)
+       -c cmd : program passed in as string (terminates option list)
+       -q     : don't print version and copyright messages on interactive startup
 
 # The Python Package Index (PyPI) is a repository of software for the Python programming language.
 pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
