@@ -1,22 +1,17 @@
 套接字发展史及分类
-套接字起源于 20 世纪 70 年代加利福尼亚大学伯克利分校版本的 Unix,即人们所说的 BSD Unix。 因此,有时人们也把套接字称为“伯克利套接字”或“BSD 套接字”。一开始,套接字被设计用在同 一台主机上多个应用程序之间的通讯。这也被称进程间通讯,或 IPC。套接字有两种（或者称为有两个种族）,分别是基于文件型的和基于网络型的。 
+套接字起源于20世纪70年代加利福尼亚大学伯克利分校版本的Unix,即人们所说的BSD Unix。因此,有时人们也把套接字称为“伯克利套接字”或“BSD套接字”。一开始,套接字被设计用在同一台主机上多个应用程序之间的通讯。这也被称进程间通讯,即IPC。套接字有两种（或者称为有两个种族）,分别是基于文件型的和基于网络型的。 
 
-基于文件类型的套接字家族
-套接字家族的名字：AF_UNIX
-unix一切皆文件，基于文件的套接字调用的就是底层的文件系统来取数据，两个套接字进程运行在同一机器，可以通过访问同一个文件系统间接完成通信
-
-基于网络类型的套接字家族
-套接字家族的名字：AF_INET
+基于文件类型的套接字家族：AF_UNIX
+UNIX一切皆文件，基于文件的套接字调用的就是底层的文件系统来取数据，两个套接字进程运行在同一机器，可以通过访问同一个文件系统间接完成通信
+基于网络类型的套接字家族：AF_INET
 还有AF_INET6被用于ipv6，还有一些其他的地址家族，不过，他们要么是只用于某个平台，要么就是已经被废弃，或者是很少被使用，或者是根本没有实现，所有地址家族中，AF_INET是使用最广泛的一个，python支持很多种地址家族，但是由于我们只关心网络编程，所以大部分时候我么只使用AF_INET
 
 import socket
 s = socket.socket(socket_family,socket_type,protocal=0)
-#socket_family 可以是 AF_UNIX 或 AF_INET。socket_type 可以是 SOCK_STREAM 或 SOCK_DGRAM。protocol 一般不填,默认值为 0。
-
-#获取tcp/ip套接字
+#socket_family可以是 AF_UNIX 或 AF_INET。socket_type可以是 SOCK_STREAM 或 SOCK_DGRAM。protocol一般不填,默认值为0。
+#获取TCP/IP套接字
 tcpSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-#获取udp/ip套接字
+#获取UDP/IP套接字
 udpSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 服务端套接字函数
