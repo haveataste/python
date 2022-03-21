@@ -157,3 +157,7 @@
     ZREMRANGEBYSCORE xl 0 3
     ZREVRANGE xl 3 0
     ZSCORE xl c
+---
+
+--- 20220321 ---
+./redis-cli.exe -h redis-19073.c289.us-west-1-2.ec2.cloud.redislabs.com -p 19073 -d memdb -a memdb
