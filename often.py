@@ -1,15 +1,8 @@
 import pickle
-# 检索所支持的格式
-print(pickle.format_version, pickle.compatible_formats)
-
-t = ('this is a string', 42, [1, 2, 3], None)
-s = pickle.dumps(t)
-p = pickle.loads(s)
+print(pickle.format_version, pickle.compatible_formats)     # 检索所支持的格式
+t = ('this is a string', 42, [1, 2, 3], None), s = pickle.dumps(t), p = pickle.loads(s)
 print('pickle.dumps(object)', s, 'pickle.loads(pickle_str)', p, sep='\n')
-
-a1 = 'apple'
-b1 = {1: 'One', 2: 'Two', 3: 'Three'}
-c1 = ['fee', 'fie', 'foe', 'fum']
+a1 = 'apple', b1 = {1: 'One', 2: 'Two', 3: 'Three'}, c1 = ['fee', 'fie', 'foe', 'fum']
 with open('temp.pkl', 'wb') as f1:
     pickle.dump(a1, f1, True)
     pickle.dump(b1, f1, True)
@@ -19,6 +12,17 @@ with open('temp.pkl', 'rb') as f2:
     b2 = pickle.load(f2)
     c2 = pickle.load(f2)
 print(a2,b2,c2,sep='\n')
+
+import shutil
+'''
+shutil.make_archive(base_name, format[, root_dir[, base_dir[, verbose[, dry_run[, owner[, group[, logger]]]]]]])
+Create an archive file (such as zip or tar) and return its name.
+base_name is the name of the file to create, including the path, minus any format-specific extension. format is the archive format: one of “zip” (if the zlib module is available), “tar”, “gztar” (if the zlib module is available), “bztar” (if the bz2 module is available), or “xztar” (if the lzma module is available).
+root_dir is a directory that will be the root directory of the archive, all paths in the archive will be relative to it; for example, we typically chdir into root_dir before creating the archive.
+base_dir is the directory where we start archiving from; i.e. base_dir will be the common prefix of all files and directories in the archive. base_dir must be given relative to root_dir. See Archiving example with base_dir for how to use base_dir and root_dir together.
+root_dir and base_dir both default to the current directory.
+'''
+shutil.make_archive(tarName, 'tar')
 
 import queue
 q = queue.Queue()
