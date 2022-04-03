@@ -96,7 +96,7 @@ os.path.getmtime(path)
 os.path.getatime(path)
 os.path.getctime(path)
 
-import urllib.request
+import urllib
 with urllib.request.urlopen(URL) as f:
     print('Status:', f.status, f.reason)
     for k, v in f.getheaders():
@@ -128,21 +128,9 @@ base64.encodebytes(r)
 import PIL
 
 
-dir(obj)
-help(obj)
-callable(obj)
-isinstance(obj, typestr)
-bin(aint)
-oct(aint)
-hex(aint)
-int(s)
-str(aint)
-chr(aint)
-ord(char)
-s.zfill(3)
-zip(seq, seq)
-enumerate(seq, [start=0])
-map(func, seq)
-filter(func, seq)
+dir(obj), help(obj), callable(obj), isinstance(obj, typestr)
+bin(aint), oct(aint), hex(aint), int(s), str(aint), chr(aint), ord(char)
+s.zfill(3), s.startswith(str)
+zip(seq, seq), enumerate(seq, [start=0]), map(func, seq), filter(func, seq)
 import functools
 functools.reduce(func(x,y), seq)
