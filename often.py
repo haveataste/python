@@ -85,9 +85,7 @@ string.whitespace
 dir(string)
 
 import os
-os.name
-os.getcwd()
-os.listdir()
+os.name, os.curdir, os.getcwd(), os.listdir(), os.chdir(path), os.walk(path)
 os.path.abspath('.')
 os.path.split(path)
 os.path.basename(path)
