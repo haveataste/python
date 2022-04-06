@@ -16,8 +16,6 @@ vim pip.conf
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 [install]
 trusted-host = https://pypi.tuna.tsinghua.edu.cn
-# 查看使用的镜像源
-pip config list
 
 # 常用命令
 pip install      # Install packages.
@@ -33,7 +31,8 @@ pip wheel        # Build wheels from your requirements.
 pip hash         # Compute hashes of package archives.
 pip completion   # A helper command used for command completion.
 pip debug        # Show informat
-
+# 查看使用的镜像源
+pip config list
 # 生成requirements.txt文件
 pip freeze > requirements.txt
 # 安装requirements.txt依赖
