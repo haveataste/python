@@ -25,16 +25,9 @@ root_dir and base_dir both default to the current directory.
 shutil.make_archive(tarName, 'tar')
 
 import queue
-q = queue.Queue()
-for i in range(5):
-    q.put(i)
-while not q.empty():
-    print(q.get())
-q = queue.LifoQueue()
-for i in range(5):
-    q.put(i)
-while not q.empty():
-    print(q.get())
+q = queue.Queue(maxsize=0)
+q.qsize(), q.put(obj), q.get(), q.empty(), q.full()
+stack = queue.LifoQueue()
 
 import sys
 sys.version
