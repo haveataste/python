@@ -30,9 +30,7 @@ q.qsize(), q.put(obj), q.get(), q.empty(), q.full()
 stack = queue.LifoQueue()
 
 import sys
-sys.version
-sys.version_info
-sys.path
+sys.version, sys.version_info, sys.path
 
 import re
 re.compile(r'')
@@ -60,9 +58,9 @@ result = hf.hexdigest().upper()
 print(hf, result, len(result), sep='\n')
 
 import time
+time.time()
 time.sleep(3)
 list(time.localtime())
-time.time()
 
 import json
 l = json.loads(s)
