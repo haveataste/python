@@ -76,13 +76,7 @@ l = json.loads(s)
 json.dumps(l)
 
 import string
-string.printable
-string.punctuation
-string.digits
-string.ascii_letters
-string.capwords('abc def')
-string.whitespace
-dir(string)
+dir(string), string.printable, string.punctuation, string.digits, string.ascii_letters, string.whitespace, string.capwords('abc def')
 
 import os
 os.name, os.curdir, os.getcwd(), os.listdir(), os.chdir(path), os.walk(path)
@@ -112,18 +106,15 @@ urllib.parse.urlencode(d) #content=%E4%B8%AD%E6%96%87%E5%86%85%E5%AE%B9%E4%BF%A1
 urllib.parse.quote('好好学习')
 
 import requests
-url = 'https://api.shodan.io/tools/myip'
-r = requests.get(url)
-r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content
-
-import requests
 import base64
 url = 'http://bunker.wlppr.co/01-hfyeo8.png'
-r = requests.get(url).content
-e = base64.b64encode(r)
-print(len(r), len(e), (len(e)-len(r))/len(r), sep=' ')
+r = requests.get(url)
+r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content
+c = r.content
+e = base64.b64encode(c)
+print(len(c), len(e), (len(e)-len(c))/len(c), sep=' ')
 base64.b64encode('abc'.encode()).decode('utf-8')
-base64.encodebytes(r)
+base64.encodebytes(c)
 
 # PIL(Python Image Library)是python的第三方图像处理库，但是由于其强大的功能与众多的使用人数，几乎已经被认为是python官方图像处理库了。PIL历史悠久，原来是只支持python2.x的版本的，后来出现了移植到python3的库pillow(http://python-pillow.org/),pillow号称是`friendly fork for PIL`,其功能和PIL差不多，但是支持python3。
 # python3 -m pip install --upgrade Pillow
