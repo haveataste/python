@@ -10,9 +10,9 @@ python -m pip install --upgrade pip
 # The Python Package Index (PyPI) is a repository of software for the Python programming language.
 pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
 # 使用清华镜像源
-# mkdir ~/.pip && cd ~/.pip
-# vim pip.conf
-[global] 
+mkdir ~/.pip && cd ~/.pip
+vim pip.conf
+[global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 [install]
 trusted-host = https://pypi.tuna.tsinghua.edu.cn
@@ -34,30 +34,29 @@ pip hash         # Compute hashes of package archives.
 pip completion   # A helper command used for command completion.
 pip debug        # Show informat
 
-# 安装requirements.txt依赖
-pip install -r requirements.txt
 # 生成requirements.txt文件
 pip freeze > requirements.txt
+# 安装requirements.txt依赖
+pip install -r requirements.txt
 
 # setup.py 安装
 # python setup.py install
 # 卸载
-# python setup.py install --record files.txt # 获取安装程序安装的文件名
-# cat files.txt | xargs rm -rf               # 删除这些文件
+# python setup.py install --record files.txt      # 获取安装程序安装的文件名
+# cat files.txt | xargs rm -rf                    # 删除这些文件
 
 # wheel 安装
-# 安装requests模块
-# pip3 install requests
-Collecting requests
-Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
-Collecting idna<3,>=2.5
-Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
-Collecting certifi>=2017.4.17
-Downloading certifi-2020.12.5-py2.py3-none-any.whl (147 kB)
-Collecting urllib3<1.27,>=1.21.1
-Downloading urllib3-1.26.3-py2.py3-none-any.whl (137 kB)
-Collecting chardet<5,>=3.0.2
-Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
-Installing collected packages: idna, certifi, urllib3, chardet, requests
-Successfully installed certifi-2020.12.5 chardet-4.0.0 idna-2.10 requests-2.25.1 urllib3-1.26.3
-# pip3 download requests && zip requests.zip *.whl
+pip3 install requests
+  Collecting requests
+  Downloading requests-2.25.1-py2.py3-none-any.whl (61 kB)
+  Collecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+  Collecting certifi>=2017.4.17
+  Downloading certifi-2020.12.5-py2.py3-none-any.whl (147 kB)
+  Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.3-py2.py3-none-any.whl (137 kB)
+  Collecting chardet<5,>=3.0.2
+  Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+  Installing collected packages: idna, certifi, urllib3, chardet, requests
+  Successfully installed certifi-2020.12.5 chardet-4.0.0 idna-2.10 requests-2.25.1 urllib3-1.26.3
+pip3 download requests && pip3 install *.whl && zip requests.zip *.whl
