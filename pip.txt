@@ -1,6 +1,6 @@
 # 使用 pip 安装
-curl -O https://bootstrap.pypa.io/get-pip.py
-python get-pip.py
+sudo apt install python3-pip
+curl -O https://bootstrap.pypa.io/get-pip.py && python get-pip.py
 python -m pip --version
 python -m pip install --upgrade pip
        -m mod : run library module as a script (terminates option list)
