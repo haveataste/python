@@ -125,9 +125,12 @@ print(len(r), len(e), (len(e)-len(r))/len(r), sep=' ')
 base64.b64encode('abc'.encode()).decode('utf-8')
 base64.encodebytes(r)
 
-import PIL
-#PIL(Python Image Library)是python的第三方图像处理库，但是由于其强大的功能与众多的使用人数，几乎已经被认为是python官方图像处理库了。PIL历史悠久，原来是只支持python2.x的版本的，后来出现了移植到python3的库pillow(http://python-pillow.org/),pillow号称是`friendly fork for PIL`,其功能和PIL差不多，但是支持python3。
-import pillow
+# PIL(Python Image Library)是python的第三方图像处理库，但是由于其强大的功能与众多的使用人数，几乎已经被认为是python官方图像处理库了。PIL历史悠久，原来是只支持python2.x的版本的，后来出现了移植到python3的库pillow(http://python-pillow.org/),pillow号称是`friendly fork for PIL`,其功能和PIL差不多，但是支持python3。
+# python3 -m pip install --upgrade Pillow
+# https://pillow.readthedocs.io/en/stable/index.html#
+from PIL import Image
+im = Image.open("hopper.ppm")
+print(im.format, im.size, im.mode)
 
 dir(obj), help(obj), callable(obj), isinstance(obj, typestr)
 bin(aint), oct(aint), hex(aint), int(s), str(aint), chr(aint), ord(char)
