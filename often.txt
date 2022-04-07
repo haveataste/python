@@ -33,7 +33,7 @@ import sys
 sys.version, sys.version_info, sys.path
 
 import re
-re.compile(r'')
+pattern = re.compile(r'')
 re.search(pattern, string)
 re.match(pattern, string).group(2)
 re.findall(pattern, string)
@@ -116,7 +116,7 @@ print(im.format, im.size, im.mode)
 
 dir(obj), help(obj), callable(obj), isinstance(obj, typestr)
 bin(aint), oct(aint), hex(aint), int(s), str(aint), chr(aint), ord(char)
-s.zfill(3), s.startswith(str)
+s.zfill(3), s.startswith(str), s.find(str, beg=0, end=len(s))
 zip(seq, seq), enumerate(seq, [start=0]), map(func, seq), filter(func, seq)
 import functools
 functools.reduce(func(x,y), seq)
