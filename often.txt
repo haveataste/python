@@ -70,6 +70,9 @@ import string
 dir(string), string.printable, string.punctuation, string.digits, string.ascii_letters, string.whitespace, string.capwords('abc def')
 astring.find(str[, beg=0, end=len(str)])
 
+import uuid
+uuid.uuid4()， uuid.uuid1().hex
+
 import os
 os.name, os.curdir, os.getcwd(), os.listdir(), os.chdir(path), os.walk(path)
 os.path.abspath('.')
