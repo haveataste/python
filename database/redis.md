@@ -1,18 +1,9 @@
 --- 20190425 ---  
 
     Redis 字符串（string）命令：
-    set
-    setnx
-    append
-    setex
-
-    get
-    mget
-    getrange
-    strlen
-
-    incr
-    decr
+    set, mset, setnx, append, setex
+    get, mget, getrange, strlen
+    incr, decr
 
     参考链接：
     http://www.runoob.com/redis/redis-strings.html
@@ -25,6 +16,8 @@
 
     set a 1
     get a
+    mset k1 v1 k2 v2
+    mget k1 k2
     
     hmset b 1 2 3 4
     hget b 1
@@ -32,7 +25,7 @@
     
     lpush c 1
     lpush c 2
-    lpush c 3
+    rpush c 3
     lrange c 0 2
     
     sadd d 1
@@ -51,7 +44,7 @@
 --- 20210224 ---
 
     pip install redis
-    $ redis-server
+    $ redis-server # 启动redis服务
     >import redis
     >r = redis.StrictRedis(host='localhost', port=6379, db=0[, password=''])
     >r = redis.StrictRedis(host='redistributionpublic.redis.rds.aliyuncs.com', port=6379, db=0, password='xxoo1234@')
@@ -68,8 +61,7 @@
     r.keys()
     r.delete(key)
     r.set(name, value, ex=None, px=None, nx=False, xx=False)
-        在 Redis 中设置值，默认不存在则创建，存在则修改。
-        参数：
+        在 Redis 中设置值，默认不存在则创建，存在则修改。参数：
         ex - 过期时间（秒）
         px - 过期时间（毫秒）
         nx - 如果设置为True，则只有name不存在时，当前set操作才执行
@@ -102,7 +94,6 @@
     > auth [user:]password
     > ping
     > keys *
-    > lpush list a b c d e
 ---
 
 --- 20210805 ---
@@ -160,4 +151,5 @@
 ---
 
 --- 20220321 ---
-./redis-cli.exe -h redis-19073.c289.us-west-1-2.ec2.cloud.redislabs.com -p 19073 -d memdb -a memdb
+    
+    ./redis-cli.exe -h redis-19073.c289.us-west-1-2.ec2.cloud.redislabs.com -p 19073 -d memdb -a memdb
