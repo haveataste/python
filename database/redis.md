@@ -94,6 +94,7 @@
     > auth [user:]password
     > ping
     > keys *
+    > type key
 ---
 
 --- 20210805 ---
