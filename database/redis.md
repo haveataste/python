@@ -104,6 +104,7 @@
     > expire key time               # 设置某个 key 的过期时间（秒）
     > ttl key                       # 查找某个 key 还有多长时间过期，返回时间单位为秒
     > flushdb                       # 清空当前数据库中的所有键
+    > help save
     
     > config get requirepass            # 用来读取运行 Redis 服务器的配置参数，查看密码
     > config set requirepass test123    # 设置密码为 test123
@@ -189,4 +190,13 @@
       > set name b
       > exec
       > get name
+
+    数据持久化：
+      1. snapshotting（快照）：将数据存放到文件里，默认方式。是将内存中的数据以快照的方式写入到二进制文件中，默认文件 dump.rdb，可以通过配置设置自动做快照持久化的方式。可配置 Redis 在 n 秒内如果超过 m 个 key 被修改就自动保存快照。save 命令是将数据写入磁盘中。比如： save 300 10：300 秒内如果超过 10 个 key 被修改，则快照保存。 
+      2. AOF(Append-only file)。配置文件中的可配置参数：
+        appendonly yes          //启用 aof 持久化方式
+        #appendfsync always     //收到写命令就立即写入磁盘，最慢，但是保证了数据的完整持久化
+        appendfsync everysec    //每秒钟写入磁盘一次，在性能和持久化方面做了很好的折中
+        
+    虚拟内存：Redis 的虚拟内存是暂时把不经常访问的数据从内存交换到磁盘中，从而腾出内存空间用于其它的访问数据，尤其对于 redis 这样的内存数据库，内存总是不够用的。除了分隔到多个 redis server 外，提高数据库容量的方法就是使用虚拟内存，把那些不常访问的数据交换到磁盘上。虚拟内存管理在 2.6 及之上版本取消了，由 redis 软件自身管理。
 ---
