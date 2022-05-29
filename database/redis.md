@@ -19,26 +19,25 @@
     mset k1 v1 k2 v2
     mget k1 k2
     
-    hmset b 1 2 3 4
-    hget b 1
-    hget b 3
+    hmset b f1 v1 f2 v2 f3 v3
+    hget b f1
     
-    lpush c 1
-    lpush c 2
-    rpush c 3
-    lrange c 0 2
+    lpush c 1 2 3
+    rpush c 4 5 6
+    lrange c 0 -1
     
-    sadd d 1
-    sadd d 2
-    sadd d 3
+    sadd d 1 2 3
     sadd d 3
     smembers d
+    sismember d 3   # 匹配成功返回 1，匹配失败返回 0
     
     zadd e 0 1
     zadd e 0 2
     zadd e 0 3
     zadd e 0 3
     zrangebyscore e 0 3
+    zrange e 0 -1 [withscores]
+    zrevrange e 0 -1
 ---
 
 --- 20210224 ---
@@ -90,11 +89,31 @@
 
 --- 20210316 ---
 
-    redis-cli -h host -p port
+    redis-cli -h host -p port [-d db0 -a password]
     > auth [user:]password
     > ping
     > keys *
+    > dbsize                        # 返回当前数据库的 key 的总数
     > type key
+    > exists key
+    > del key
+    > randomkey                     # 随机获得一个已经存在的 key，如果当前数据库为空，则返回空字符串
+    > clear                         # 清除界面
+    > rename oldname newname        # 更改 key 的名字，新键如果存在将被覆盖
+    > renamenx oldname newname      # 更改 key 的名字，新键如果存在则更新失败
+    > expire key time               # 设置某个 key 的过期时间（秒）
+    > ttl key                       # 查找某个 key 还有多长时间过期，返回时间单位为秒
+    > flushdb                       # 清空当前数据库中的所有键
+    
+    > config get requirepass            # 用来读取运行 Redis 服务器的配置参数，查看密码
+    > config set requirepass test123    # 设置密码为 test123
+    > config get requirepass            # 报错，没有认证
+    > auth test123                      # 认证密码
+    > config get requirepass
+    > config get *max-*-entries*        # 查询数据类型的最大条目，以 list 的 key-value 对显示
+    > config resetstat                  # 重置数据统计报告，通常返回值为“OK”
+    
+    > info [server | clients | memory | persistence | stats | replication | cpu | cluster | keyspace | all | default]
 ---
 
 --- 20210805 ---
