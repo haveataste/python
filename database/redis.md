@@ -118,24 +118,15 @@
 
 --- 20210805 ---
 
-    1. redis按照hash进行存值
-        hmset key field1 value1 field2 value2 ...
-    2. redis得到hash的key中某一个field的值
-        hmget key field
-    3. redis返回哈希表key的所有field值和所有的value值
-        hgetall key
-    4. redis返回哈希表key的所有filed的值
-        hkeys key
-    5. redis返回哈希表key的所有的value值
-        hvals key
-    6. redis删除哈希表key的某一个field值和对应的value值
-        hdel key field
-    7. redis设置key的过期时间
-        expire key time | expireat key time
-    8. redis查看key的到期时间或剩余的剩余的生存时间
-        ttl key
-    9. redis删除key的过期时间
-        persist key
+    hmset key field1 value1 field2 value2 ...       # 按照hash进行存值
+    hmget key field                                 # 得到hash的key中某一个field的值
+    hgetall key                                     # 返回哈希表key的所有field值和所有的value值
+    hkeys key                                       # 返回哈希表key的所有filed的值
+    hvals key                                       # 返回哈希表key的所有的value值
+    hdel key field                                  # 删除哈希表key的某一个field值和对应的value值
+    expire key time | expireat key time             # 设置key的过期时间
+    ttl key                                         # 查看key的到期时间或剩余的剩余的生存时间
+    persist key                                     # 删除key的过期时间
 ---
 
 --- 20211125 ---
@@ -156,18 +147,17 @@
 
 --- 20211127 ---
 
-    sorted set
-    
-    ZADD xl 1 a 2 b 3 c
-    ZCARD xl
-    ZCOUNT xl 0 3
-    ZINCRBY xl 2 b
-    ZRANGE xl 0 3
-    ZRANK xl b
-    ZREM xl b
-    ZREMRANGEBYSCORE xl 0 3
-    ZREVRANGE xl 3 0
-    ZSCORE xl c
+    SORTED SET
+    zadd xl 1 a 2 b 3 c
+    zcard xl
+    zcount xl 0 3
+    zincrby xl 2 b
+    zrange xl 0 3
+    zrank xl b
+    zrem xl b
+    zremrangebyscore xl 0 3
+    zrevrange xl 3 0
+    zscore xl c
 ---
 
 --- 20220321 ---
