@@ -182,4 +182,11 @@
     建立这样一个主从关系的缓存服务器，只需要在 Slave 端执行命令：
       > slaveof 127.0.0.1 6379
       > config set masterauth <password>  # 如果主服务器设置了连接密码，就需要在从服务器中事先设置好
+      
+    事务处理:Redis 的事务处理比较简单。只能保证 client 发起的事务中的命令可以连续的执行，而且不会插入其它的 client 命令，当一个 client 在连接中发出 multi 命令时，这个连接就进入一个事务的上下文，该连接后续的命令不会执行，而是存放到一个队列中，当执行 exec 命令时，redis 会顺序的执行队列中的所有命令。
+      > multi
+      > set name a
+      > set name b
+      > exec
+      > get name
 ---
