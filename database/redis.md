@@ -164,6 +164,7 @@
 --- 20220321 ---
     
     ./redis-cli.exe -h redis-19073.c289.us-west-1-2.ec2.cloud.redislabs.com -p 19073 -d memdb -a memdb
+    ./redis-cli.exe -h redis-15611.c289.us-west-1-2.ec2.cloud.redislabs.com -p 15611 -d db0
 ---
 
 --- 20220529 ---
