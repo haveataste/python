@@ -203,19 +203,19 @@
 
 --- 20220602 ---
         
-    lpush key value1 [value2 ...]                                      # 将一个或多个值插入到列表头部。如果key值不存在，会先创建再执行lpush命令，如果key值存在但不是列表类型时，返回一个错误
-    rpush key value1 [value2 ...]                                      # 将一个或多个值插入到列表尾部。如果key值不存在，会先创建再执行lpush命令，如果key值存在但不是列表类型时，返回一个错误
-    lpop key                                                           # 用于移除并返回列表的第一个元素
-    rpop key                                                           # 用于移除并返回列表的最后一个元素
-    llen key                                                           # 返回列表长度，如果key不存在，返回0，如果key不是列表列表类型，返回错误
-    lrange key start stop                                              # 获取列表中指定区间的元素，0表示列表中第一个元素，-1表示列表中最后一个元素
-    lindex key index                                                   # 用于通过索引获取列表中的元素，0表示第一个元素，-1表示最后一个元素，如果指定索引值不在列表的区间范围内，返回nil
-    lset key index value                                               # 通过索引来设置元素的值，当指定索引超出范围，或者列表不存在时，返回错误
-    linsert key before|after pivot value                               # 用于在指定的元素之前或之后插入指定的元素，value为待插入的元素，pivot为列表中的元素
-    ltrim key start stop                                               # 对列表进行修剪，只保留指定区间内的元素，不在区间内的元素都删除，0表示列表中第一个元素，-1表示列表中最后一个元素
-    rpoplpush source distination                                       # 将source列表中最后一个元素移除，并将该元素添加到destination列表中，可简单理解为“尾删头插”
-    brpoplpush source destination timeout                              # 从列表中取出最后一个元素并插入到另一个元素的头部（尾删头插），如果列表没有元素会阻塞知直到超时会发现可弹出元素为止，timeout的单位为秒
-    blpop key1 [key2] timeout                                          # 移除列表中的第一个元素，如果列表没有元素会阻塞直到超时或者发现可弹出元素为止，timeout的单位为秒
-    brpop key1 [key2] timeout                                          # 移除列表中的最后一个元素，如果列表没有元素会阻塞直到超时或者发现可弹出元素为止，timeout的单位为秒
-    lrem key count value                                               # 移除列表中与指定元素相等的元素，count>0：从头到尾搜索，移除与value相等的元素，数量为count；count<0：从尾到头搜索，移除与value相等的元素，数量为count的绝对值；count=0：移除列表中所有与value相等的元素
+    lpush key value1 [value2 ...]                  # 将一个或多个值插入到列表头部。如果key值不存在，会先创建再执行lpush命令，如果key值存在但不是列表类型时，返回一个错误
+    rpush key value1 [value2 ...]                  # 将一个或多个值插入到列表尾部。如果key值不存在，会先创建再执行lpush命令，如果key值存在但不是列表类型时，返回一个错误
+    lpop key                                       # 用于移除并返回列表的第一个元素
+    rpop key                                       # 用于移除并返回列表的最后一个元素
+    llen key                                       # 返回列表长度，如果key不存在，返回0，如果key不是列表列表类型，返回错误
+    lrange key start stop                          # 获取列表中指定区间的元素，0表示列表中第一个元素，-1表示列表中最后一个元素
+    lindex key index                               # 用于通过索引获取列表中的元素，0表示第一个元素，-1表示最后一个元素，如果指定索引值不在列表的区间范围内，返回nil
+    lset key index value                           # 通过索引来设置元素的值，当指定索引超出范围，或者列表不存在时，返回错误
+    linsert key before|after pivot value           # 用于在指定的元素之前或之后插入指定的元素，value为待插入的元素，pivot为列表中的元素
+    ltrim key start stop                           # 对列表进行修剪，只保留指定区间内的元素，不在区间内的元素都删除，0表示列表中第一个元素，-1表示列表中最后一个元素
+    rpoplpush source distination                   # 将source列表中最后一个元素移除，并将该元素添加到destination列表中，可简单理解为“尾删头插”
+    brpoplpush source destination timeout          # 从列表中取出最后一个元素并插入到另一个元素的头部（尾删头插），如果列表没有元素会阻塞知直到超时会发现可弹出元素为止，timeout的单位为秒
+    blpop key1 [key2] timeout                      # 移除列表中的第一个元素，如果列表没有元素会阻塞直到超时或者发现可弹出元素为止，timeout的单位为秒
+    brpop key1 [key2] timeout                      # 移除列表中的最后一个元素，如果列表没有元素会阻塞直到超时或者发现可弹出元素为止，timeout的单位为秒
+    lrem key count value                           # 移除列表中与指定元素相等的元素，count>0：从头到尾搜索，移除与value相等的元素，数量为count；count<0：从尾到头搜索，移除与value相等的元素，数量为count的绝对值；count=0：移除列表中所有与value相等的元素
 ---
