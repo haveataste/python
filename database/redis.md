@@ -220,3 +220,18 @@
     brpop key1 [key2] timeout                      # 移除列表中的最后一个元素，如果列表没有元素会阻塞直到超时或者发现可弹出元素为止，timeout的单位为秒
     lrem key count value                           # 移除列表中与指定元素相等的元素，count>0：从头到尾搜索，移除与value相等的元素，数量为count；count<0：从尾到头搜索，移除与value相等的元素，数量为count的绝对值；count=0：移除列表中所有与value相等的元素
 ---
+
+--- 20220603 ---
+    
+     decr, decrby, del, exists, expire, 
+     get, getset, 
+     hdel, hexists, hget, hgetall, hincrby, hkeys, hlen, hmget, hmset, hset, hvals, 
+     incr, incrby, keys, 
+     lindex, llen, lpop, lpush, lrange, lrem, lset, ltrim, 
+     mget, mset, msetnx, multi, pexpire, rename, renamenx, rpop, rpoplpush, rpush, 
+     sadd, scard, sdiff, sdiffstore, set, setex, setnx, sinter, sinterstore, sismember, smembers, smove, sort, spop, srandmember, srem, sunion, sunionstore, 
+     ttl, type, 
+     zadd, zcard, zcount, zincrby, zrange, zrangebyscore, zrank, zrem, zremrangebyscore, zrevrange, zscore
+ ---
+ 
+ --- ---
