@@ -104,7 +104,7 @@ import requests
 import base64
 url = 'http://bunker.wlppr.co/01-hfyeo8.png'
 r = requests.get(url)
-r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content
+r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content, r.json()
 c = r.content
 e = base64.b64encode(c)
 print(len(c), len(e), (len(e)-len(c))/len(c), sep=' ')
