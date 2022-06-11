@@ -85,8 +85,8 @@ os.path.getmtime(path)
 os.path.getatime(path)
 os.path.getctime(path)
 
-import urllib
-with urllib.request.urlopen(URL) as f:
+from urllib import request, parse
+with request.urlopen(URL) as f:
     print('Status:', f.status, f.reason)
     for k, v in f.getheaders():
         print('%s: %s' % (k, v))
@@ -97,8 +97,8 @@ d = {
     "charsetSelect": "utf-8",
     "en": "UrlEncode编码"
 }
-urllib.parse.urlencode(d) #content=%E4%B8%AD%E6%96%87%E5%86%85%E5%AE%B9%E4%BF%A1%E6%81%AF&charsetSelect=utf-8&en=UrlEncode%E7%BC%96%E7%A0%81
-urllib.parse.quote('好好学习')
+parse.urlencode(d)      #content=%E4%B8%AD%E6%96%87%E5%86%85%E5%AE%B9%E4%BF%A1%E6%81%AF&charsetSelect=utf-8&en=UrlEncode%E7%BC%96%E7%A0%81
+parse.quote('好好学习')
 
 import requests
 import base64
