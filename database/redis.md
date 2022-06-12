@@ -89,6 +89,7 @@
 
 --- 20210316 ---
 
+    # 下载地址：https://github.com/tporadowski/redis/releases/tag/v5.0.10
     redis-cli -h host -p port [-d db0 -a password]
     > auth [user:]password
     > ping
