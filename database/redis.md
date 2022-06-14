@@ -106,12 +106,11 @@
     > ttl key                       # 查找某个 key 还有多长时间过期，返回时间单位为秒
     > flushdb                       # 清空当前数据库中的所有键
     > help save
-    
-    > config get requirepass            # 用来读取运行 Redis 服务器的配置参数，查看密码
+         
     > config set requirepass test123    # 设置密码为 test123
     > config get requirepass            # 报错，没有认证
     > auth test123                      # 认证密码
-    > config get requirepass
+    > config get requirepass            # 用来读取运行 Redis 服务器的配置参数，查看密码
     > config get *max-*-entries*        # 查询数据类型的最大条目，以 list 的 key-value 对显示
     > config resetstat                  # 重置数据统计报告，通常返回值为“OK”
     
