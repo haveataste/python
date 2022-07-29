@@ -35,7 +35,7 @@ print(f"browser content = {browser.page_source}")
 browser.quit()
 
 selenium元素明明可见但is_displayed()为False，这样造成click的时候抛出异常：不可见的元素。目前知道的可选方案有：
-修改页面当前元素,或者当前元素父元素的CSS,使元素的isDisplayed()值为true
+修改页面当前元素或者其父元素的CSS,使元素的isDisplayed()值为true
 相关信息如下：
 1,isDisplayed为false,是指那个元素是存在的,只是webdriver认为不见.回到关键问题,webdriver是如何判断一个元素是否displayed,请参照:
 http://www.w3.org/TR/webdriver/#determining-visibility
