@@ -1,8 +1,7 @@
 # Linux version 4.14.105-1-tlinux3-0016 (root@VM_194_153_centos) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC)) #1 SMP Fri Jul 31 16:16:47 CST 2020
 # 安装Chrome
-curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && dpkg -i google-chrome-stable_current_amd64.deb
-# 解决包依赖关系
 apt-get install -f
+curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && dpkg -i google-chrome-stable_current_amd64.deb
 google-chrome -version  # Google Chrome 88.0.4324.182
 
 # 下载webdriver，注意版本，至/usr/bin/目录中
