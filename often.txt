@@ -68,7 +68,7 @@ json.dumps(l)
 
 import string
 dir(string), string.printable, string.punctuation, string.digits, string.ascii_letters, string.whitespace, string.capwords('abc def')
-astring.find(str[, beg=0, end=len(str)])
+s.find(str[, beg=0, end=len(str)]), s.strip('\n')
 
 import uuid
 uuid.uuid4()， uuid.uuid1().hex
