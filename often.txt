@@ -11,7 +11,7 @@ with open('temp.pkl', 'rb') as f2:
     a2 = pickle.load(f2)
     b2 = pickle.load(f2)
     c2 = pickle.load(f2)
-print(a2,b2,c2,sep='\n')
+print(a2, b2, c2, sep='\n')
 
 import shutil
 '''
@@ -68,7 +68,7 @@ json.dumps(l)
 
 import string
 dir(string), string.printable, string.punctuation, string.digits, string.ascii_letters, string.whitespace, string.capwords('abc def')
-s.find(str[, beg=0, end=len(str)]), s.strip('\n')
+s.zfill(3), s.startswith(str), s.find(str, beg=0, end=len(s)), s.strip('\n'), s.encode().decode(['utf|utf-8|ascii|gbk|gb2312|unicode_escape'])
 
 import uuid
 uuid.uuid4()， uuid.uuid1().hex
@@ -101,11 +101,11 @@ parse.urlencode(d)      #content=%E4%B8%AD%E6%96%87%E5%86%85%E5%AE%B9%E4%BF%A1%E
 parse.quote('好好学习')
 
 import requests
-import base64
 url = 'http://bunker.wlppr.co/01-hfyeo8.png'
 r = requests.get(url)
 r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content, r.json()
 c = r.content
+import base64
 e = base64.b64encode(c)
 print(len(c), len(e), (len(e)-len(c))/len(c), sep=' ')
 base64.b64encode('abc'.encode()).decode('utf-8')
@@ -118,10 +118,7 @@ from PIL import Image
 im = Image.open("hopper.ppm")
 print(im.format, im.size, im.mode)
 
-dir(obj), help(obj), callable(obj), isinstance(obj, typestr)
+type(obj), id(obj), dir(obj), help(obj), callable(obj), isinstance(obj, typestr)
 bin(aint), oct(aint), hex(aint), int(s), str(aint), chr(aint), ord(char)
-s.zfill(3), s.startswith(str), s.find(str, beg=0, end=len(s))
-s.encode().decode(['utf|utf-8|ascii|gbk|gb2312|unicode_escape'])
 zip(seq, seq), enumerate(seq, [start=0]), map(func, seq), filter(func, seq)
-import functools
-functools.reduce(func(x,y), seq)
+import functools; functools.reduce(func(x,y), seq)
