@@ -50,8 +50,7 @@
     >import redis
     >r = redis.StrictRedis(host='localhost', port=6379, db=0[, password=''])
     >r = redis.StrictRedis(host='redistributionpublic.redis.rds.aliyuncs.com', port=6379, db=0, password='xxoo1234@')
-    >r.set('a', '1')
-    >r.get('a')
+    >r.quit()
     # ConnectionPool 管理对一个 redis server 的所有连接，避免每次建立、释放连接的开销。
     # redis 取出的结果默认是字节，我们可以设定 decode_responses=True 改成字符串。
     >pool = redis.ConnectionPool(host='localhost', port=6379, decode_responses=True)
@@ -237,4 +236,7 @@
      zadd, zcard, zcount, zincrby, zrange, zrangebyscore, zrank, zrem, zremrangebyscore, zrevrange, zscore
  ---
  
- --- ---
+ --- 20221124 ---
+ 
+     
+ ---
