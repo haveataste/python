@@ -106,7 +106,7 @@
     > rename oldname newname        # 更改 key 的名字，新键如果存在将被覆盖
     > renamenx oldname newname      # 更改 key 的名字，新键如果存在则更新失败
     > expire key time               # 设置某个 key 的过期时间（秒）
-    > expireat key time
+    > expireat key timestamp
     > persist key                   # 删除key的过期时间
     > ttl key                       # 查看key的到期时间或剩余的剩余的生存时间，返回时间单位为秒
     > flushdb                       # 清空当前数据库中的所有键
