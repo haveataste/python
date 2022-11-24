@@ -19,8 +19,11 @@
     mset k1 v1 k2 v2
     mget k1 k2
     
-    hmset b f1 v1 f2 v2 f3 v3
+    hset b f1 v1 f2 v2 f3 v3
     hget b f1
+    hmget b f2 f3
+    hkeys b
+    hvals b
     
     lpush c 1 2 3
     rpush c 4 5 6
@@ -103,7 +106,9 @@
     > rename oldname newname        # 更改 key 的名字，新键如果存在将被覆盖
     > renamenx oldname newname      # 更改 key 的名字，新键如果存在则更新失败
     > expire key time               # 设置某个 key 的过期时间（秒）
-    > ttl key                       # 查找某个 key 还有多长时间过期，返回时间单位为秒
+    > expireat key time
+    > persist key                   # 删除key的过期时间
+    > ttl key                       # 查看key的到期时间或剩余的剩余的生存时间，返回时间单位为秒
     > flushdb                       # 清空当前数据库中的所有键
     > help save
          
@@ -118,16 +123,14 @@
 ---
 
 --- 20210805 ---
-
-    hmset key field1 value1 field2 value2 ...       # 按照hash进行存值
+ 
+    # As per Redis 4.0.0, HMSET is considered deprecated. Please use HSET in new code.
+    hset key field1 value1 field2 value2 ...        # 按照hash进行存值
     hmget key field                                 # 得到hash的key中某一个field的值
     hgetall key                                     # 返回哈希表key的所有field值和所有的value值
     hkeys key                                       # 返回哈希表key的所有filed的值
     hvals key                                       # 返回哈希表key的所有的value值
     hdel key field                                  # 删除哈希表key的某一个field值和对应的value值
-    expire key time | expireat key time             # 设置key的过期时间
-    ttl key                                         # 查看key的到期时间或剩余的剩余的生存时间
-    persist key                                     # 删除key的过期时间
 ---
 
 --- 20211125 ---
