@@ -1,0 +1,32 @@
+mongodb+srv://mdb@cluster.vl2l3s5.mongodb.net/one
+Enter password: xxoo1234@
+> show dbs
+one     72.00 KiB
+test    40.00 KiB
+admin  336.00 KiB
+local    5.86 GiB
+> use test
+switched to db test
+> db.dropDatabase()
+{ ok: 1, dropped: 'test' }
+> exit()
+
+# collections
+> use one
+> db.createCollection("tb")
+> show tables
+> show collections
+> db.tb.drop()
+
+# documents
+> db.tb.insertOne({"first":"the first important"})
+> db.tb.insertMany([{1:2},{3:4}])
+
+> db.tb.remove({})
+> db.tb.deleteOne
+> db.tb.deleteMany
+
+> db.tb.find().pretty()
+> db.tb.findOne()
+
+> db.tb.update
