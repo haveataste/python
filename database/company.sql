@@ -1,16 +1,13 @@
 CREATE DATABASE mysql_shiyan;
-
 USE mysql_shiyan;
 
-CREATE TABLE department
-(
+CREATE TABLE department(
     dpt_name   CHAR(20) NOT NULL,
     people_num INT(10) DEFAULT '10',
     CONSTRAINT dpt_pk PRIMARY KEY (dpt_name)
  );
 
-CREATE TABLE employee
-(
+CREATE TABLE employee(
     id      INT(10) PRIMARY KEY,
     name    CHAR(20),
     age     INT(10),
@@ -21,8 +18,7 @@ CREATE TABLE employee
     CONSTRAINT emp_fk FOREIGN KEY (in_dpt) REFERENCES department(dpt_name)
  );
 
-CREATE TABLE project
-(
+CREATE TABLE project(
     proj_num   INT(10) NOT NULL,
     proj_name  CHAR(20) NOT NULL,
     start_date DATE NOT NULL,
