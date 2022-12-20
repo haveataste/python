@@ -1,4 +1,14 @@
-# Django命令
+# 实验楼Django项目
+# 删除python软链接，创建指向python3.5的软链接
+sudo rm /usr/bin/python && sudo ln -s /usr/bin/python3.5 /usr/bin/python
+#sudo pip install --upgrade pip
+sudo pip install Django==1.11 && pip show django
+python
+  >>>import django
+  >>>django.get_version()
+  '1.11'
+  >>>django.VERSION
+sudo sh -c "echo '151.101.72.133  raw.githubusercontent.com' >> /etc/hosts" && wget https://raw.githubusercontent.com/kuugagoku/django/master/run.sh -O- | sh && wget -P ~ https://raw.githubusercontent.com/kuugagoku/django/master/django.txt && clear
 
 # 新建一个django project
 django-admin.py startproject project_name
@@ -31,5 +41,4 @@ python manage.py loaddata appname.json
 python manage.py shell
 # 数据库命令行
 python manage.py dbshell
-
 # 终端上输入 python manage.py 可以看到详细的列表，在忘记子名称的时候特别有用。
