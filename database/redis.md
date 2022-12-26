@@ -1,4 +1,5 @@
 --- 20190425 ---  
+
     Redis 字符串（string）命令：
     set, mset, setnx, append, setex
     get, mget, getrange, strlen
@@ -235,7 +236,11 @@
      zadd, zcard, zcount, zincrby, zrange, zrangebyscore, zrank, zrem, zremrangebyscore, zrevrange, zscore
  ---
  
- --- 20221124 ---
+ --- 20221226 ---
  
+     D:\mongosh\mongosh-1.6.0-win32-x64\bin\mongosh.exe mongodb+srv://mdb@cluster.vl2l3s5.mongodb.net/one
+     D:\mongosh-1.6.1-win32-x64\bin\mongosh.exe "mongodb+srv://cluster.vl2l3s5.mongodb.net/one" --apiVersion 1 --username mdb
      
+     D:\redis\redis-cli.exe -h redis-15611.c289.us-west-1-2.ec2.cloud.redislabs.com -p 15611
+     D:\redis\redis-cli.exe -u redis://redis-15611.c289.us-west-1-2.ec2.cloud.redislabs.com:15611     
  ---
