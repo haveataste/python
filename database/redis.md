@@ -1,5 +1,4 @@
 --- 20190425 ---  
-
     Redis 字符串（string）命令：
     set, mset, setnx, append, setex
     get, mget, getrange, strlen
