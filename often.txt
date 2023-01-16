@@ -1,3 +1,8 @@
+pip install virtualenv
+virturalenv venv
+source venv/bin/activate
+deactivate
+
 import pickle
 print(pickle.format_version, pickle.compatible_formats)     # 检索所支持的格式
 t = ('this is a string', 42, [1, 2, 3], None), s = pickle.dumps(t), p = pickle.loads(s)
