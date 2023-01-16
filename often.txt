@@ -73,7 +73,7 @@ json.dumps(l)
 
 import string
 dir(string), string.printable, string.punctuation, string.digits, string.ascii_letters, string.whitespace, string.capwords('abc def')
-s.zfill(3), s.startswith(str), s.find(str, beg=0, end=len(s)), s.strip('\n'), s.encode().decode(['utf|utf-8|ascii|gbk|gb2312|unicode_escape'])
+s.zfill(3), s.startswith(str), s.find(str, beg=0, end=len(s)), s.strip('\n'), s.encode([encoding="utf-8"][, errors="strict"]).decode(['utf|utf-8|ascii|gbk|gb2312|unicode_escape'])
 
 import uuid
 uuid.uuid4()， uuid.uuid1().hex
