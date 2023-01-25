@@ -1,0 +1,6 @@
+Sublist3r是一款简单易用的子域名枚举利器。从Sublist3r的GitHub主页（https://github.com/aboul3la/Sublist3r）上，我们可以了解到这是一款基于python开发使用OSINT技术的子域名枚举工具。帮助渗透测试者和bug捕获者收集目标域名的子域名。
+OSINT是英文名“Open-source intelligence”的缩写，中文名称叫“公开来源情报”。从公众可见的信息中，查找所需目标的信息。说的通俗易懂一点，就是我想知道某某东西的详细信息，我在公开的信息里查找、检索，找到有关这个东西的任何内容都提取出来，最后将这些内容汇总，得到较为详细的信息。再说的通俗易懂一点就是：查资料。再再通俗一点就是：找百度。最终目标信息的准确度、详细程度均依赖于查找源。所以Sublist3r的原理就是这样，但是Sublist3r的查找源很多，不仅仅是在个别搜索引擎上查找。搜索源包括有百度、Yahoo、Google、Bing、Ask、Netcraft等等除此之外使用通过查找SSL证书、DNS、暴力枚举等这些手段去查找子域名。
+可以通过git clone https://github.com/aboul3la/Sublist3r.git安装Sublist3r。
+然后使用sudo pip install -r requirements.txt安装依赖库。
+最后通过一个简单的命令查找子域名，这里以freebuf为例子。
+python3 sublist3r.py -d freebuf.com网站内容越多查询时间越慢，可以加一个-v来实时显示找到的子域名。
