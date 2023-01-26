@@ -24,3 +24,10 @@ mt = Thread(target=m, args=())
 ft = Thread(target=f, args=())
 mt.start()
 ft.start()
+
+
+# pip install python-magic-bin==0.4.14 eyed3
+import eyed3 as ed
+audio = ed.load('x.mp3')
+dir(audio.tag)
+dir(audio.info)
