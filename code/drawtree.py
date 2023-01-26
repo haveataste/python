@@ -17,8 +17,6 @@ def tree(plist, l, a, f):
             lst.append(p)#将元素增加到列表的最后
             lst.append(q)
         tree(lst, l*f, a, f)
-  
-           
 
 def main():
     p = Turtle()
@@ -40,7 +38,6 @@ def main():
 
     #t = tree([p], 200, 65, 0.6375)
     t = tree([p], 200, 65, 0.6375)
-
-if __name__ == '__main__':
+    
+if __name__ == '__main__':
     main()
-

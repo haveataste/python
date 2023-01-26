@@ -1,4 +1,4 @@
-# graphics.py  /usr/local/lib/python3.5/dist-packages 
+# graphics.py
 """Simple object oriented graphics library  
 
 The library is designed to make it very easy for novice programmers to
