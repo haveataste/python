@@ -1,32 +1,31 @@
-# 字典的创建：字典由一系列“键-值（key-value)对组成，”键-值“对之间用”逗号“隔开，并且被包含在一对“花括号”中。
-value = dict [ key ] 
+# 字典的创建：字典由一系列键值对(key-value)组成，“键-值”对之间用“逗号”隔开，并且被包含在一对“花括号”中。
+value = dict [ key ]
 dict ["x"] = "value"
-①如果索引“x”不在字典dict的key列表中，dict将添加一条新的映射(x:key)；如果已在dict中，则修改对应的value值。 
-②由于字典是无序的，所以字典没有append ( ) ,remove ( ) ，字典的删除调用del ( )实现，del （ ）属于内建函数，可以直接调用。pop()方法与列表有所不同，pop ( k [ , d ] ) -> v 。
+# 如果索引“x”不在字典dict的key列表中，dict将添加一条新的映射(x:key)；如果已在dict中，则修改对应的value值。
+# 由于字典是无序的，所以字典没有append(),remove()，字典的删除调用del ()实现，del ()属于内建函数，可以直接调用。pop()方法与列表有所不同，pop ( k [ , d ] ) -> v 。
 
-del(dict["a"])               #删除
-print dict.pop("b"),dict.pop('c','furit')  #前者字典有索引的提取，后者没有索引的提取。 输出结果：banana furit
-dict.clear()          #清空字典
+del(dict["a"])                              # 删除
+print dict.pop("b"),dict.pop('c','furit')   # 前者字典有索引的提取，后者没有索引的提取。 输出结果：banana furit
+dict.clear()                                # 清空字典
 
-for k in dict:        #利用for in 循环语句
-    print(k ,dict[k])   #k值获取是是dict的key值，因此通过dict[k]来获取value值。
-
-print dict.items( ) 输出结果：[ ( 1 , ‘apple’ ) , ( 2, ‘orange’ ），（3 , ’ banana’ ) ] 
+for k in dict:                              # 利用for in 循环语句
+    print(k ,dict[k])                       # k值获取是是dict的key值，因此通过dict[k]来获取value值。
+print dict.items()                          # 输出结果：[ ( 1 , ‘apple’ ) , ( 2, ‘orange’ )，(3 , ’ banana’ ) ]
 
 dict(zip(lista,listb))
 zip函数将lista,listb的元素两两组合在一起，dict将zip的返回值强制转换为字典
 生成一个以lista成员为key,listb元素为value的字典
 
-keys( ) 和 values ( ) 方法 
+keys() 和 values()方法
 
-get ( ) 方法 
+get()方法
 获取字典中某个value值。D.get ( k [ , d ] ) -> D [ k ] 参数K表示字典的键值，参数d可作为get()的返回值，也可以默认，默认值为None.
 
-update ( )方法 
-update( )把一个字典中的key 和 value 值全部拷贝到另一个字典中，相当于一个合并函数。
+update ()方法
+update()把一个字典中的key 和 value 值全部拷贝到另一个字典中，相当于一个合并函数。
 
-setdefault ( )方法 
-setdefault ( ) 方法与get （）使用方法类似 
+setdefault ()方法
+setdefault()方法与get ()使用方法类似
 D.setdefault( k [ , d ] ) -> D . get ( k, d) 参数k表示字典的键值，参数d表示D[K] 的默认值，d可以省略，默认值为“None”。
 #由于已经设置了dict["a]的值为"apple",因此再次调用setdefault()也不会影响value值，所以dict["a"]的值仍为“apple”，而不是“None"。 输出结果：{'a' : 'apple'}
 
@@ -36,23 +35,22 @@ sorted(dict.values())   #返回字典值的排序列表
 sorted(dict, key=lambda x:dict[x], reverse=True)    #返回根据字典值排序的键的列表
 #按照key排序  1、items()=遍历字典返回元组。2、d[0]表示items()中的key，按照key值进行排序。3、lambda()可以创建匿名函数，用于返回计算结果。
 print sorted(dict.items(), key=lambda d: d[0])
-#按照value排序  
+#按照value排序
 print sorted(dict.items(), key=lambda d: d[1])
 
-字典的复制 
+字典的复制
 copy() : 把字典A的内容复制到字典B中，并清除字典B中原有的内容。
 #字典的浅拷贝
-dict = {"a" : "apple", "b" : "grape"} 
-dict2 = {"c" : "orange", "d" : "banana"} 
+dict = {"a" : "apple", "b" : "grape"}
+dict2 = {"c" : "orange", "d" : "banana"}
 dict2 = dict.copy()
 print dict2
 输出结果：{'a': 'apple', 'b': 'grape'}
 
-深、浅拷贝的区别： 
-深拷贝能够拷贝对象内部所有的数据和引用，浅拷贝只是复制数据，数据的引用没有被复制，因此新的数据使用同一块内存空间。
-#字典的深、浅拷贝的区别
+# 深、浅拷贝的区别：深拷贝能够拷贝对象内部所有的数据和引用，浅拷贝只是复制数据，数据的引用没有被复制，因此新的数据使用同一块内存空间。
+# 字典的深、浅拷贝的区别
 import copy
-dict = {"a" : "apple", "b" : {"g" : "grape","o" : "orange"}} 
+dict = {"a" : "apple", "b" : {"g" : "grape","o" : "orange"}}
 dict2 = copy.deepcopy(dict)
 dict3 = copy.copy(dict)
 dict2["b"]["g"] = "orange"
@@ -60,5 +58,4 @@ print dict
 dict3["b"]["g"] = "orange"
 print dict
 
-序列 
-序列是具有索引和切片能力的集合。元组、列表和字符串具有通过索引访问某个具体的值，或通过切片一段切片的能力，因此元组、列表和字符串都属于序列。
+序列:序列是具有索引和切片能力的集合。元组、列表和字符串具有通过索引访问某个具体的值，或通过切片一段切片的能力，因此元组、列表和字符串都属于序列。
