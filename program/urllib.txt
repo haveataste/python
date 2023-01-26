@@ -1,0 +1,54 @@
+python实现文件下载的方法总结:环境win8.1  python2.6/2.7
+#1
+使用 urllib 模块提供的 urlretrieve() 函数。urlretrieve() 方法直接将远程数据下载到本地。
+urlretrieve(url, [filename=None, [reporthook=None, [data=None]]])
+说明：
+参数 finename 指定了保存本地路径（如果参数未指定，urllib会生成一个临时文件保存数据。）
+参数 reporthook 是一个回调函数，当连接上服务器、以及相应的数据块传输完毕时会触发该回调，我们可以利用这个回调函数来显示当前的下载进度。
+参数 data 指 post 到服务器的数据，该方法返回一个包含两个元素的(filename, headers)元组，filename 表示保存到本地的路径，header 表示服务器的响应头。
+
+#!/usr/bin/python
+#encoding:utf-8
+import urllib
+import os
+def Schedule(a,b,c):
+    '''
+    a:已经下载的数据块
+    b:数据块的大小
+    c:远程文件的大小
+    '''
+    per = 100.0 * a * b / c
+    if per > 100 :
+        per = 100
+    print '%.2f%%' % per
+url = 'http://www.python.org/ftp/python/2.7.5/Python-2.7.5.tar.bz2'
+local = os.path.join('/data/software', url.split('/')[-1])
+urllib.urlretrieve(url,local,Schedule)
+######output######
+#0.00%
+#0.07%
+#0.13%
+#0.20%
+#....
+#99.94%
+#100.00%
+来源：http://www.nowamagic.net/academy/detail/1302861
+
+#2
+使用urllib的urlopen()函数
+import urllib2
+print "downloading with urllib2"
+url = 'http://.pythontab.com/test/demo.zip'
+f = urllib2.urlopen(url)
+data = f.read()
+with open("demo2.zip", "wb") as code:
+    code.write(data)
+
+#3
+使用requests模块
+import requests
+print "downloading with requests"
+url = 'http://ww.pythontab.com/test/demo.zip'
+r = requests.get(url)
+with open("demo3.zip", "wb") as code:
+     code.write(r.content)

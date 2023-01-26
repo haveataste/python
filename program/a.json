@@ -1,0 +1,16 @@
+[{
+     "teamName": "GoldenArch",
+     "distCode": 04,
+     "distArea": "Shanghai",
+     "month": 11,
+     "income": 16255,
+     "cost": 30250,
+},
+{
+     "teamName": "OldFather",
+     "distCode": 02,
+     "distArea": "Beijing",
+     "month": 11,
+     "income": 135300,
+     "cost": 27200,
+}]

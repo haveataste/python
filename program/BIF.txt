@@ -1,0 +1,152 @@
+IDLE常用快捷键：
+Ctrl+]  缩进代码
+Ctrl+[  取消缩进
+Alt+3   注释代码
+Alt+4   取消注释
+Alt+p  上一次命令
+F5        运行程序
+Ctrl+z  撤销一步
+
+匹配汉字 [\u4e00-\u9fa5]
+
+print(value1, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+print方法格式输出：%s %d %3d %03d %f %.2f           print('%d' % (a))       print('%d%d'%(a,b))
+格式	描述
+%%	百分号标记
+%c	字符及其ASCII码
+%s	字符串
+%d	有符号整数(十进制)
+%u	无符号整数(十进制)
+%o	无符号整数(八进制)
+%x	无符号整数(十六进制)
+%X	无符号整数(十六进制大写字符)
+%e	浮点数字(科学计数法)
+%E	浮点数字(科学计数法，用E代替e)
+%f	浮点数字(用小数点符号)
+%g	浮点数字(根据值的大小采用%e或%f)
+%G	浮点数字(类似于%g)
+%p	指针(用十六进制打印值的内存地址)
+%n	存储输出字符的数量放进参数列表的下一个变量中
+
+
+ord(c)   返回字符的ascii值
+chr(x)    返回整数i对应的ASCII字符。与ord()作用相反。参数x：取值范围[0, 255]之间的正数。
+hex()
+oct()
+bin()
+str(object)    	BIF把对象转换成字符串
+set(object)        去除Object中重复的元素，列表类型
+'1'.zfill(3)          '001'
+
+locals() 	返回当前作用域中的变量集合，字典类型
+globals()   查看全局变量，返回一个包含所有 Python 能识别变量的字典（包括Python 自动创建的变量）。
+dir()函数不带参数时，返回当前范围内的变量、方法和定义的类型列表；带参数时，返回参数的属性、方法列表。如果参数包含方法__dir__()，该方法将被调用。如果参数不包含__dir__()，该方法将最大限度地收集参数信息。
+空间名.__dict__
+
+>>> issubclass(int, object) # all objects in Python inherit from a common baseclass
+True
+>>> def foo():
+...         pass
+>>> foo.__class__
+<type 'function'>
+>>> issubclass(foo.__class__, object)
+True
+
+使用raise语句自己触发异常
+
+装饰器其实就是一个以函数作为参数并返回一个替换函数的可执行函数。
+上下文管理协议则是__enter__和__exit__。
+
+使用了 yield 的函数被称为生成器（generator）。
+跟普通函数不同的是，生成器是一个返回迭代器的函数，只能用于迭代操作，更简单点理解生成器就是一个迭代器。
+在调用生成器运行的过程中，每次遇到 yield 时函数会暂停并保存当前所有的运行信息，返回 yield 的值, 并在下一次执行 next() 方法时从当前位置继续运行。
+迭代器（iterator）是访问集合内元素的一种方式，提供了一种遍历类序列对象的方法。对于一般的序列，利用索引从0一直迭代到序列的最后一个元素。对象从集合的第一个元素开始访问，直到所有的元素都被访问一遍后结束。对于字典、文件、自定义对象类型等，可以自定义迭代方式，从而实现对这些对象的遍历。总之，迭起器就是定义了对对象进行遍历的方式。迭代器协议是实现了__iter__方法。
+>>>it = iter([1,2,3,4,5])
+>>>next(it)
+1
+>>>next(it)
+2
+……
+
+生成器表达式并不真正创建数字列表，而是返回一个生成器对象，此对象在每次计算出一个条目后，把这个条目”产生“（yield）出来。生成器表达式使用了”惰性计算“或称作”延迟求值“的机制。任何使用yield的函数都称之为生成器。生成器.__next__()
+>>> def count(n):
+...     print("cunting")
+...     while n > 0:
+...         print("before yield")
+...         yield n
+...         n -= 1
+...         print("after yield")
+...
+>>> for i in count(5):
+...     print(i)
+...
+cunting
+before yield
+5
+after yield
+before yield
+4
+after yield
+before yield
+3
+after yield
+before yield
+2
+after yield
+before yield
+1
+after yield
+>>>
+
+
+list(map(function,list))
+>>>print(list(map(str,range(5))))
+['0', '1', '2', '3', '4']
+
+
+reduce(function(x,y),list)      #其中func必须有两个参数。每次func计算的结果继续和序列的下一个元素做累积计算。
+在Python 3里，reduce()函数已经被从全局名字空间里移除了，它现在被放置在fucntools模块里，用的话要先引入
+from functools import reduce
+def sum(s1,s2):
+    return int(s1)*10+int(s2)
+result = reduce(sum, ['0', '1', '2', '3', '4'])
+print(result)#1234
+
+
+list(filter(function, list))，将func作用于lst的每个元素，然后根据返回值是True或False判断是保留还是丢弃该元素。
+l = range(-10,10)
+def is_negative(x):
+    return x<0
+filtered_list = filter(is_negative, l)
+print(list(filtered_list))
+
+
+enumerate(list/str)
+>>> enumerate('1234abc')
+<enumerate object at 0x000000BD52308168>
+>>> type(enumerate('1234abc'))
+<class 'enumerate'>
+>>> dict(enumerate('1234abc'))
+{0: '1', 1: '2', 2: '3', 3: '4', 4: 'a', 5: 'b', 6: 'c'}
+>>> dict(enumerate([1,2,3,'a','b','c']))
+{0: 1, 1: 2, 2: 3, 3: 'a', 4: 'b', 5: 'c'}
+>>> list(enumerate('123abc'))
+[(0, '1'), (1, '2'), (2, '3'), (3, 'a'), (4, 'b'), (5, 'c')]
+
+
+断言
+使用assert断言是学习python一个非常好的习惯，assert断言句语格式及用法很简单。在没完善一个程序之前，我们不知道程序在哪里会出错，与其让它在运行最崩溃，不如在出现错误条件时就崩溃，这时候就需要assert断言的帮助。本文主要是讲assert断言的基础知识。
+python assert断言的作用
+python assert断言是声明其布尔值必须为真的判定，如果发生异常就说明表达示为假。可以理解assert断言语句为raise-if-not，用来测试表示式，其返回值为假，就会触发异常。
+assert断言语句的语法格式
+下面做一些assert用法的语句供参考：
+assert 1==1
+assert 2+2==2*2
+assert len(['my boy',12])<10
+assert range(4)==[0,1,2,3]
+如何为assert断言语句添加异常参数
+assert的异常参数，其实就是在断言表达式后添加字符串信息，用来解释断言并更好的知道是哪里出了问题。格式如下：
+assert expression [, arguments]
+assert 表达式 [, 参数]
+assert len(lists) >=5,'列表元素个数小于5'
+assert 2==1,'2不等于1'

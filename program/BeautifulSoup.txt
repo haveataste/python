@@ -1,0 +1,107 @@
+Help on package bs4:
+NAME
+    bs4
+DESCRIPTION
+    Beautiful Soup
+    Elixir and Tonic
+    "The Screen-Scraper's Friend"
+    http://www.crummy.com/software/BeautifulSoup/
+
+    Beautiful Soup uses a pluggable XML or HTML parser to parse a
+    (possibly invalid) document into a tree representation. Beautiful Soup
+    provides methods and Pythonic idioms that make it easy to navigate,
+    search, and modify the parse tree.
+
+    Beautiful Soup works with Python 2.7 and up. It works better if lxml
+    and/or html5lib is installed.
+
+    For more than you ever wanted to know about Beautiful Soup, see the
+    documentation:
+    http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+PACKAGE CONTENTS
+    builder (package)
+    dammit
+    diagnose
+    element
+    testing
+    tests (package)
+        
+html_doc = """
+<html><head><title>The Dormouse's story</title></head>
+<body>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters; and their names were
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+and they lived at the bottom of a well.</p>
+<p class="story">...</p>
+"""
+使用BeautifulSoup解析这段代码,能够得到一个 BeautifulSoup的对象,并能按照标准的缩进格式的结构输出:
+BeautifulSoup(html, 解析器)    #解析器:'html.parser','html5lib','xml','lxml'
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(html_doc)
+print(soup.prettify())
+# <html>
+#  <head>
+#   <title>
+#    The Dormouse's story
+#   </title>
+#  </head>
+#  <body>
+#   <p class="title">
+#    ...
+#   </p>
+#  </body>
+# </html>
+
+几个简单的浏览结构化数据的方法:
+soup.title
+# <title>The Dormouse's story</title>
+
+soup.title.name
+# u'title'
+
+soup.title.string
+# u'The Dormouse's story'
+
+soup.title.parent.name
+# u'head'
+
+soup.p
+# <p class="title"><b>The Dormouse's story</b></p>
+
+soup.p['class']
+# u'title'
+
+soup.a
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+
+soup.find_all('a')
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+
+soup.find(id="link3")
+# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+
+从文档中找到所有<a>标签的链接:
+for link in soup.find_all('a'):
+    print(link.get('href'))
+# http://example.com/elsie
+# http://example.com/lacie
+# http://example.com/tillie
+
+从文档中获取所有文字内容:
+print(soup.get_text())
+# The Dormouse's story
+#
+# The Dormouse's story
+#
+# Once upon a time there were three little sisters; and their names were
+# Elsie,
+# Lacie and
+# Tillie;
+# and they lived at the bottom of a well.
+#
+# ...

@@ -1,0 +1,21 @@
+>>> a = set('boy')
+>>> a
+{'b', 'o', 'y'}
+>>> 
+>>> a.add('python')
+>>> a
+{'python', 'b', 'o', 'y'}
+>>> 
+>>> a.update('java')
+>>> a
+{'python', 'y', 'a', 'o', 'v', 'b', 'j'}
+>>> 
+>>> a.remove('python')
+>>> a
+{'y', 'a', 'o', 'v', 'b', 'j'}
+>>> 
+
+a&b
+a|b
+a-b
+a==b

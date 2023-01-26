@@ -1,0 +1,31 @@
+The urllib.request module defines functions and classes which help in opening URLs (mostly HTTP) in a complex world ¡ª basic and digest authentication, redirections, cookies and more.
+
+urllib.request.urlopen(url, data=None, [timeout, ]*, cafile=None, capath=None, cadefault=False, context=None)
+This function always returns an object which can work as a context manager and has methods such as:
+    geturl() ¡ª return the URL of the resource retrieved, commonly used to determine if a redirect was followed
+    info() ¡ª return the meta-information of the page, such as headers, in the form of an email.message_from_string() instance (see Quick Reference to HTTP Headers)
+    getcode() ¨C return the HTTP status code of the response.
+    read() ¨C the url content
+    
+urllib.request.pathname2url(path)
+Convert the pathname path from the local syntax for a path to the form used in the path component of a URL. This does not produce a complete URL. The return value will already be quoted using the quote() function.
+
+urllib.request.url2pathname(path)
+Convert the path component path from a percent-encoded URL to the local syntax for a path. This does not accept a complete URL. This function uses unquote() to decode path.
+
+urllib.request.getproxies()
+This helper function returns a dictionary of scheme to proxy server URL mappings. It scans the environment for variables named <scheme>_proxy, in a case insensitive approach, for all operating systems first, and when it cannot find it, looks for proxy information from Mac OSX System Configuration for Mac OS X and Windows Systems Registry for Windows. If both lowercase and uppercase environment variables exist (and disagree), lowercase is preferred.
+    Note If the environment variable REQUEST_METHOD is set, which usually indicates your script is running in a CGI environment, the environment variable HTTP_PROXY (uppercase _PROXY) will be ignored. This is because that variable can be injected by a client using the ¡°Proxy:¡± HTTP header. If you need to use an HTTP proxy in a CGI environment, either use ProxyHandler explicitly, or make sure the variable name is in lowercase (or at least the _proxy suffix).
+    
+class urllib.request.Request(url, data=None, headers={}, origin_req_host=None, unverifiable=False, method=None)
+    This class is an abstraction of a URL request.
+    url should be a string containing a valid URL.
+    data must be a bytes object specifying additional data to send to the server, or None if no such data is needed. Currently HTTP requests are the only ones that use data; the HTTP request will be a POST instead of a GET when the data parameter is provided. data should be a buffer in the standard application/x-www-form-urlencoded format. The urllib.parse.urlencode() function takes a mapping or sequence of 2-tuples and returns an ASCII string in this format. It should be encoded to bytes before being used as the data parameter.
+    headers should be a dictionary, and will be treated as if add_header() was called with each key and value as arguments. This is often used to ¡°spoof¡± the User-Agent header value, which is used by a browser to identify itself ¨C some HTTP servers only allow requests coming from common browsers as opposed to scripts. For example, Mozilla Firefox may identify itself as "Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11", while urllib¡¯s default user agent string is "Python-urllib/2.6" (on Python 2.6).
+    An example of using Content-Type header with data argument would be sending a dictionary like {"Content-Type": "application/x-www-form-urlencoded"}.
+    The final two arguments are only of interest for correct handling of third-party HTTP cookies:
+    origin_req_host should be the request-host of the origin transaction, as defined by RFC 2965. It defaults to http.cookiejar.request_host(self). This is the host name or IP address of the original request that was initiated by the user. For example, if the request is for an image in an HTML document, this should be the request-host of the request for the page containing the image.
+    unverifiable should indicate whether the request is unverifiable, as defined by RFC 2965. It defaults to False. An unverifiable request is one whose URL the user did not have the option to approve. For example, if the request is for an image in an HTML document, and the user had no option to approve the automatic fetching of the image, this should be true.
+    method should be a string that indicates the HTTP request method that will be used (e.g. 'HEAD'). If provided, its value is stored in the method attribute and is used by get_method(). Subclasses may indicate a default method by setting the method attribute in the class itself.
+    Changed in version 3.3: Request.method argument is added to the Request class.
+    Changed in version 3.4: Default Request.method may be indicated at the class level.

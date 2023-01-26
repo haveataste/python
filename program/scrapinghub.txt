@@ -1,0 +1,44 @@
+#pip3 install shub
+#shub login
+Enter your API key from https://app.scrapinghub.com/account/apikey
+API key: f64b7cbd0b044a1991c3bee00dca0af0
+Validating API key...
+API key is OK, you are logged in now.
+#shub deply     ---->cd ../.. 要在root/crab/目录下
+Packing version 1.0
+Deploying to Scrapy Cloud project "326945"
+{"status": "ok", "project": 326945, "version": "1.0", "spiders": 1}
+Run your spiders at: https://app.scrapinghub.com/p/326945/
+#shub logout
+
+root@ubuntu:~# pip install scrapy
+root@ubuntu:~# ln -s /home/用户名/.local/bin/scrapy /usr/bin/scrapy    #提示command not found时
+root@ubuntu:~# scrapy
+Scrapy 1.5.0 - no active project
+Usage:
+  scrapy <command> [options] [args]
+Available commands:
+  bench         Run quick benchmark test
+  fetch         Fetch a URL using the Scrapy downloader
+  genspider     Generate new spider using pre-defined templates
+  runspider     Run a self-contained spider (without creating a project)
+  settings      Get settings values
+  shell         Interactive scraping console
+  startproject  Create new project
+  version       Print Scrapy version
+  view          Open URL in browser, as seen by Scrapy
+  [ more ]      More commands available when run from project directory
+Use "scrapy <command> -h" to see more info about a command
+
+scrapy startproject <project_name>
+cd <project_name>/<project_name>/spider
+scrapy genspider <spider_name> <domain>
+vim <spider_name>.py
+scrapy list
+scrapy runspider <spider_name>
+scrapy bench
+scrapy fetch URI
+scrapy shell URI
+
+
+https://storage.scrapinghub.com/items/335778/8/12?apikey=f64b7cbd0b044a1991c3bee00dca0af0

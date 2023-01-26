@@ -1,0 +1,135 @@
+字符串长度获取：len(str)
+
+连接字符串
+sStr1 = 'strcat'
+sStr2 = 'append'
+sStr1 += sStr2
+
+复制字符串
+#strcpy(sStr1,sStr2)
+sStr1 = 'strcpy'
+sStr2 = sStr1
+sStr1 = 'strcpy2'
+print sStr2
+
+比较字符串
+#strcmp(sStr1,sStr2)
+sStr1 = 'strchr'
+sStr2 = 'strch'
+print cmp(sStr1,sStr2)
+#注意cmp函数的输出结果和C语言的strcmp是一样的。还可以用 “aaa”==“bbb” 来比较字符串。
+
+截取字符串
+特别注意：下标从0开始；str[0:3]不包含下标为3的字符。
+str = ’0123456789′
+print str[0:3] #截取第一位到第三位的字符
+print str[:] #截取字符串的全部字符
+print str[6:] #截取第七个字符到结尾
+print str[:-3] #截取从头开始到倒数第三个字符之前
+print str[2] #截取第三个字符
+print str[-1] #截取倒数第一个字符
+print str[::-1] #创造一个与原字符串顺序相反的字符串
+print str[-3:-1] #截取倒数第三位与倒数第一位之前的字符
+print str[-3:] #截取倒数第三位到结尾
+print str[:-5:-3] #逆序截取
+
+字符串中的搜索和替换：
+S.find(substr, [start, [end]])   #返回S中出现substr的第一个字母的标号，如果S中没有substr则返回-1。start和end作用就相当于在S[start:end]中搜索 
+S.index(substr, [start, [end]])   #与find()相同，只是在S中没有substr时，会抛出异常
+S.rfind(substr, [start, [end]])   #返回S中最后出现的substr的第一个字母的标号，如果S中没有substr则返回-1，也就是说从右边算起的第一次出现的substr的首字母标号 
+S.rindex(substr, [start, [end]]) 
+S.count(substr, [start, [end]])    #计算substr在S中出现的次数 
+S.replace(oldstr, newstr, [count])    #把S中的oldstr替换为newstr，count为替换次数。这是替换的通用形式，还有一些函数进行特殊字符的替换 
+
+字符串去空格及去指定字符
+去两边空格：str.strip()
+去左空格：s.lstrip([chars]) 
+去右空格：s.rstrip([chars]) 
+去两边字符串：s.strip('d')
+S.expandtabs([tabsize])   #把S中的tab字符替换没空格，每个tab替换为tabsize个空格，默认是8个
+
+字符串的分割和组合：
+S.partition(s)                        #用s将S切分为三个值
+S.split([sep, [maxsplit]])       #以sep为分隔符，把S分成一个list。maxsplit表示分割的次数。默认的分割符为空白字符 
+S.rsplit([sep, [maxsplit]]) 
+S.splitlines([keepends])        #把S按照行分割符分为一个list，keepends是一个bool值，如果为真每行后而会保留行分割符。 
+S.join(seq)                            #把seq代表的序列──字符串序列，用S连接起来字符串的mapping，这一功能包含两个函数：
+String.maketrans(from, to)  #返回一个256个字符组成的翻译表，其中from中的字符被一一对应地转换成to，所以from和to必须是等长的。 
+S.translate(table[,deletechars]) 
+#使用上面的函数产后的翻译表，把S进行翻译，并把deletechars中有的字符删掉。需要注意的是，如果S为unicode字符串，那么就不支持deletechars参数，可以使用把某个字符翻译为None的方式实现相同的功能。此外还可以使用codecs模块的功能来创建更加功能强大的翻译表。
+
+字符串中字符大小写的变换：
+S.lower()    #小写 
+S.upper()   #大写
+S.title()      #只有首字母大写，其余为小写，模块中没有这个方法
+S.swapcase()   #大小写互换 
+S.capitalize()   #首字母大写
+String.capwords(S)  #这是模块中的方法。它把S用split()函数分开，然后用capitalize()把首字母变成大写，最后用join()合并到一起
+
+字符串编码和解码的函数：
+S.encode([encoding,[errors]])
+# 其中encoding可以有多种值，比如gb2312 gbk gb18030 bz2 zlib big5 base64等都支持。
+# errors默认值为"strict"，意思是UnicodeError。可能的值还有'ignore', 'replace', 'xmlcharrefreplace', 'backslashreplace'和所有的通过codecs.register_error注册的值。
+# 这一部分内容涉及codecs模块，不是特明白
+# str.encode(encoding='UTF-8',errors='strict')
+S.decode([encoding,[errors]]) 
+
+字符串的测试函数，这一类函数在string模块中没有，这些函数返回的都是bool值：
+S.startswith(prefix[,start[,end]]) #是否以prefix开头 
+S.endswith(suffix[,start[,end]])  #以suffix结尾 
+S.isalnum()  #是否全是字母或数字，并至少有一个字符 
+S.isalpha()  #是否全是字母，并至少有一个字符 
+S.isdigit()  #是否全是数字，并至少有一个字符 
+S.isspace() #是否全是空白字符，并至少有一个字符 
+S.islower() #S中的字母是否全是小写 
+S.isupper() #S中的字母是否便是大写 
+S.istitle() #S是否是首字母大写的
+
+字符串类型转换函数，这几个函数只在string模块中有：
+string.atoi(s[,base])  #base默认为10，如果为0,那么s就可以是012或0x23这种形式的字符串，如果是16那么s就只能是0x23或0X12这种形式的字符串 
+string.atol(s[,base])  #转成long 
+string.atof(s[,base])  #转成float
+str(num)                   #数字变为字符串
+
+string模块里有
+>>> import string
+>>> a="12345"
+>>> import string
+>>> string.atoi(a)
+12345
+>>> b="123.678"
+>>> string.atof(b)
+123.678
+
+字符串在输出时的对齐：
+S.ljust(width,[fillchar])   #输出width个字符，S左对齐，不足部分用fillchar填充，默认的为空格。 
+S.rjust(width,[fillchar])    #右对齐 
+S.center(width, [fillchar])    #将原字符串用空格填充成一个长度为width的字符串，原字符串居中 
+S.zfill(width)   #把S变成width长，并在右对齐，不足部分用0补足
+
+字符串中的单引号，双引号用 \ 来转义。
+
+#查看string模块中所有常量
+import inspect
+import string
+def is_str(value):  
+    return isinstance(value, str)
+for name, value in inspect.getmembers(string, is_str):  
+    if name.startswith('_'):
+        continue  
+    print('%s=%r\n' % (name, value)) 
+
+string.ascii_lowercase      'a-z'                    string.lowercase
+string.ascii_uppercase      'A-Z'
+string.ascii_letters             'a-zA-Z'             string.letters
+string.digits                      '0-9'
+string.octdigit                   '0-7'
+string.hexdigit                  '0-9a-fA-F'
+string.punctuation           所有的标点符号
+string.printable                所有可打印的字符的字符串
+string.whitespace            空白字符 '\t\n\r\x0b\x0c'
+
+#解决UnicodeEncodeError: 'ascii' codec can't encode characters in position问题
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
