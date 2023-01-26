@@ -1,7 +1,47 @@
 pip install virtualenv
-virturalenv venv
+# 查看命令帮助
+virtualenv --help
+# 创建虚拟环境
+virtualenv venv
+virtualenv --python=/usr/bin/python3.5 venv
+virtualenv --no-site-packages venv # 如果不想使用系统的包,加上–no-site-packeages参数
+# 启动虚拟环境
 source venv/bin/activate
+# 退出虚拟环境
 deactivate
+# 删除虚拟环境
+rm -rf venv
+# 注意事项：如果没有启动虚拟环境，系统也安装了pip工具，那么套件将被安装在系统环境中，为了避免发生此事，可以在~/.bashrc文件中加上：
+export PIP_REQUIRE_VIRTUALENV=true或者让在执行pip的时候让系统自动开启虚拟环境：export PIP_RESPECT_VIRTUALENV=true
+
+pip install virtualenvwrapper
+# virtualenvwrapper是virtualenv的扩展管理包，用于更方便管理虚拟环境，它可以做：将所有虚拟环境整合在一个目录下、管理（新增，删除，复制）虚拟环境、切换虚拟环境
+mkvirtualenv ENV
+workon ENV
+deactivate
+rmvirtualenv ENV
+mkproject mic               #创建mic项目和运行环境mic
+mktmpenv                    #创建临时运行环境
+lsvirtualenv [-b]           #列出可用的运行环境
+lssitepackages              #列出当前环境安装了的包
+
+
+默认virtualenvwrapper安装在/usr/local/bin下面，实际上需要运行virtualenvwrapper.sh文件才行；所以需要先进行配置一下：
+创建虚拟环境管理目录: mkdir $HOME/.local/virtualenvs
+
+在~/.bashrc中添加行：
+export VIRTUALENV_USE_DISTRIBUTE=1      # 总是使用 pip/distribute
+export WORKON_HOME=$HOME/.local/virtualenvs     # 所有虚拟环境存储的目录
+if [ -e $HOME/.local/bin/virtualenvwrapper.sh ];then
+    source $HOME/.local/bin/virtualenvwrapper.sh
+else if [ -e /usr/local/bin/virtualenvwrapper.sh ];then
+    source /usr/local/bin/virtualenvwrapper.sh
+    fi
+fi
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+
+启动 virtualenvwrapper: source ~/.bashrc
 
 import pickle
 print(pickle.format_version, pickle.compatible_formats)     # 检索所支持的格式
