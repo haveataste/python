@@ -1,3 +1,6 @@
+CPython is Guido van Rossum’s reference version of the Python computing language. It’s most often called simply “Python”; speakers say “CPython” generally to distinguish it explicitly from other implementations.
+GIL(Global Interpreter Lock)是最流程的 CPython 解释器（平常称为 Python）中的一个技术术语，中文译为全局解释器锁，其本质上类似操作系统的 Mutex。GIL 的功能是：在 CPython 解释器中执行的每一个 Python 线程，都会先锁住自己，以阻止别的线程执行。
+
 迭代是 python 中访问集合元素的一种非常强大的一种方式。迭代器是一个可以记住遍历位置的对象，因此不会像列表那样一次性全部生成，而是可以等到用的时候才生成，因此节省了大量的内存资源。迭代器对象从集合中的第一个元素开始访问，直到所有的元素被访问完。迭代器有两个方法：iter(iterable)和 next(iterator) 方法。
 这么解释可能不太直观，我们以生活的一个小栗子来解释一下，方便大家能够更深刻的理解。比如说我们去超市买水果，而正巧超市的服务人员正在摆放苹果。服务人员告诉我们需要等苹果都摆放完毕我们才可以拿苹果，这样就很耽误我们的时间。(这个场景中，柜台上其实已经有苹果了，只不过销售不让拿罢了。)
 然后我们再去卖橘子的柜台，服务人员也在摆放橘子。但是服务人员告诉我们可以不用等他摆放完毕，我们可以直接拿橘子，这样就会很好的节省我们的时间。如果我们拿橘子的速度超过了服务人员摆放的速度 ，我们只需要等待服务人员摆放之后就可以直接拿橘子，大大的提升了我们买橘子的效率。
