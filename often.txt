@@ -63,8 +63,8 @@ time.sleep(3)
 list(time.localtime())
 
 import json
-l = json.loads(s)
-json.dumps(l, sort_keys=True, indent=4, separators=(',', ':'), ensure_ascii=True)
+j = json.loads(s)
+json.dumps(j, sort_keys=True, indent=4, separators=(',', ':'), ensure_ascii=True)
 
 import string
 dir(string), string.printable, string.punctuation, string.digits, string.ascii_letters, string.whitespace, string.capwords('abc def')
