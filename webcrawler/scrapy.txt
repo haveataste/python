@@ -40,12 +40,19 @@ Available commands:
   view          Open URL in browser, as seen by Scrapy
   [ more ]      More commands available when run from project directory
 Use "scrapy <command> -h" to see more info about a command
+# 提示command not found时
+ln -s /home/用户名/.local/bin/scrapy /usr/bin/scrapy
 
 $ scrapy startproject crabz
 $ cd crabz/crabz/spiders/
+$ scrapy genspider <spider_name> <domain>
 $ vim spidername.py
 $ scrapy list
 $ scrapy crawl spidername
+$ scrapy runspider <spider_name>
+$ scrapy bench
+$ scrapy fetch URI
+$ scrapy shell URI
 
 # pip3 install Scrapy
 Collecting Scrapy
