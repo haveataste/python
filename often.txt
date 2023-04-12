@@ -102,7 +102,8 @@ parse.quote('好好学习')
 
 import requests
 url = 'http://bunker.wlppr.co/01-hfyeo8.png'
-r = requests.get(url)
+r = requests.get(url, headers=dict, params=dict, proxies={"http": "http://10.10.1.10:3128", "https": "http://10.10.1.10:1080"})
+r = requests.post(url, data=dict)
 r.url, r.headers, r.cookies, r.status_code, r.encoding, r.text, r.content, r.json()
 c = r.content
 import base64
