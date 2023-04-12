@@ -1,3 +1,22 @@
+# 在 Python 多线程中，变量是共享的，这也是相较多进程的一个优点，线程占用资源要少得多，但也导致多个 CPU 同时操作多个线程时会引起结果无法预测的问题，也就是说 Python 的线程不安全。
+# 如何解决线程安全问题？CPython 解释器使用了加锁的方法。每个进程有一把锁，启动线程先加锁，结束线程释放锁。
+# 计算密集型，用多进程; IO密集型，用多线程
+import time
+from threading import Thread
+def m():
+    while True:
+        print(Thread.name, Thread.ident, 'Yes')
+        time.sleep(1)
+def f():
+    while True:
+        print(Thread.name, Thread.ident, 'Noo')
+        time.sleep(1)
+mt = Thread(target=m, args=())
+ft = Thread(target=f, args=())
+mt.start()
+ft.start()
+
+
 这段时间一直在用 Python 写一个游戏的服务器程序。在编写过程中，不可避免的要用多线程来处理与客户端的交互。 Python 标准库提供了 thread 和 threading 两个模块来对多线程进行支持。
 其中， thread 模块以低级、原始的方式来处理和控制线程，而 threading 模块通过对 thread 进行二次封装，提供了更方便的 api 来处理线程。 虽然使用 thread 没有 threading来的方便，但它更灵活。
 今天先介绍 thread 模块的基本使用，下一篇 将介绍threading 模块。
@@ -33,7 +52,6 @@ def threadFunc(a = None, b = None, c = None, d = None):
 thread.start_new_thread(threadFunc, (3, 4, 5, 6))	#创建线程，并执行threadFunc函数。
 time.sleep(5)
 
-
 thread.exit ()结束当前线程。调用该函数会触发 SystemExit 异常，如果没有处理该异常，线程将结束。
 thread.get_ident ()返回当前线程的标识符，标识符是一个非零整数。
 
@@ -45,7 +63,6 @@ try:
 except KeyboardInterrupt, e:
     print 'error:', e
 print 'over'
-
 
 下面介绍 thread 模块中的琐，琐可以保证在任何时刻，最多只有一个线程可以访问共享资源。
 lock = thread.allocate_lock() #创建一个琐对象
