@@ -1,117 +1,115 @@
-×Ö·û´®³¤¶È»ñÈ¡£ºlen(str)
+å­—ç¬¦ä¸²é•¿åº¦è·å–ï¼šlen(str)
 
-Á¬½Ó×Ö·û´®
+è¿æ¥å­—ç¬¦ä¸²
 sStr1 = 'strcat'
 sStr2 = 'append'
 sStr1 += sStr2
 
-¸´ÖÆ×Ö·û´®
+å¤åˆ¶å­—ç¬¦ä¸²
 #strcpy(sStr1,sStr2)
 sStr1 = 'strcpy'
 sStr2 = sStr1
 sStr1 = 'strcpy2'
 print sStr2
 
-±È½Ï×Ö·û´®
+æ¯”è¾ƒå­—ç¬¦ä¸²
 #strcmp(sStr1,sStr2)
 sStr1 = 'strchr'
 sStr2 = 'strch'
 print cmp(sStr1,sStr2)
-#×¢Òâcmpº¯ÊıµÄÊä³ö½á¹ûºÍCÓïÑÔµÄstrcmpÊÇÒ»ÑùµÄ¡£»¹¿ÉÒÔÓÃ ¡°aaa¡±==¡°bbb¡± À´±È½Ï×Ö·û´®¡£
+#æ³¨æ„cmpå‡½æ•°çš„è¾“å‡ºç»“æœå’ŒCè¯­è¨€çš„strcmpæ˜¯ä¸€æ ·çš„ã€‚è¿˜å¯ä»¥ç”¨ â€œaaaâ€==â€œbbbâ€ æ¥æ¯”è¾ƒå­—ç¬¦ä¸²ã€‚Python 3.X çš„ç‰ˆæœ¬ä¸­å·²ç»æ²¡æœ‰ cmp å‡½æ•°ï¼Œå¦‚æœä½ éœ€è¦å®ç°æ¯”è¾ƒåŠŸèƒ½ï¼Œéœ€è¦å¼•å…¥ operator æ¨¡å—ï¼Œé€‚åˆä»»ä½•å¯¹è±¡
 
-½ØÈ¡×Ö·û´®
-ÌØ±ğ×¢Òâ£ºÏÂ±ê´Ó0¿ªÊ¼£»str[0:3]²»°üº¬ÏÂ±êÎª3µÄ×Ö·û¡£
-str = ¡¯0123456789¡ä
-print str[0:3] #½ØÈ¡µÚÒ»Î»µ½µÚÈıÎ»µÄ×Ö·û
-print str[:] #½ØÈ¡×Ö·û´®µÄÈ«²¿×Ö·û
-print str[6:] #½ØÈ¡µÚÆß¸ö×Ö·ûµ½½áÎ²
-print str[:-3] #½ØÈ¡´ÓÍ·¿ªÊ¼µ½µ¹ÊıµÚÈı¸ö×Ö·ûÖ®Ç°
-print str[2] #½ØÈ¡µÚÈı¸ö×Ö·û
-print str[-1] #½ØÈ¡µ¹ÊıµÚÒ»¸ö×Ö·û
-print str[::-1] #´´ÔìÒ»¸öÓëÔ­×Ö·û´®Ë³ĞòÏà·´µÄ×Ö·û´®
-print str[-3:-1] #½ØÈ¡µ¹ÊıµÚÈıÎ»Óëµ¹ÊıµÚÒ»Î»Ö®Ç°µÄ×Ö·û
-print str[-3:] #½ØÈ¡µ¹ÊıµÚÈıÎ»µ½½áÎ²
-print str[:-5:-3] #ÄæĞò½ØÈ¡
+æˆªå–å­—ç¬¦ä¸²
+ç‰¹åˆ«æ³¨æ„ï¼šä¸‹æ ‡ä»0å¼€å§‹ï¼›str[0:3]ä¸åŒ…å«ä¸‹æ ‡ä¸º3çš„å­—ç¬¦ã€‚
+str = '0123456789'
+print str[0:3] #æˆªå–ç¬¬ä¸€ä½åˆ°ç¬¬ä¸‰ä½çš„å­—ç¬¦
+print str[:] #æˆªå–å­—ç¬¦ä¸²çš„å…¨éƒ¨å­—ç¬¦
+print str[6:] #æˆªå–ç¬¬ä¸ƒä¸ªå­—ç¬¦åˆ°ç»“å°¾
+print str[:-3] #æˆªå–ä»å¤´å¼€å§‹åˆ°å€’æ•°ç¬¬ä¸‰ä¸ªå­—ç¬¦ä¹‹å‰
+print str[2] #æˆªå–ç¬¬ä¸‰ä¸ªå­—ç¬¦
+print str[-1] #æˆªå–å€’æ•°ç¬¬ä¸€ä¸ªå­—ç¬¦
+print str[::-1] #åˆ›é€ ä¸€ä¸ªä¸åŸå­—ç¬¦ä¸²é¡ºåºç›¸åçš„å­—ç¬¦ä¸²
+print str[-3:-1] #æˆªå–å€’æ•°ç¬¬ä¸‰ä½ä¸å€’æ•°ç¬¬ä¸€ä½ä¹‹å‰çš„å­—ç¬¦
+print str[-3:] #æˆªå–å€’æ•°ç¬¬ä¸‰ä½åˆ°ç»“å°¾
+print str[:-5:-3] #é€†åºæˆªå–
 
-×Ö·û´®ÖĞµÄËÑË÷ºÍÌæ»»£º
-S.find(substr, [start, [end]])   #·µ»ØSÖĞ³öÏÖsubstrµÄµÚÒ»¸ö×ÖÄ¸µÄ±êºÅ£¬Èç¹ûSÖĞÃ»ÓĞsubstrÔò·µ»Ø-1¡£startºÍend×÷ÓÃ¾ÍÏàµ±ÓÚÔÚS[start:end]ÖĞËÑË÷ 
-S.index(substr, [start, [end]])   #Óëfind()ÏàÍ¬£¬Ö»ÊÇÔÚSÖĞÃ»ÓĞsubstrÊ±£¬»áÅ×³öÒì³£
-S.rfind(substr, [start, [end]])   #·µ»ØSÖĞ×îºó³öÏÖµÄsubstrµÄµÚÒ»¸ö×ÖÄ¸µÄ±êºÅ£¬Èç¹ûSÖĞÃ»ÓĞsubstrÔò·µ»Ø-1£¬Ò²¾ÍÊÇËµ´ÓÓÒ±ßËãÆğµÄµÚÒ»´Î³öÏÖµÄsubstrµÄÊ××ÖÄ¸±êºÅ 
+å­—ç¬¦ä¸²ä¸­çš„æœç´¢å’Œæ›¿æ¢ï¼š
+S.find(substr, [start, [end]])   #è¿”å›Sä¸­å‡ºç°substrçš„ç¬¬ä¸€ä¸ªå­—æ¯çš„æ ‡å·ï¼Œå¦‚æœSä¸­æ²¡æœ‰substråˆ™è¿”å›-1ã€‚startå’Œendä½œç”¨å°±ç›¸å½“äºåœ¨S[start:end]ä¸­æœç´¢ 
+S.index(substr, [start, [end]])   #ä¸find()ç›¸åŒï¼Œåªæ˜¯åœ¨Sä¸­æ²¡æœ‰substræ—¶ï¼Œä¼šæŠ›å‡ºå¼‚å¸¸
+S.rfind(substr, [start, [end]])   #è¿”å›Sä¸­æœ€åå‡ºç°çš„substrçš„ç¬¬ä¸€ä¸ªå­—æ¯çš„æ ‡å·ï¼Œå¦‚æœSä¸­æ²¡æœ‰substråˆ™è¿”å›-1ï¼Œä¹Ÿå°±æ˜¯è¯´ä»å³è¾¹ç®—èµ·çš„ç¬¬ä¸€æ¬¡å‡ºç°çš„substrçš„é¦–å­—æ¯æ ‡å· 
 S.rindex(substr, [start, [end]]) 
-S.count(substr, [start, [end]])    #¼ÆËãsubstrÔÚSÖĞ³öÏÖµÄ´ÎÊı 
-S.replace(oldstr, newstr, [count])    #°ÑSÖĞµÄoldstrÌæ»»Îªnewstr£¬countÎªÌæ»»´ÎÊı¡£ÕâÊÇÌæ»»µÄÍ¨ÓÃĞÎÊ½£¬»¹ÓĞÒ»Ğ©º¯Êı½øĞĞÌØÊâ×Ö·ûµÄÌæ»» 
+S.count(substr, [start, [end]])    #è®¡ç®—substråœ¨Sä¸­å‡ºç°çš„æ¬¡æ•° 
+S.replace(oldstr, newstr, [count])    #æŠŠSä¸­çš„oldstræ›¿æ¢ä¸ºnewstrï¼Œcountä¸ºæ›¿æ¢æ¬¡æ•°ã€‚è¿™æ˜¯æ›¿æ¢çš„é€šç”¨å½¢å¼ï¼Œè¿˜æœ‰ä¸€äº›å‡½æ•°è¿›è¡Œç‰¹æ®Šå­—ç¬¦çš„æ›¿æ¢ 
 
-×Ö·û´®È¥¿Õ¸ñ¼°È¥Ö¸¶¨×Ö·û
-È¥Á½±ß¿Õ¸ñ£ºstr.strip()
-È¥×ó¿Õ¸ñ£ºs.lstrip([chars]) 
-È¥ÓÒ¿Õ¸ñ£ºs.rstrip([chars]) 
-È¥Á½±ß×Ö·û´®£ºs.strip('d')
-S.expandtabs([tabsize])   #°ÑSÖĞµÄtab×Ö·ûÌæ»»Ã»¿Õ¸ñ£¬Ã¿¸ötabÌæ»»Îªtabsize¸ö¿Õ¸ñ£¬Ä¬ÈÏÊÇ8¸ö
+å­—ç¬¦ä¸²å»ç©ºæ ¼åŠå»æŒ‡å®šå­—ç¬¦
+å»ä¸¤è¾¹ç©ºæ ¼ï¼šstr.strip()
+å»å·¦ç©ºæ ¼ï¼šs.lstrip([chars]) 
+å»å³ç©ºæ ¼ï¼šs.rstrip([chars]) 
+å»ä¸¤è¾¹å­—ç¬¦ä¸²ï¼šs.strip('d')
+S.expandtabs([tabsize])   #æŠŠSä¸­çš„tabå­—ç¬¦æ›¿æ¢æ²¡ç©ºæ ¼ï¼Œæ¯ä¸ªtabæ›¿æ¢ä¸ºtabsizeä¸ªç©ºæ ¼ï¼Œé»˜è®¤æ˜¯8ä¸ª
 
-×Ö·û´®µÄ·Ö¸îºÍ×éºÏ£º
-S.partition(s)                        #ÓÃs½«SÇĞ·ÖÎªÈı¸öÖµ
-S.split([sep, [maxsplit]])       #ÒÔsepÎª·Ö¸ô·û£¬°ÑS·Ö³ÉÒ»¸ölist¡£maxsplit±íÊ¾·Ö¸îµÄ´ÎÊı¡£Ä¬ÈÏµÄ·Ö¸î·ûÎª¿Õ°××Ö·û 
+å­—ç¬¦ä¸²çš„åˆ†å‰²å’Œç»„åˆï¼š
+S.partition(s)                   #ç”¨så°†Såˆ‡åˆ†ä¸ºä¸‰ä¸ªå€¼
+S.split([sep, [maxsplit]])       #ä»¥sepä¸ºåˆ†éš”ç¬¦ï¼ŒæŠŠSåˆ†æˆä¸€ä¸ªlistã€‚maxsplitè¡¨ç¤ºåˆ†å‰²çš„æ¬¡æ•°ã€‚é»˜è®¤çš„åˆ†å‰²ç¬¦ä¸ºç©ºç™½å­—ç¬¦ 
 S.rsplit([sep, [maxsplit]]) 
-S.splitlines([keepends])        #°ÑS°´ÕÕĞĞ·Ö¸î·û·ÖÎªÒ»¸ölist£¬keependsÊÇÒ»¸öboolÖµ£¬Èç¹ûÎªÕæÃ¿ĞĞºó¶ø»á±£ÁôĞĞ·Ö¸î·û¡£ 
-S.join(seq)                            #°Ñseq´ú±íµÄĞòÁĞ©¤©¤×Ö·û´®ĞòÁĞ£¬ÓÃSÁ¬½ÓÆğÀ´×Ö·û´®µÄmapping£¬ÕâÒ»¹¦ÄÜ°üº¬Á½¸öº¯Êı£º
-String.maketrans(from, to)  #·µ»ØÒ»¸ö256¸ö×Ö·û×é³ÉµÄ·­Òë±í£¬ÆäÖĞfromÖĞµÄ×Ö·û±»Ò»Ò»¶ÔÓ¦µØ×ª»»³Éto£¬ËùÒÔfromºÍto±ØĞëÊÇµÈ³¤µÄ¡£ 
+S.splitlines([keepends])         #æŠŠSæŒ‰ç…§è¡Œåˆ†å‰²ç¬¦åˆ†ä¸ºä¸€ä¸ªlistï¼Œkeependsæ˜¯ä¸€ä¸ªboolå€¼ï¼Œå¦‚æœä¸ºçœŸæ¯è¡Œåè€Œä¼šä¿ç•™è¡Œåˆ†å‰²ç¬¦ã€‚ 
+S.join(seq)                      #æŠŠseqä»£è¡¨çš„åºåˆ—â”€â”€å­—ç¬¦ä¸²åºåˆ—ï¼Œç”¨Sè¿æ¥èµ·æ¥å­—ç¬¦ä¸²çš„mappingï¼Œè¿™ä¸€åŠŸèƒ½åŒ…å«ä¸¤ä¸ªå‡½æ•°ï¼š
+String.maketrans(from, to)       #è¿”å›ä¸€ä¸ª256ä¸ªå­—ç¬¦ç»„æˆçš„ç¿»è¯‘è¡¨ï¼Œå…¶ä¸­fromä¸­çš„å­—ç¬¦è¢«ä¸€ä¸€å¯¹åº”åœ°è½¬æ¢æˆtoï¼Œæ‰€ä»¥fromå’Œtoå¿…é¡»æ˜¯ç­‰é•¿çš„ã€‚ 
 S.translate(table[,deletechars]) 
-#Ê¹ÓÃÉÏÃæµÄº¯Êı²úºóµÄ·­Òë±í£¬°ÑS½øĞĞ·­Òë£¬²¢°ÑdeletecharsÖĞÓĞµÄ×Ö·ûÉ¾µô¡£ĞèÒª×¢ÒâµÄÊÇ£¬Èç¹ûSÎªunicode×Ö·û´®£¬ÄÇÃ´¾Í²»Ö§³Ödeletechars²ÎÊı£¬¿ÉÒÔÊ¹ÓÃ°ÑÄ³¸ö×Ö·û·­ÒëÎªNoneµÄ·½Ê½ÊµÏÖÏàÍ¬µÄ¹¦ÄÜ¡£´ËÍâ»¹¿ÉÒÔÊ¹ÓÃcodecsÄ£¿éµÄ¹¦ÄÜÀ´´´½¨¸ü¼Ó¹¦ÄÜÇ¿´óµÄ·­Òë±í¡£
+#ä½¿ç”¨ä¸Šé¢çš„å‡½æ•°äº§åçš„ç¿»è¯‘è¡¨ï¼ŒæŠŠSè¿›è¡Œç¿»è¯‘ï¼Œå¹¶æŠŠdeletecharsä¸­æœ‰çš„å­—ç¬¦åˆ æ‰ã€‚éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œå¦‚æœSä¸ºunicodeå­—ç¬¦ä¸²ï¼Œé‚£ä¹ˆå°±ä¸æ”¯æŒdeletecharså‚æ•°ï¼Œå¯ä»¥ä½¿ç”¨æŠŠæŸä¸ªå­—ç¬¦ç¿»è¯‘ä¸ºNoneçš„æ–¹å¼å®ç°ç›¸åŒçš„åŠŸèƒ½ã€‚æ­¤å¤–è¿˜å¯ä»¥ä½¿ç”¨codecsæ¨¡å—çš„åŠŸèƒ½æ¥åˆ›å»ºæ›´åŠ åŠŸèƒ½å¼ºå¤§çš„ç¿»è¯‘è¡¨ã€‚
 
-×Ö·û´®ÖĞ×Ö·û´óĞ¡Ğ´µÄ±ä»»£º
-S.lower()    #Ğ¡Ğ´ 
-S.upper()   #´óĞ´
-S.title()      #Ö»ÓĞÊ××ÖÄ¸´óĞ´£¬ÆäÓàÎªĞ¡Ğ´£¬Ä£¿éÖĞÃ»ÓĞÕâ¸ö·½·¨
-S.swapcase()   #´óĞ¡Ğ´»¥»» 
-S.capitalize()   #Ê××ÖÄ¸´óĞ´
-String.capwords(S)  #ÕâÊÇÄ£¿éÖĞµÄ·½·¨¡£Ëü°ÑSÓÃsplit()º¯Êı·Ö¿ª£¬È»ºóÓÃcapitalize()°ÑÊ××ÖÄ¸±ä³É´óĞ´£¬×îºóÓÃjoin()ºÏ²¢µ½Ò»Æğ
+å­—ç¬¦ä¸²ä¸­å­—ç¬¦å¤§å°å†™çš„å˜æ¢ï¼š
+S.lower()       #å°å†™ 
+S.upper()       #å¤§å†™
+S.title()       #åªæœ‰é¦–å­—æ¯å¤§å†™ï¼Œå…¶ä½™ä¸ºå°å†™ï¼Œæ¨¡å—ä¸­æ²¡æœ‰è¿™ä¸ªæ–¹æ³•
+S.swapcase()    #å¤§å°å†™äº’æ¢ 
+S.capitalize()  #é¦–å­—æ¯å¤§å†™
+String.capwords(S)  #è¿™æ˜¯æ¨¡å—ä¸­çš„æ–¹æ³•ã€‚å®ƒæŠŠSç”¨split()å‡½æ•°åˆ†å¼€ï¼Œç„¶åç”¨capitalize()æŠŠé¦–å­—æ¯å˜æˆå¤§å†™ï¼Œæœ€åç”¨join()åˆå¹¶åˆ°ä¸€èµ·
 
-×Ö·û´®±àÂëºÍ½âÂëµÄº¯Êı£º
+å­—ç¬¦ä¸²ç¼–ç å’Œè§£ç çš„å‡½æ•°ï¼š
 S.encode([encoding,[errors]])
-# ÆäÖĞencoding¿ÉÒÔÓĞ¶àÖÖÖµ£¬±ÈÈçgb2312 gbk gb18030 bz2 zlib big5 base64µÈ¶¼Ö§³Ö¡£
-# errorsÄ¬ÈÏÖµÎª"strict"£¬ÒâË¼ÊÇUnicodeError¡£¿ÉÄÜµÄÖµ»¹ÓĞ'ignore', 'replace', 'xmlcharrefreplace', 'backslashreplace'ºÍËùÓĞµÄÍ¨¹ıcodecs.register_error×¢²áµÄÖµ¡£
-# ÕâÒ»²¿·ÖÄÚÈİÉæ¼°codecsÄ£¿é£¬²»ÊÇÌØÃ÷°×
+# å…¶ä¸­encodingå¯ä»¥æœ‰å¤šç§å€¼ï¼Œæ¯”å¦‚gb2312 gbk gb18030 bz2 zlib big5 base64ç­‰éƒ½æ”¯æŒã€‚
+# errorsé»˜è®¤å€¼ä¸º"strict"ï¼Œæ„æ€æ˜¯UnicodeErrorã€‚å¯èƒ½çš„å€¼è¿˜æœ‰'ignore', 'replace', 'xmlcharrefreplace', 'backslashreplace'å’Œæ‰€æœ‰çš„é€šè¿‡codecs.register_erroræ³¨å†Œçš„å€¼ã€‚
+# è¿™ä¸€éƒ¨åˆ†å†…å®¹æ¶‰åŠcodecsæ¨¡å—ï¼Œä¸æ˜¯ç‰¹æ˜ç™½
 # str.encode(encoding='UTF-8',errors='strict')
 S.decode([encoding,[errors]]) 
 
-×Ö·û´®µÄ²âÊÔº¯Êı£¬ÕâÒ»Ààº¯ÊıÔÚstringÄ£¿éÖĞÃ»ÓĞ£¬ÕâĞ©º¯Êı·µ»ØµÄ¶¼ÊÇboolÖµ£º
-S.startswith(prefix[,start[,end]]) #ÊÇ·ñÒÔprefix¿ªÍ· 
-S.endswith(suffix[,start[,end]])  #ÒÔsuffix½áÎ² 
-S.isalnum()  #ÊÇ·ñÈ«ÊÇ×ÖÄ¸»òÊı×Ö£¬²¢ÖÁÉÙÓĞÒ»¸ö×Ö·û 
-S.isalpha()  #ÊÇ·ñÈ«ÊÇ×ÖÄ¸£¬²¢ÖÁÉÙÓĞÒ»¸ö×Ö·û 
-S.isdigit()  #ÊÇ·ñÈ«ÊÇÊı×Ö£¬²¢ÖÁÉÙÓĞÒ»¸ö×Ö·û 
-S.isspace() #ÊÇ·ñÈ«ÊÇ¿Õ°××Ö·û£¬²¢ÖÁÉÙÓĞÒ»¸ö×Ö·û 
-S.islower() #SÖĞµÄ×ÖÄ¸ÊÇ·ñÈ«ÊÇĞ¡Ğ´ 
-S.isupper() #SÖĞµÄ×ÖÄ¸ÊÇ·ñ±ãÊÇ´óĞ´ 
-S.istitle() #SÊÇ·ñÊÇÊ××ÖÄ¸´óĞ´µÄ
+å­—ç¬¦ä¸²çš„æµ‹è¯•å‡½æ•°ï¼Œè¿™ä¸€ç±»å‡½æ•°åœ¨stringæ¨¡å—ä¸­æ²¡æœ‰ï¼Œè¿™äº›å‡½æ•°è¿”å›çš„éƒ½æ˜¯boolå€¼ï¼š
+S.startswith(prefix[,start[,end]]) #æ˜¯å¦ä»¥prefixå¼€å¤´ 
+S.endswith(suffix[,start[,end]])  #ä»¥suffixç»“å°¾ 
+S.isalnum()  #æ˜¯å¦å…¨æ˜¯å­—æ¯æˆ–æ•°å­—ï¼Œå¹¶è‡³å°‘æœ‰ä¸€ä¸ªå­—ç¬¦ 
+S.isalpha()  #æ˜¯å¦å…¨æ˜¯å­—æ¯ï¼Œå¹¶è‡³å°‘æœ‰ä¸€ä¸ªå­—ç¬¦ 
+S.isdigit()  #æ˜¯å¦å…¨æ˜¯æ•°å­—ï¼Œå¹¶è‡³å°‘æœ‰ä¸€ä¸ªå­—ç¬¦ 
+S.isspace()  #æ˜¯å¦å…¨æ˜¯ç©ºç™½å­—ç¬¦ï¼Œå¹¶è‡³å°‘æœ‰ä¸€ä¸ªå­—ç¬¦ 
+S.islower()  #Sä¸­çš„å­—æ¯æ˜¯å¦å…¨æ˜¯å°å†™ 
+S.isupper()  #Sä¸­çš„å­—æ¯æ˜¯å¦ä¾¿æ˜¯å¤§å†™ 
+S.istitle()  #Sæ˜¯å¦æ˜¯é¦–å­—æ¯å¤§å†™çš„
 
-×Ö·û´®ÀàĞÍ×ª»»º¯Êı£¬Õâ¼¸¸öº¯ÊıÖ»ÔÚstringÄ£¿éÖĞÓĞ£º
-string.atoi(s[,base])  #baseÄ¬ÈÏÎª10£¬Èç¹ûÎª0,ÄÇÃ´s¾Í¿ÉÒÔÊÇ012»ò0x23ÕâÖÖĞÎÊ½µÄ×Ö·û´®£¬Èç¹ûÊÇ16ÄÇÃ´s¾ÍÖ»ÄÜÊÇ0x23»ò0X12ÕâÖÖĞÎÊ½µÄ×Ö·û´® 
-string.atol(s[,base])  #×ª³Élong 
-string.atof(s[,base])  #×ª³Éfloat
-str(num)                   #Êı×Ö±äÎª×Ö·û´®
+å­—ç¬¦ä¸²ç±»å‹è½¬æ¢å‡½æ•°ï¼Œè¿™å‡ ä¸ªå‡½æ•°åªåœ¨stringæ¨¡å—ä¸­æœ‰ï¼š
+string.atoi(s[,base])  #baseé»˜è®¤ä¸º10ï¼Œå¦‚æœä¸º0,é‚£ä¹ˆså°±å¯ä»¥æ˜¯012æˆ–0x23è¿™ç§å½¢å¼çš„å­—ç¬¦ä¸²ï¼Œå¦‚æœæ˜¯16é‚£ä¹ˆså°±åªèƒ½æ˜¯0x23æˆ–0X12è¿™ç§å½¢å¼çš„å­—ç¬¦ä¸² 
+string.atol(s[,base])  #è½¬æˆlong 
+string.atof(s[,base])  #è½¬æˆfloat
+str(num)                   #æ•°å­—å˜ä¸ºå­—ç¬¦ä¸²
 
-stringÄ£¿éÀïÓĞ
+stringæ¨¡å—é‡Œæœ‰
 >>> import string
 >>> a="12345"
->>> import string
 >>> string.atoi(a)
 12345
 >>> b="123.678"
 >>> string.atof(b)
 123.678
 
-×Ö·û´®ÔÚÊä³öÊ±µÄ¶ÔÆë£º
-S.ljust(width,[fillchar])   #Êä³öwidth¸ö×Ö·û£¬S×ó¶ÔÆë£¬²»×ã²¿·ÖÓÃfillcharÌî³ä£¬Ä¬ÈÏµÄÎª¿Õ¸ñ¡£ 
-S.rjust(width,[fillchar])    #ÓÒ¶ÔÆë 
-S.center(width, [fillchar])    #½«Ô­×Ö·û´®ÓÃ¿Õ¸ñÌî³ä³ÉÒ»¸ö³¤¶ÈÎªwidthµÄ×Ö·û´®£¬Ô­×Ö·û´®¾ÓÖĞ 
-S.zfill(width)   #°ÑS±ä³Éwidth³¤£¬²¢ÔÚÓÒ¶ÔÆë£¬²»×ã²¿·ÖÓÃ0²¹×ã
+å­—ç¬¦ä¸²åœ¨è¾“å‡ºæ—¶çš„å¯¹é½ï¼š
+S.ljust(width,[fillchar])   #è¾“å‡ºwidthä¸ªå­—ç¬¦ï¼ŒSå·¦å¯¹é½ï¼Œä¸è¶³éƒ¨åˆ†ç”¨fillcharå¡«å……ï¼Œé»˜è®¤çš„ä¸ºç©ºæ ¼ã€‚ 
+S.rjust(width,[fillchar])    #å³å¯¹é½ 
+S.center(width, [fillchar])    #å°†åŸå­—ç¬¦ä¸²ç”¨ç©ºæ ¼å¡«å……æˆä¸€ä¸ªé•¿åº¦ä¸ºwidthçš„å­—ç¬¦ä¸²ï¼ŒåŸå­—ç¬¦ä¸²å±…ä¸­ 
+S.zfill(width)   #æŠŠSå˜æˆwidthé•¿ï¼Œå¹¶åœ¨å³å¯¹é½ï¼Œä¸è¶³éƒ¨åˆ†ç”¨0è¡¥è¶³
 
-×Ö·û´®ÖĞµÄµ¥ÒıºÅ£¬Ë«ÒıºÅÓÃ \ À´×ªÒå¡£
+å­—ç¬¦ä¸²ä¸­çš„å•å¼•å·ï¼ŒåŒå¼•å·ç”¨ \ æ¥è½¬ä¹‰ã€‚
 
-#²é¿´stringÄ£¿éÖĞËùÓĞ³£Á¿
-import inspect
-import string
+#æŸ¥çœ‹stringæ¨¡å—ä¸­æ‰€æœ‰å¸¸é‡
+import inspect, string
 def is_str(value):  
     return isinstance(value, str)
 for name, value in inspect.getmembers(string, is_str):  
@@ -119,17 +117,17 @@ for name, value in inspect.getmembers(string, is_str):
         continue  
     print('%s=%r\n' % (name, value)) 
 
-string.ascii_lowercase      'a-z'                    string.lowercase
+string.ascii_lowercase      'a-z'
 string.ascii_uppercase      'A-Z'
-string.ascii_letters             'a-zA-Z'             string.letters
-string.digits                      '0-9'
-string.octdigit                   '0-7'
-string.hexdigit                  '0-9a-fA-F'
-string.punctuation           ËùÓĞµÄ±êµã·ûºÅ
-string.printable                ËùÓĞ¿É´òÓ¡µÄ×Ö·ûµÄ×Ö·û´®
-string.whitespace            ¿Õ°××Ö·û '\t\n\r\x0b\x0c'
+string.ascii_letters        'a-zA-Z'
+string.digits               '0-9'
+string.octdigit             '0-7'
+string.hexdigit             '0-9a-fA-F'
+string.punctuation          æ‰€æœ‰çš„æ ‡ç‚¹ç¬¦å·
+string.printable            æ‰€æœ‰å¯æ‰“å°çš„å­—ç¬¦çš„å­—ç¬¦ä¸²
+string.whitespace           ç©ºç™½å­—ç¬¦ '\t\n\r\x0b\x0c'
 
-#½â¾öUnicodeEncodeError: 'ascii' codec can't encode characters in positionÎÊÌâ
+#è§£å†³UnicodeEncodeError: 'ascii' codec can't encode characters in positioné—®é¢˜
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
