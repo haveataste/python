@@ -1,26 +1,35 @@
-http://tensorlayercn.readthedocs.io/zh/latest/index.html
-https://github.com/nfmcclure/tensorflow_cookbook
-比如先写一个mnist分类
-https://github.com/SidHard/tfAlexNet
-
-TensorFlow 是非常强大的分布式跨平台深度学习框架；因此，我们有必要比较一下基于 TensorFlow 开发的三个库 ：Keras, TensorLayer,  Tflearn
-Keras 是这三个库中最早发布的，最开始只支持 Theano，16年初开始同时支持 Theano 和 TensorFlow 。它的优点是提供傻瓜式编程风格，一分钟可以上手。有中英文文档。
-缺点是框架封闭太死，难以自定义，比如 Activation 的设置是输入string来实现的，而TensorLayer是直接输入function，这样自定义 function 时非常方便。
+TensorFlow 是非常强大的分布式跨平台深度学习框架；因此，我们有必要比较一下基于 TensorFlow 开发的三个库 ：Keras, TensorLayer, Tflearn
+Keras 是这三个库中最早发布的，最开始只支持 Theano，16年初开始同时支持 Theano 和 TensorFlow 。它的优点是提供傻瓜式编程风格，一分钟可以上手。有中英文文档。缺点是框架封闭太死，难以自定义，比如 Activation 的设置是输入string来实现的，而TensorLayer是直接输入function，这样自定义 function 时非常方便。
 TensorLayer 是16年中发布的，相对较晚但也较为先进。它的优点是速度最快，速度和完全用 TensorFlow 写的代码一样。
 同时提供傻瓜式编程方法，和专业级编程方法。参考：tutorial_mnist_simple.py   tutorial_mnist.py
 提供很多高级功能，适合分布式和嵌入式应用，如：variable reuse ，same model to npz file，GPU manager 等等。
 提供大量官方教程，包含了 TensorFlow 官方所有深度学习教程的模块化实现，集合教学和编程于一体。有中英文文档。
 缺点是发布较晚，16年6月前只限作者的学校内部使用，所以现在才开始积累用户。
-Tflearn 的作者在陌陌工作，亮点和keras一样，都提供傻瓜式编程方法，但由相比Keras透明，所以运行速度比Keras快。
-缺点是不支持 Seq2seq，高级应用没法做。。这个bug比较大，希望尽快修复。
+Tflearn 的作者在陌陌工作，亮点和keras一样，都提供傻瓜式编程方法，但由相比Keras透明，所以运行速度比Keras快。缺点是不支持 Seq2seq，高级应用没法做。。这个bug比较大，希望尽快修复。
 
+http://tensorlayercn.readthedocs.io/zh/latest/index.html
+https://github.com/nfmcclure/tensorflow_cookbook
+比如先写一个mnist分类
+https://github.com/SidHard/tfAlexNet
+
+#!/bin/sh
+sudo pip install virtualenv
+virtualenv --python=/usr/bin/python3.5 she
+source she/bin/activate
+pip install --upgrade pip
+pip install numpy matplotlib scipy scikit-image tensorflow
+pip install git+https://github.com/zsdonghao/tensorlayer.git
+clear
 sudo apt-get install python-pip python-dev python-virtualenv
+
 # 建立一个全新的 virtualenv 环境. 为了将环境建在 ~/tensorflow 目录下, 执行:
 virtualenv --system-site-packages ~/tensorflow
 pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
 MNIST  https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/examples/tutorials/mnist/input_data.py
 
+
 Seaborn是一种开源的数据可视化工具，它在Matplotlib的基础上进行了更高级的API封装，因此可以进行更复杂的图形设计和输出。Seaborn是Matplotlib的重要补充，可以自主设置在Matplotlib中被默认的各种参数，而且它能高度兼容NumPy与Pandas数据结构以及Scipy与statsmodels等统计模式。Seaborn已集成在Anaconda中，无须再次安装。
+
 
 sklearn是一个Python第三方提供的非常强力的机器学习库，它包含了从数据预处理到训练模型的各个方面。在实战使用scikit-learn中可以极大的节省我们编写代码的时间以及减少我们的代码量，使我们有更多的精力去分析数据分布，调整模型和修改超参。
 Scikits-learn，又称为sk-learn，是一个基于Numpy与SciPy的Python库。Sk-learn被认为是用于处理复杂数据的最优秀的机器学习库之一。它包含了大量用于实现传统机器学习和数据挖掘任务的算法，比如数据降维、分类、回归、聚类、以及模型选择等。随着时间的发展，sk-learn不断演进。其中包括它加入了交叉验证功能，提供了使用多个衡量指标的能力。许多的训练方法都得到了一定的改进，如逻辑回归、近邻算法（KNN）等。
