@@ -26,14 +26,10 @@ https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id
     "expires_in":2592000
 }
 
-//===============================2019.07.30
+2019.07.30
 https://openapi.baidu.com/oauth/2.0/authorize?response_type=token&client_id=0n5Q9qFVP3SxwbS2ihygzy4e&redirect_uri=oob&scope=netdisk
+access_token=23.898a3a6f5ddcb03a74ca5bcfdf7152c6.2592000.1567083472.3358459855-10689949
 
 https://openapi.baidu.com/oauth/2.0/login_success#expires_in=2592000&access_token=23.898a3a6f5ddcb03a74ca5bcfdf7152c6.2592000.1567083472.3358459855-10689949&session_secret=8facb5776e089abce455a19cbc6a0a2c&session_key=9mtqXVT6LTC%2FmdXld2A6leFfUYrAl2%2BxXdmpyxJghj0npLhbh1J8Yf9fTjLNqy41CfBNTZkEFJGN%2FRXrOKiPtXVPgLFwJfeJJtA%3D&scope=basic+netdisk
 
-access_token=23.898a3a6f5ddcb03a74ca5bcfdf7152c6.2592000.1567083472.3358459855-10689949
-
 curl -k -L -F "file=@/home/user/Downloads/phddns_3.0_x86_64.deb" "https://c.pcs.baidu.com/rest/2.0/pcs/file?method=upload&access_token=23.898a3a6f5ddcb03a74ca5bcfdf7152c6.2592000.1567083472.3358459855-10689949&path=/apps/pcstest_oauth/phddns_3.0_x86_64.deb"
-
-/home/user/Downloads
-//======================================
