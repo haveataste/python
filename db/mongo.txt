@@ -1,4 +1,4 @@
-mongodb+srv://mdb@cluster.vl2l3s5.mongodb.net/one
+mongodb+srv://admin@db.nqjy0vv.mongodb.net/
 Enter password: xxoo1234@
 > show dbs
 one     72.00 KiB
