@@ -1,0 +1,12 @@
+pip install mssql-cli
+mssql-cli -S den1.mssql7.gear.host -d blackwidow -U blackwidow
+
+SELECT TABLE_NAME
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE';
+
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age int
+);
