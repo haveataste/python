@@ -10,3 +10,30 @@ CREATE TABLE users (
     name VARCHAR(50),
     age int
 );
+
+--在 SQL Server 中，你不能使用 AUTO_INCREMENT 来指定列的自增长属性。相反，你应该使用 IDENTITY 属性来实现自增长列。以下是一个正确的示例，创建一个带有自增长主键的表：
+CREATE TABLE student(
+    sid int PRIMARY KEY IDENTITY(1,1),
+    sname varchar(20) NOT NULL,
+    gender varchar(10) NOT NULL
+    );
+
+CREATE TABLE course(
+    cid int PRIMARY KEY IDENTITY(1,1),
+    cname varchar(20) NOT NULL
+    );
+
+CREATE TABLE mark(
+    mid int PRIMARY KEY IDENTITY(1,1),
+    sid int NOT NULL,
+    cid int NOT NULL,
+    score int NOT NULL,
+    FOREIGN KEY(sid) REFERENCES student(sid),
+    FOREIGN KEY(cid) REFERENCES course(cid)
+    );
+
+INSERT INTO student VALUES('Tom','male'),('Jack','male'),('Rose','female');
+
+INSERT INTO course VALUES('math'),('physics'),('chemistry');
+
+INSERT INTO mark VALUES(1,1,80),(2,1,85),(3,1,90),(2,2,60),(2,2,90),(3,2,75),(1,3,95),(2,3,75),(3,3,85);
