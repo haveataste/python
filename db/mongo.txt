@@ -34,3 +34,11 @@ switched to db test
 > db.tb.findOne()
 
 > db.tb.update
+
+db.users.find({ age: { $gt: 19 }})
+db.users.find({ age: { $gte: 19 }})
+db.users.find({ age: { $lte: 19 }})
+db.users.find({ name: { $in: ["kyle", "Sally"} }})
+db.users.find({ name: { $nin: ["kyle", "Sally"} }})
+db.users.find({ age: { $exists: true }})
+db.users.find({ age: { $exists: false }})
