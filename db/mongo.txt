@@ -20,7 +20,7 @@ switched to db test
 > db.tb.insertOne({"first":"the first important"})
 > db.tb.insertMany([{1:2}, {3:4}])
 
-> db.tb.count()
+> db.tb.countDocuments()
 > db.tb.remove({})
 > db.tb.deleteOne
 > db.tb.deleteMany
