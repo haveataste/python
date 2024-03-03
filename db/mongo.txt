@@ -1,8 +1,6 @@
 mongodb+srv://admin@db.nqjy0vv.mongodb.net/
 Enter password: xxoo1234@
 > show dbs
-one     72.00 KiB
-test    40.00 KiB
 admin  336.00 KiB
 local    5.86 GiB
 > use test
@@ -12,7 +10,7 @@ switched to db test
 > exit()
 
 # collections
-> use one
+> use test
 > db.createCollection("tb")
 > show tables
 > show collections
@@ -20,26 +18,24 @@ switched to db test
 
 # documents
 > db.tb.insertOne({"first":"the first important"})
-> db.tb.insertMany([{1:2},{3:4}])
+> db.tb.insertMany([{1:2}, {3:4}])
 
 > db.tb.count()
-
 > db.tb.remove({})
 > db.tb.deleteOne
 > db.tb.deleteMany
+> db.tb.findOne
+> db.tb.update
 
 > db.tb.find().pretty()
 > db.tb.find().sort({'date': -1}).limit(10).skip(2)
 > db.dlt.find({}, { 'lotteryDrawResult':1, 'lotteryDrawTime':1, _id:0 }).sort({ 'lotteryDrawTime': 1 }).limit(1000)
-> db.tb.findOne()
-
-> db.tb.update
 
 db.users.find({ age: { $gt: 19 }})
 db.users.find({ age: { $gte: 19 }})
 db.users.find({ age: { $lte: 19 }})
-db.users.find({ name: { $in: ["Kyle", "Sally"} }})
-db.users.find({ name: { $nin: ["Kyle", "Sally"} }})
+db.users.find({ name: { $in: ["Kyle", "Sally"] }})
+db.users.find({ name: { $nin: ["Kyle", "Sally"] }})
 db.users.find({ age: { $exists: true }})
 db.users.find({ age: { $exists: false }})
 db.users.find({ age: { $gte: 19, $lte: 40 }, name: "Kyle" })
