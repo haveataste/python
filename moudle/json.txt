@@ -1,20 +1,20 @@
-ͨ��Python��jsonģ�飬���Խ��ַ�����ʽ��json����ת��Ϊ�ֵ䣬Ҳ���Խ�Python�е��ֵ�����ת��Ϊ�ַ�����ʽ��json���ݡ�
-֮ǰʹ�����ģ��ʱ������������飬ǳ����ֹ����ģ��Ĺ����˽ⲻ�
-����ʹ�ô��������ӣ��Ҷ�����������Ƶ�ģ�����˸�����˽⣬��¼���¡�
+通过Python的json模块，可以将字符串形式的json数据转化为字典，也可以将Python中的字典数据转化为字符串形式的json数据。
+之前使用这个模块时，都是随用随查，浅尝辄止，对模块的功能了解不深。
+随着使用次数的增加，我对这个功能完善的模块有了更多的了解，记录如下：
 
-1��json�ַ���תΪ�ֵ�
+1、json字符串转为字典
 json.load / json.loads
 
-���������������ƣ���ѡ����Ҳ��ͬ�������������ڣ�json.load�������ܵ����룬����һ���������ǰ���json���ݵ��ļ�������open�����ķ��ض���
-json.loads���ܵ�������json�ַ����������ļ����󡣴��������͵�����Ҳ���Կ������ߵ�ʹ�ó��ϡ�
-��ѡ���������Ƿ���Ҫת�����͡������͵���ֵ�Ĳ���������һЩ���ӵĹ��ܣ���ʱû���õ����Ժ��л������˽⡣
+两个方法功能类似，可选参数也相同，最大的区别在于，json.load方法接受的输入，即第一个参数，是包含json数据的文件对象，如open方法的返回对象，
+json.loads接受的输入是json字符串，而非文件对象。从输入类型的区别也可以看出两者的使用场合。
+可选参数包括是否需要转换整型、浮点型等数值的参数，还有一些复杂的功能，暂时没有用到，以后有机会再了解。
 
-2���ֵ�ת��Ϊjson
+2、字典转换为json
 json.dump / json.dumps
 
-��Ӧ��load��loads��dump�ĵ�һ�������Ƕ����ֵ䣬�ڶ����������ļ����󣬿���ֱ�ӽ�ת�����json����д���ļ���dumps�ĵ�һ�������Ƕ����ֵ䣬���඼�ǿ�ѡ������
-dump��dumps�Ŀ�ѡ������ͬ����Щ�������൱ʵ�ã��ֽ��õ��Ĳ�����¼���£�
-ensure_ascii        Ĭ��ΪTrue����֤ת�����json�ַ�����ȫ����ascii�ַ�����ascii�ַ����ᱻת�塣��������д������Ļ�������ascii�ַ�����ý�ensure_ascii����ΪFalse����֤������������
-indent                 ������Ĭ��ΪNone��û������������Ϊ������ʱ������ĸ�ʽ������indentָ���İ�ǿո����������൱ʵ�á�
-separators          ���÷ָ�����Ĭ�ϵķָ�����(',', ': ')�������Ҫ�Զ���json�еķָ������������ð��ǰ��Ŀո��������԰���(item_separator, key_separator)����ʽ���á�
-sort_keys            Ĭ��ΪFalse����ΪTrueʱ���������������ֵ��е�key����
+对应于load和loads，dump的第一个参数是对象字典，第二个参数是文件对象，可以直接将转换后的json数据写入文件，dumps的第一个参数是对象字典，其余都是可选参数。
+dump和dumps的可选参数相同，这些参数都相当实用，现将用到的参数记录如下：
+ensure_ascii        默认为True，保证转换后的json字符串中全部是ascii字符，非ascii字符都会被转义。如果数据中存在中文或其他非ascii字符，最好将ensure_ascii设置为False，保证输出结果正常。
+indent              缩进，默认为None，没有缩进，设置为正整数时，输出的格式将按照indent指定的半角空格数缩进，相当实用。
+separators          设置分隔符，默认的分隔符是(',', ': ')，如果需要自定义json中的分隔符，例如调整冒号前后的空格数，可以按照(item_separator, key_separator)的形式设置。
+sort_keys           默认为False，设为True时，输出结果将按照字典中的key排序。
