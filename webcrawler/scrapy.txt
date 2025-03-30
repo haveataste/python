@@ -41,7 +41,7 @@ Available commands:
   [ more ]      More commands available when run from project directory
 Use "scrapy <command> -h" to see more info about a command
 # 提示command not found时
-ln -s /home/用户名/.local/bin/scrapy /usr/bin/scrapy
+ln -s ~/.local/bin/scrapy /usr/bin/scrapy
 
 $ scrapy startproject crabz
 $ cd crabz/crabz/spiders/
