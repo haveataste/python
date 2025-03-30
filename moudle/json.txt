@@ -11,6 +11,7 @@ json.loads接受的输入是json字符串，而非文件对象。从输入类型
 
 2、字典转换为json
 json.dump / json.dumps
+json.dumps(j, ensure_ascii=True, indent=2, sort_keys=True)
 
 对应于load和loads，dump的第一个参数是对象字典，第二个参数是文件对象，可以直接将转换后的json数据写入文件，dumps的第一个参数是对象字典，其余都是可选参数。
 dump和dumps的可选参数相同，这些参数都相当实用，现将用到的参数记录如下：
