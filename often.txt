@@ -74,7 +74,7 @@ import uuid
 uuid.uuid4()， uuid.uuid1().hex
 
 import os
-os.name, os.curdir, os.getcwd(), os.listdir(), os.chdir(path), os.walk(path)
+os.name, os.curdir, os.getcwd(), os.listdir(), os.chdir(path), os.walk(path), os.system(cmd)
 os.path.abspath('.')
 os.path.split(path)
 os.path.basename(path)
