@@ -31,8 +31,13 @@
     
     sadd d 1 2 3
     sadd d 3
+    srem d 2
     smembers d
     sismember d 3   # 匹配成功返回 1，匹配失败返回 0
+    scard d         # 获取集合中元素的数量
+    sinter s1 s2    # 交集
+    sunion s1 s2    # 并集
+    sdiff  s1 s2    # 差集
     
     zadd e 0 1
     zadd e 0 2
