@@ -1,7 +1,7 @@
 # 20250410 download Windows Client
 # https://downloads.mongodb.com/compass/mongosh-2.5.0-x64.msi
 # "C:\Program Files\mongosh\mongosh.exe" "mongodb+srv://db.nqjy0vv.mongodb.net/lottery" --apiVersion 1 --username admin
-Enter password: xxoo1234
+Enter password: xx******
 
 > show dbs
 data      80.00 KiB
