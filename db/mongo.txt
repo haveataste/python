@@ -31,7 +31,6 @@ switched to db test
 > db.tb.deleteMany
 > db.tb.findOne
 > db.tb.update
-
 > db.tb.find().pretty()
 > db.tb.find().sort({'date': -1}).limit(10).skip(2)
 > db.dlt.find({}, { 'lotteryDrawResult':1, 'lotteryDrawTime':1, _id:0 }).sort({ 'lotteryDrawTime': 1 }).limit(1000)
