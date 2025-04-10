@@ -1,8 +1,13 @@
-mongodb+srv://admin@db.nqjy0vv.mongodb.net/
-Enter password: xxoo1234@
+# 20250410 download Windows Client
+# https://downloads.mongodb.com/compass/mongosh-2.5.0-x64.msi
+# "C:\Program Files\mongosh\mongosh.exe" "mongodb+srv://db.nqjy0vv.mongodb.net/" --apiVersion 1 --username admin
+Enter password: xxoo1234
+
 > show dbs
-admin  336.00 KiB
-local    5.86 GiB
+data      80.00 KiB
+lottery    1.78 MiB
+admin    348.00 KiB
+local    808.95 MiB
 > use test
 switched to db test
 > db.dropDatabase()
