@@ -38,6 +38,7 @@
     sinter s1 s2    # 交集
     sunion s1 s2    # 并集
     sdiff  s1 s2    # 差集
+    sdiffstore result s1 s2    # 存储差集
     
     zadd e 0 1
     zadd e 0 2
