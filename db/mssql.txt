@@ -1,9 +1,22 @@
 pip install mssql-cli
 mssql-cli -S den1.mssql7.gear.host -d blackwidow -U blackwidow
 
+-- 数据库实例是数据库管理系统在服务器内存中运行的一组进程（在 Windows 系统中有时也称为线程）和分配的内存区域。它是数据库管理系统与物理数据库文件之间的桥梁，负责管理数据库的访问、操作和维护。
+-- 查看当前正在使用的数据库
+SELECT DB_NAME();
+-- 查看 SQL Server 实例里所有的数据库
+SELECT name 
+FROM sys.databases;
+-- 切换当前使用的数据库
+USE DBNAME;
+
+-- 查询当前数据库中所有用户表的名称
 SELECT TABLE_NAME
 FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_TYPE = 'BASE TABLE';
+
+SELECT name, create_date, modify_date
+FROM sys.tables;
 
 CREATE TABLE users (
     id INT PRIMARY KEY,
@@ -11,7 +24,7 @@ CREATE TABLE users (
     age int
 );
 
---在 SQL Server 中，你不能使用 AUTO_INCREMENT 来指定列的自增长属性。相反，你应该使用 IDENTITY 属性来实现自增长列。以下是一个正确的示例，创建一个带有自增长主键的表：
+-- 在 SQL Server 中，你不能使用 AUTO_INCREMENT 来指定列的自增长属性。相反，你应该使用 IDENTITY 属性来实现自增长列。以下是一个正确的示例，创建一个带有自增长主键的表：
 CREATE TABLE student(
     sid int PRIMARY KEY IDENTITY(1,1),
     sname varchar(20) NOT NULL,
